@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head>
+        <!-- 网站属性和社交预览相关 start-->
         <title>This is a test only.</title>
         <meta charset="UTF-8">
         <meta name="description" content="nya?">
+        <meta name="keywords" content="Taranakineko">
+        <meta name="author" content="Taranakineko">
+        <meta name="og:title" content="This is a test only.">
+        <meta name="og:type" content="website">
+        <meta name="og:description" content="nya?">
+        <meta name="og:image" content="https://nekoq.eu.org/static/images/avatar.png">
+        <meta name="og:site_name" content="This is a test only.">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="This is a test only.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 网站属性和社交预览相关 End && 资源引用-->
         <link rel="stylesheet" href="https://api.stapxs.cn/css/color-light.css" media="(prefers-color-scheme: light)">
         <link rel="stylesheet" href="https://api.stapxs.cn/css/color-dark.css" media="(prefers-color-scheme: dark)">
         <link rel="stylesheet" href="https://api.stapxs.cn/css/style.css">
+        <link rel="preconnect" href="https://rsms.me/">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     </head>
     <body>
         <style>
@@ -15,7 +28,7 @@
                 transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
             }
             body{
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* 笑死，老自动填充了 */
+                font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* 笑死，老自动填充了 */
             }
             .miao{
                 /* 页边距 */
@@ -38,8 +51,9 @@
                 header{
                     color: #252525;
                 }
-                a:visited{
-                    color: rgba(0, 0, 255, 0.542);
+                a{
+                    color: #0969da;
+                    text-decoration: none;
                 }
             }
             @media (prefers-color-scheme: dark) {
@@ -56,7 +70,8 @@
                     fill: #f8f9fa;
                 }
                 a{
-                    color: aqua;
+                    color: #58a6ff;
+                    text-decoration: none;
                 }
             }
             svg{
@@ -94,7 +109,7 @@
             </div>
             <div class="ss-card ana-card" style="margin: 20px 20px 0 20px;">
                 <div></div>
-                <span>A cat lying on the keyboard.</span>
+                <span><b>A cat lying on the keyboard.</b></span>
             </div>
             <div class="ss-card" style="margin: 20px 20px 0 20px;">
                 <header style="font-weight: bold;"><div></div>这只是是带有标头的卡片</header>
