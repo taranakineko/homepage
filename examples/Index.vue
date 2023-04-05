@@ -60,7 +60,7 @@
                 </div>
             </ss-card>
             <ss-card title="这又是链接！" icon style="text-align: center; margin: 20px 5px 0px 5px;">
-                <span><a href="https://winsloweric.com/">Pivot of Winslow</a> | <a href="https://shef.cc/">SheepChef Blog</a></span>
+                <a href="https://winsloweric.com/">Pivot of Winslow</a> | <a href="https://shef.cc/">SheepChef Blog</a>
             </ss-card>
         </div>
     </bc-tab>
@@ -97,50 +97,6 @@ export default defineComponent({
         }
     },
     methods: {
-        showMenu(event: Event, isMe = false) {
-            const info = this.menu.set('demo-menu', event as MouseEvent)
-            info.list = !isMe ? ['reply', 'copy'] : ['delete', 'copy']
-            this.menuStatue = info
-        },
-        closeMenu(id: string) {
-            this.menuStatue.show = false
-            if(id) {
-                this.toast.show({
-                    icon: 'fa-solid fa-circle-info',
-                    text: `${id} 被点击了。`,
-                    autoClose: true
-                })
-            }
-        },
-
-        showToast() {
-            const textList = [
-                ['fa-circle-info', '这是一条吐司消息。'],
-                ['fa-bread-slice', '香浓的吐司！'],
-                ['fa-gear', '这个吐司看起来有好好初始化哦。'],
-                ['fa-ghost', '¯\\_(ツ)_/¯'],
-                ['fa-utensils', '来个吐司？'],
-                ['fa-face-grin-stars', '吐司超好吃 ——'],
-                ['fa-circle-info', '这是个没有感情的吐司。'],
-                ['fa-heart', 'Also try LayUI!'],
-                ['fa-bread-slice', 'Toast'],
-                ['fa-circle-info', '不想说话。'],
-                ['fa-circle-info', 'SS!'],
-                ['fa-face-grin-squint-tears', '隔壁小孩都馋哭了。'],
-                ['fa-fire', '正在烤吐司。'],
-                ['fa-wrench', '超文本烤箱控制协议'],
-                ['fa-ban', '419 I\'m a Microwave Oven.']
-            ]
-            // 随机显示
-            const index = Math.floor(Math.random() * textList.length)
-            const toastInfo = {
-                icon: 'fa-solid ' + textList[index][0],
-                text: textList[index][1],
-                // 随机获取一个 true 或 false
-                autoClose: Math.random() > 0.5
-            }
-            this.toast.show(toastInfo)
-        },
         showTaraSay() {
             const textList = [
                 ['fa-circle-info', '还在施工中哦'],
@@ -158,58 +114,11 @@ export default defineComponent({
         clearToast() {
             this.toast.clear()
         },
-
-        addPop() {
-            const textList = [
-                '这是一条弹窗消息。',
-                '👋，你好啊！',
-                '这是一条弹窗消息，这是一条弹窗消息，这是一条弹窗消息。',
-                '你好世界！',
-                '一个弱小可怜又无助的消息。'
-            ]
-            // 随机获取三条显示
-            for (let i = 0; i < 4; i++) {
-                const index = Math.floor(Math.random() * textList.length)
-                const popInfo = {
-                    title: '你好啊！',
-                    icon: 'fa-solid fa-smile',
-                    html: `<p>${textList[index]}</p>`,
-                    button: [
-                        {
-                            text: '关闭',
-                            master: true,
-                            fun: () => this.popBox.remove()
-                        }
-                    ]
-                }
-                this.popBox.add(popInfo)
-            }
-        },
-        removeCard() {
-            const card = document.getElementById('delCard')
-            if (card) {
-                card.style.display = 'none'
-            }
-        }
     }
 });
 </script>
 
 <style scoped>
-h2 {
-    opacity: 0;
-    height: 0;
-    margin: 0;
-}
-code {
-    font-family: 'Fira Code', monospace;
-    background: var(--color-main);
-    color: var(--color-font-r);
-    border-radius: 4px;
-    padding: 1px 10px;
-    font-size: 0.8rem;
-    white-space: pre;
-}
 svg{
     width: 40px;
     height: 40px;
@@ -218,78 +127,6 @@ span{
     text-align: center;
 }
 
-.code {
-    margin: 30px -30px -20px -30px;
-    border-radius: 0 0 7px 7px;
-    padding: 10px 20px;
-    overflow-x: scroll;
-}
-.code > code {
-    color: var(--color-font) !important;
-    background: unset !important;
-}
-.code-free {
-    border-radius: 7px;
-    margin: 10px 5px;
-    padding: 20px;
-}
-
-.color-view {
-    margin: 0 -20px;
-    width: 200px;
-}
-.color-view > div {
-    border-radius: 7px;
-    padding: 5px;
-    margin: 5px;
-}
-
-.view-space {
-    margin: 0 -30px -30px -30px;
-    background: var(--color-bg);
-    padding: 20px;
-}
-
-.just-img {
-    border-radius: 7px;
-    margin: 10px;
-    height: auto;
-    width: 100%;
-}
-.just-img-a {
-    color: var(--color-font-2);
-    font-size: 0.8rem;
-}
-.just-img-b {
-    color: var(--color-font);
-}
-
-.menu-view-bg {
-    background-image: url(https://lib.stapxs.cn/download/pic/desktopImg/75558054_p0.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.menu-view img.hd {
-    background: var(--color-card-2);
-    border-radius: 100%;
-    margin-right: 10px;
-    margin-top: 10px;
-    height: 2.2rem;
-    width: 2.2rem;
-}
-.menu-view > div {
-    align-items: center;
-    align-items: start;
-    margin: 5px 0;
-    display: flex;
-}
-.menu-view > div .space {
-    flex: 1;
-}
-.menu-view-body {
-    margin: -10px -20px !important;
-}
 .link{
     margin: 20px 20px 0 20px;
     text-align: center;
