@@ -11,7 +11,7 @@
                 <span>A cat lying on the keyboard.</span>
             </ss-card>
         </div>
-        <div name="介绍？">
+        <div name="介绍?">
             <ss-card title="Taranakineko 是谁？" icon style="margin: 20px 5px 0px 5px;">
                 <p>Taranakineko 就是 Taranakineko 啊，没问题啊！非常的合理不是嘛</p>
                 <p>另外，你也可以叫 ta “千畔” 或者是 “千帆”（很好听的名字不是？</p>
@@ -65,12 +65,12 @@
         </div>
     </bc-tab>
  </div>
-    <ss-card style="margin: 20px 25px 20px 25px;">
-        <div class="footer">
+<div class="footer">
+    <ss-card style="margin: 15px 15px 0px 15px; padding-bottom: 10px; padding-top: 10px;">
             <p>Copyright © 2022 - Now Taranakineko</p>
-                <p>Made with <a href="https://stapxs.github.io/Border-Card-UI/docs/" target="_blank">Border Card UI</a> | <a href="https://github.com/taranakineko/homepage/" target="_blank">Github Repo</a></p>
-        </div>
+            <p>Made with <a href="https://stapxs.github.io/Border-Card-UI/docs/" target="_blank">Border Card UI</a> | <a href="https://github.com/taranakineko/homepage/" target="_blank">Github Repo</a></p>
     </ss-card>
+</div>
 </div>
 
     <bc-toast :time="5000"></bc-toast>
@@ -201,9 +201,6 @@ h2 {
     height: 0;
     margin: 0;
 }
-p {
-    font-size: 0.9rem;
-}
 code {
     font-family: 'Fira Code', monospace;
     background: var(--color-main);
@@ -308,11 +305,11 @@ span{
 }
 .miao{
 /* 页边距 */
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
     margin-right: auto;
     margin-left: auto;
-    max-width: 700px;
+    max-width: 1000px;
     min-width: 360px;
 }
 .hi{
