@@ -308,11 +308,11 @@ span{
 }
 .miao{
 /* 页边距 */
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
     margin-right: auto;
     margin-left: auto;
-    max-width: 1000px;
+    max-width: 700px;
     min-width: 360px;
 }
 .hi{
