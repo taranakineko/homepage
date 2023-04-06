@@ -60,7 +60,7 @@
                 </div>
             </ss-card>
             <ss-card title="这又是链接！" icon style="text-align: center; margin: 20px 5px 0px 5px;">
-                <a href="https://winsloweric.com/">Pivot of Winslow</a> | <a href="https://shef.cc/">SheepChef Blog</a>
+                <p><a href="https://winsloweric.com/">Pivot of Winslow</a> | <a href="https://shef.cc/">SheepChef Blog</a></p>
             </ss-card>
         </div>
     </bc-tab>
@@ -137,13 +137,8 @@ span{
     box-sizing: border-box;
     padding: 10px;
 }
-.friends-link{
-    padding: 2px;
-}
 .miao{
 /* 页边距 */
-    padding-right: 10px;
-    padding-left: 10px;
     margin-right: auto;
     margin-left: auto;
     max-width: 700px;
@@ -158,11 +153,5 @@ span{
     width: 6rem;
     border-radius: 50%;
     --main-size: ;
-}
-.anacard{
-    text-align: center;
-    box-sizing: border-box;
-    font-size: 1.0rem;
-    font-weight: 400;
 }
 </style>

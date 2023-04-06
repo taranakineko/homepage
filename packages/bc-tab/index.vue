@@ -94,7 +94,8 @@ export default defineComponent({
     margin-bottom: 10px;
 }
 .tab-bar {
-    margin: -17px -20px -17px -40px;
+    margin: -17px -40px;
+    padding-left: 0px;
     justify-content: center;
     align-items: center;
     display: flex;

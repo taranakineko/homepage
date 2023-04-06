@@ -86,7 +86,7 @@ export default defineComponent({
     border-radius: 7px;
     padding: 10px 20px;
     margin-top: 5px;
-    max-width: 20%;
+    max-width: 90%;
     direction: ltr;
     display: flex;
 }
