@@ -21,7 +21,7 @@
             </ss-card>
         </div>
         <div name="其他">
-            <ss-card title="这是链接！" icon style="margin: 20px 5px 0px 5px;">
+            <ss-card title="这是关于千畔的链接！" icon style="margin: 20px 5px 0px 5px;">
                 <div class="link">
                     <a href="https://nekoq.eu.org">
                         <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -67,7 +67,7 @@
                     </a>
                 </div>
             </ss-card>
-            <ss-card title="这又是链接！" icon style="text-align: center; margin: 20px 5px 0px 5px;">
+            <ss-card title="这是友链！" icon style="text-align: center; margin: 20px 5px 0px 5px;">
                 <p><a href="https://winsloweric.com/">Pivot of Winslow</a> | <a href="https://shef.cc/">SheepChef Blog</a></p>
             </ss-card>
         </div>
@@ -108,6 +108,11 @@ export default defineComponent({
         showTaraSay() {
             const textList = [
                 ['fa-circle-info', '还在施工中哦'],
+                ['fa-triangle-exclamation', '请不要大力拍打或滑动哟'],
+                ['fa-question', '当 0 或 1 都是可以的喵'],
+                ['fa-exclamation', '传来樱桃青轴般的段落感。 （（'],
+                ['fa-wand-magic-sparkles', '前面的区域，以后再来探索吧'],
+                ['fa-shield-cat', 'nya~']
             ]
             // 随机显示
             const index = Math.floor(Math.random() * textList.length)
@@ -124,6 +129,8 @@ export default defineComponent({
         },
     }
 });
+console.log("%c> One day, we'll look back at where we started and be amazed by how far we've come.",  "font-size:14px; font-style:italic")
+console.log("%c感谢 Sanae & Moe23333 & U.M.R Powered 提供的部分随机句子！",  "font-size:14px")
 </script>
 
 <style scoped>

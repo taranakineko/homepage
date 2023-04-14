@@ -57,6 +57,9 @@
         --color-main-4: #f9a633;
         --color-main-5: #50534f;
     }
+    .app-msg > div svg path {
+        fill: #f8f9fa !important;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
