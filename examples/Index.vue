@@ -18,7 +18,7 @@
                 <p>另外，你也可以称呼 ta 为 “千畔” 或者是 “千帆”（很好听的名字不是？）</p>
             </ss-card>
             <ss-card title="名字从何而来？" icon style="margin: 20px 5px 0px 5px;">
-                <p>TaranakiNeko 这个名字其实是别人<!-- 至于是谁就不说了 xwx -->起的（当时只有 Taranaki）</p>
+                <p>TaranakiNeko 这个名字其实是别人<!-- 在此感谢 Moe23333 起的名 -->起的（当时只有 Taranaki）</p>
                 <p>随后 Tara 自己擅自主张的加了 Neko，于是就有了现在这个名字</p>
                 <p>至于 “千畔”嘛... 「沉舟侧畔千帆过，病树前头万木春」</p>
             </ss-card>
