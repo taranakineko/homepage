@@ -124,6 +124,10 @@ html, body {
     margin: 0;
 }
 
+p{
+    line-height: 150%;
+}
+
 #app {
     height: 100%;
     width: 100%;

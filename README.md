@@ -15,3 +15,5 @@ A homepage about @Taranakineko. 🚧
   - [Github](https://github.com) <!--作为部分调色参考-->
   - [The Inter typeface family](https://rsms.me/inter/) <!-- 使用的英文字体 -->
   - [MDN](https://developer.mozilla.org) <!-- 参考资料 -->
+  - [Ionicons](https://ionic.io/ionicons) <!--图标-->
+  - [Fontawesome](https://fontawesome.com/icons)<!--吐司通知图标-->

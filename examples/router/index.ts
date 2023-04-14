@@ -17,8 +17,7 @@ const router = createRouter({
         },
         {
             path: '/:pathMatch(.*)',
-            component: notfound,
-            meta:{title:'404!'}
+            redirect: '/404'
         }
     ]
 });
