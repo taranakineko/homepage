@@ -37,7 +37,7 @@
                     <p>或者切换上面的选项卡至 “其他” ，里面有千畔的 Github 主页，那里也有更多信息</p>
                 </ss-card>
             </div>
-            <div name="其他">
+            <div name="链接">
                 <ss-card title="这是关于 千畔 的链接！" icon style="margin: 20px 5px 0px 5px;">
                     <div class="link">
                         <a href="https://nekoq.eu.org">
@@ -99,6 +99,7 @@
                             </svg>
                         </a>
                     </div>
+                    <p style="text-align: center;">虽说还有一些其他的链接，但这就得要靠自己寻找啦！</p>
                 </ss-card>
                 <ss-card title="这是友链！" icon style="text-align: center; margin: 20px 5px 0px 5px; padding-bottom: 10px;">
                     <p><a href="https://winsloweric.com/">Pivot of Winslow</a> | <a href="https://shef.cc/">SheepChef Blog</a></p>
