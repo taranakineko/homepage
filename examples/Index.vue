@@ -12,7 +12,7 @@
                 </ss-card>
                 <ss-card style="margin: 20px 5px 0px 5px; text-align: center; font-style:italic; line-height: 200%;">
                     <span>
-                        🚧 Somethings are not finished yet, please wait a moment...
+                        🚧 Somethings are not finished yet, please wait for me to finish...!
                         <br>
                         有些事情还未结束哦...
                     </span>
@@ -102,7 +102,7 @@
                     <p style="text-align: center;">虽说还有一些其他的链接，但这就得要靠自己寻找啦！</p>
                 </ss-card>
                 <ss-card title="这是友链！" icon style="text-align: center; margin: 20px 5px 0px 5px; padding-bottom: 10px;">
-                    <p><a href="https://winsloweric.com/">Pivot of Winslow</a> | <a href="https://shef.cc/">SheepChef Blog</a></p>
+                    <p><a href="https://moe23333.vercel.app/">Moe23333</a> | <a href="https://winsloweric.com/">Pivot of Winslow</a> | <a href="https://shef.cc/">SheepChef Blog</a></p>
                 </ss-card>
             </div>
             <div name="鸣谢">
@@ -110,6 +110,7 @@
                     <p>等...！这里还在施工！</p>
                     <p>但是你可以到 <a href="https://github.com/taranakineko/homepage/blob/main/README.md">这里</a> 查看，稍后会将那边的内容 copy 一份到这里的</p>
                     <p>绝对不会咕咕咕的！千畔这样说道</p>
+                    <p>同时也要感谢陪伴在千畔身边的你</p>
                 </ss-card>
             </div>
         </bc-tab>
@@ -121,7 +122,7 @@
         </ss-card>
     </div>
     </div>
-        <bc-toast :time="5000"></bc-toast>
+<bc-toast :time="5000"></bc-toast>
     </template>
     
     <script lang="ts">
@@ -160,14 +161,21 @@
                     })
                 }
             },
+            clearToast() {
+                this.toast.clear()
+            },
             showTaraSay() {
                 const textList = [
                     ['fa-circle-info', '还在施工中哦'],
-                    ['fa-triangle-exclamation', '请不要大力拍打或滑动哟'],
+                    ['fa-triangle-exclamation', '不要大力拍打或滑动哟'],
                     ['fa-question', '当 0 或 1 都是可以的喵'],
                     ['fa-exclamation', '传来樱桃青轴般的段落感。 （（'],
                     ['fa-wand-magic-sparkles', '前面的区域，以后再来探索吧'],
-                    ['fa-shield-cat', 'nya~']
+                    ['fa-shield-cat', 'nya~'],
+                    ['fa-heart', '守られることはもうきっとないけど'],
+                    ['fa-music', '歌は、言語関係ないですからね。'],
+                    ['fa-bug', '不是写出了 Bug 就是在写出 Bug 的路上'],
+                    ['fa-heart', 'Hope...']
                 ]
                 // 随机显示
                 const index = Math.floor(Math.random() * textList.length)
@@ -175,17 +183,15 @@
                     icon: 'fa-solid ' + textList[index][0],
                     text: textList[index][1],
                     // 随机获取一个 true 或 false
-                    autoClose: Math.random() > 0.5
+                    autoClose: true
                 }
                 this.toast.show(toastInfo)
             },
-            clearToast() {
-                this.toast.clear()
-            },
         }
     });
-    console.log("%c> One day, we'll look back at where we started and be amazed by how far we've come.",  "font-size:14px; font-style:italic")
-    console.log("%c感谢 Sanae & Moe23333 & U.M.R Powered 提供的部分随机句子！",  "font-size:14px")
+    console.log("%c> We shall meet in the place where there is no darkness.",  "font-size:12px; font-style:italic")
+    console.log("%c感谢 Sanae & Moe23333 & U.M.R Powered 提供的一些句子",  "font-size:12px")
+    console.log("最后更新时间：2023.07.15 12:39")
     </script>
     
     <style scoped>
@@ -195,6 +201,9 @@
     }
     span{
         text-align: center;
+    }
+    del{
+        color: var(--color-font-1);
     }
     
     .link{
