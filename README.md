@@ -2,7 +2,7 @@
 
 A homepage about @Taranakineko. 🚧
 
-大概是半手搓的，代码写得有点渣且乱 ~~，连 commit 信息都不写好，~~ 见谅
+大概是半手搓的，代码写得有点渣且乱 ~~，连 commit 信息都不写好，~~ 见谅（）
 
 ---
 
