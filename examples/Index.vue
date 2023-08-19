@@ -6,9 +6,9 @@
         </div>
         <div style="display: flex; margin: 20px 20px 0 20px;">
         <bc-tab style="margin-top: 20px; flex: 1; min-width: 0; overflow: auto;">
-            <div name="首页">
+            <div name="Start">
                 <ss-card style="margin: 20px 5px 0px 5px; text-align: center;">
-                    <span>A cat lying on the keyboard.</span>
+                    <span>A 🐱cat lying on the ⌨️keyboard.</span>
                 </ss-card>
                 <ss-card style="margin: 20px 5px 0px 5px; text-align: center; font-style:italic; line-height: 200%;">
                     <span>
@@ -19,26 +19,26 @@
                 </ss-card>
             </div>
             <div name="介绍">
-                <ss-card title="TaranakiNeko 是谁？" icon style="margin: 20px 5px 0px 5px;">
+                <ss-card title="TaranakiNeko 是谁？🤔" icon style="margin: 20px 5px 0px 5px;">
                     <p>TaranakiNeko 就是 TaranakiNeko 啊，没问题啊！非常的合理不是嘛</p>
-                    <p>虽说名字里带有 Neko ，但无论是习惯什么的似乎都不像貓貓，<del>還不可愛</del> （思索）</p>
+                    <p>虽说名字里带有 Neko ，但无论是习惯什么的似乎都不像貓貓，<del>還不可愛（思索）</del></p>
                     <p>另外，你可以称呼 ta 为 「千畔」 或者是 「千帆」</p>
                     <p>但似乎被叫「千畔」更多一些</p>
                 </ss-card>
-                <ss-card title="名字从何而来？" icon style="margin: 20px 5px 0px 5px;">
+                <ss-card title="名字从何而来？😮" icon style="margin: 20px 5px 0px 5px;">
                     <p>TaranakiNeko 这个名字其实是别人<!-- 在此感谢 Moe23333 起的名 -->起的（当时只有 Taranaki）</p>
                     <p>随后 Tara 自己擅自主张的加了 Neko，于是就有了现在这个名字</p>
                     <p>至于 「千畔」嘛... 「沉舟侧畔千帆过，病树前头万木春」</p>
                 </ss-card>
-                <ss-card title="那其他的呢？" icon style="margin: 20px 5px 0px 5px;">
+                <ss-card title="那其他的呢？👀" icon style="margin: 20px 5px 0px 5px;">
                     <p>随机使用拼音或者注音，虽说大部分时候都是使用拼音吧</p>
-                    <p><del>umm... 剩下的懒得写了，所以屏幕前的你可以访问 <a href="https://nekoq.eu.org/about">关于(BLog)</a> 页</del></p>
-                    <p><del>博客那边的介绍会更新的，会更新的</del></p>
+                    <p><del>umm... 剩下的懒得写了，所以屏幕前的你可以访问 <a href="https://nekoq.eu.org/about">关于 (Blog)</a> 页</del></p>
+                    <p><del>至于博客那边...会更新的，会更新的 😭</del></p>
                     <p>或者切换上面的选项卡至 “其他” ，里面有千畔的 Github 主页，那里也有更多信息</p>
                 </ss-card>
             </div>
             <div name="链接">
-                <ss-card title="这是关于 千畔 的链接！" icon style="margin: 20px 5px 0px 5px;">
+                <ss-card title="这是关于 千畔 的链接！🔗" icon style="margin: 20px 5px 0px 5px;">
                     <div class="link">
                         <a href="https://nekoq.eu.org">
                             <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -108,16 +108,17 @@
                     </div>
                     <p style="text-align: center;">虽说还有一些其他的链接，但这就得要靠自己寻找啦！</p>
                 </ss-card>
-                <ss-card title="这是友链！" icon style="text-align: center; margin: 20px 5px 0px 5px; padding-bottom: 10px;">
+                <ss-card title="这是友链！🫂" icon style="text-align: center; margin: 20px 5px 0px 5px; padding-bottom: 10px;">
                     <p><a href="https://moe23333.vercel.app/">Moe23333</a> | <a href="https://winsloweric.com/">Pivot of Winslow</a> | <a href="https://shef.cc/">SheepChef Blog</a></p>
                 </ss-card>
             </div>
             <div name="鸣谢">
-                <ss-card title="特别鸣谢？（暂定标题啦" icon style="margin: 20px 5px 0px 5px;">
-                    <p>等...！这里还在施工！</p>
-                    <p>但是你可以到 <a href="https://github.com/taranakineko/homepage/blob/main/README.md">这里</a> 查看，稍后会将那边的内容 copy 一份到这里的</p>
+                <ss-card title="特别鸣谢？☺️（暂定标题啦" icon style="margin: 20px 5px 0px 5px;">
+                    <p>等...！这一部分目前还在施工！</p>
+                    <p>但是你可以到 <a href="https://github.com/taranakineko/homepage/blob/main/README.md">这里</a> 查看，稍后千畔将会把那边的内容 copy 一份到这里的</p>
                     <p>绝对不会咕咕咕的！千畔这样说道</p>
                     <p>同时也要感谢陪伴在千畔身边的你</p>
+                    <p>祝你好运！😘</p>
                 </ss-card>
             </div>
         </bc-tab>
@@ -125,7 +126,7 @@
     <div class="footer">
         <ss-card style="margin: 15px 15px 0px 15px; padding-bottom: 10px; padding-top: 10px;">
                 <p>Copyright © 2022 - Now Taranakineko</p>
-                <p>Made with <a href="https://github.com/Stapxs/Border-Card-UI/" target="_blank">Border Card UI</a> | <a href="https://github.com/taranakineko/homepage/" target="_blank">Github Repo</a></p>
+                <p>Made with <a href="https://github.com/Stapxs/Border-Card-UI/" target="_blank">Border Card UI for Vue</a> | <a href="https://github.com/taranakineko/homepage/" target="_blank">Github Repo</a></p>
         </ss-card>
     </div>
     </div>
@@ -198,7 +199,7 @@
     });
     console.log("%c> We shall meet in the place where there is no darkness.",  "font-size:12px; font-style:italic")
     console.log("%c感谢 Sanae & Moe23333 & U.M.R Powered 提供的一些句子",  "font-size:12px")
-    console.log("最后更新时间：2023.07.15 12:39")
+    console.log("最后更新时间：2023.08.08 22:54:45")
     </script>
     
     <style scoped>
