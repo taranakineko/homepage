@@ -22,19 +22,20 @@
                 <ss-card title="TaranakiNeko 是谁？🤔" icon style="margin: 20px 5px 0px 5px;">
                     <p>TaranakiNeko 就是 TaranakiNeko 啊，没问题啊！非常的合理不是嘛</p>
                     <p>虽说名字里带有 Neko ，但无论是习惯什么的似乎都不像貓貓，<del>還不可愛（思索）</del></p>
-                    <p>另外，你可以称呼 ta 为 「千畔」 或者是 「千帆」</p>
+                    <p>另外，你可以称呼 ta 为 「千畔」 <del>或者是 「千帆」</del></p>
                     <p>但似乎被叫「千畔」更多一些</p>
                 </ss-card>
                 <ss-card title="名字从何而来？😮" icon style="margin: 20px 5px 0px 5px;">
-                    <p>TaranakiNeko 这个名字其实是别人<!-- 在此感谢 Moe23333 起的名 -->起的（当时只有 Taranaki）</p>
+                    <p>TaranakiNeko 这个名字其实是别人<!-- 谢谢 Moe23333 起的名 -->帮忙起的（当时只有 Taranaki）</p>
                     <p>随后 Tara 自己擅自主张的加上了 Neko，于是就有了现在这个名字</p>
-                    <p>至于 「千畔」嘛... 「沉舟侧畔千帆过，病树前头万木春」</p>
+                    <p>至于 「千畔」 嘛... 出自于「沉舟侧畔千帆过，病树前头万木春」</p>
                 </ss-card>
                 <ss-card title="那其他的呢？👀" icon style="margin: 20px 5px 0px 5px;">
-                    <p>随机使用拼音或者注音，虽说大部分时候都是使用拼音吧</p>
-                    <p><del>umm... 剩下的懒得写了，所以屏幕前的你可以访问 <a href="https://nekoq.eu.org/about">关于 (Blog)</a> 页</del></p>
-                    <p><del>至于博客那边...会更新的，会更新的 😭</del></p>
-                    <p>或者切换上面的选项卡至 “其他” ，里面有千畔的 Github 主页，那里也有更多信息</p>
+                    <p>千畔会随机使用拼音或者注音，虽说大部分时候都是使用拼音吧</p>
+                    <p><del>umm... 剩下的懒得写了，屏幕前的你或许可以访问 <a href="https://nekoq.eu.org/about">关于 (Blog)</a> 页</del></p>
+                    <p><del>至于博客那边...会写的会写的不要催啦 😭（）</del></p>
+                    <p>或者切换上面的选项卡至 “链接” ，里面有千畔的 Github 主页，那里也有一些信息</p>
+                    <p><del>但显然千畔似乎隐藏了什么 ==</del></p>
                 </ss-card>
             </div>
             <div name="链接">
@@ -125,7 +126,7 @@
      </div>
     <div class="footer">
         <ss-card style="margin: 15px 15px 0px 15px; padding-bottom: 10px; padding-top: 10px;">
-                <p>Copyright © 2022 - Now Taranakineko</p>
+                <p>Copyright © 2022 - Now taranakiNeko</p>
                 <p>Made with <a href="https://github.com/Stapxs/Border-Card-UI/" target="_blank">Border Card UI for Vue</a> | <a href="https://github.com/taranakineko/homepage/" target="_blank">Github Repo</a></p>
         </ss-card>
     </div>
@@ -199,7 +200,7 @@
     });
     console.log("%c> We shall meet in the place where there is no darkness.",  "font-size:12px; font-style:italic")
     console.log("%c感谢 Sanae & Moe23333 & U.M.R Powered 提供的一些句子",  "font-size:12px")
-    console.log("最后更新时间：2023.08.08 22:54:45")
+    console.log("最后更新时间：2023.08.31 04:29:11")
     </script>
     
     <style scoped>
