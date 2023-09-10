@@ -119,6 +119,12 @@
     }
 }
 
+@media screen and (prefers-color-scheme: dark) and (max-width: 667px) {
+    body{
+        background: #000;
+    }
+}
+
 /* 页面样式 */
 html, body {
     height: 100%;
