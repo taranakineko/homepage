@@ -10,7 +10,7 @@
   }
 @media (prefers-color-scheme: light) {
     body{
-        background: #f3f3f3 radial-gradient(#eff4f9 75%, #f3f3f3 100%) no-repeat fixed;
+        background: #f3f3f3 radial-gradient(#f9f6ef 75%, #f3f3f3 100%) no-repeat fixed;
     }
     h1{
         color: #252525;
@@ -22,13 +22,13 @@
         color: #252525;
     }
     a{
-        color: #0969da;
+        color: #ff8c00;
         text-decoration: none;
     }
     :root {
         /* 卡片颜色 */
         --color-bg: #F8F9FA;
-        --color-card: #fafbfd;
+        --color-card: #fbfbfd;
         --color-card-1: #F1F3F5;
         --color-card-2: #e3e8ec;
     
@@ -50,7 +50,7 @@
         --color-shader: #72727240;
     
         /* 主题色 */
-        --color-main: #5675b9;
+        --color-main: #ff8c00;
     
         /* 内置主题色*/
         --color-main-0: #5675b9;
@@ -67,7 +67,7 @@
 
 @media (prefers-color-scheme: dark) {
     body{
-        background: #202020 radial-gradient(#1a1f35 25%, #202020 100%) no-repeat fixed;
+        background: #202020 radial-gradient(#35341a 25%, #202020 100%) no-repeat fixed;
     }
     h1{
         color: #f8f9fa;
@@ -79,13 +79,13 @@
         fill: #f8f9fa;
     }
     a{
-        color: #58a6ff;
+        color: #ff8c00;
         text-decoration: none;
     }
     :root {
         /* 卡片颜色 */
         --color-bg: #2D2D2D;
-        --color-card: #282a39;
+        --color-card: #454330;
         --color-card-1: #494949;
         --color-card-2: #5F5F5F;
     
@@ -107,7 +107,7 @@
         --color-shader: #1010109c;
     
         /* 主题色 */
-        --color-main: #c8e5ff;
+        --color-main: #ff8c00;
     
         /* 内置主题色*/
         --color-main-0: #c8e5ff;
