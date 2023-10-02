@@ -58,7 +58,7 @@
                         </a>
                         <a href="https://github.com/users/taranakineko/projects/1/views/1">
                             <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                                <title>Project（字面意思</title>
+                                <title>Project（字面意思）</title>
                                 <path d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48zm-88 302a24 24 0 1124-24 24 24 0 01-24 24zm0-71a24 24 0 1124-24 24 24 0 01-24 24zm0-73a24 24 0 1124-24 24 24 0 01-24 24zm184 135H224a16 16 0 010-32h128a16 16 0 010 32zm0-71H224a16 16 0 010-32h128a16 16 0 010 32zm0-72H224a16 16 0 010-32h128a16 16 0 010 32z"/>
                             </svg>
                             <span>&nbsp;</span>
@@ -114,7 +114,7 @@
                 </ss-card>
             </div>
             <div name="鸣谢">
-                <ss-card title="特别鸣谢？☺️（暂定标题啦" icon style="margin: 20px 5px 0px 5px;">
+                <ss-card title="特别鸣谢？☺️（暂定标题啦）" icon style="margin: 20px 5px 0px 5px;">
                     <p>等...！这一部分目前还在施工！</p>
                     <p>但是你可以到 <a href="https://github.com/taranakineko/homepage/blob/main/README.md">这里</a> 查看，稍后千畔将会把那边的内容 copy 一份到这里的</p>
                     <p>绝对不会咕咕咕的！千畔这样说道</p>
