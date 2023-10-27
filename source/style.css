@@ -14,7 +14,7 @@ span{
 h2{
     margin-bottom: 10px;
     margin-top: 0px;
-    font-weight: 700;
+    font-weight: 667;
     display: flex;
     font-size: 100%;
 }
@@ -34,7 +34,7 @@ del {
     margin-right: auto;
     margin-left: auto;
     margin-top: 1%;
-    max-width: 700px;
+    max-width: 667px;
     min-width: 360px;
 }
 .hi{
@@ -88,7 +88,7 @@ del {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 667px) {
     .mobile {
       display: block;
     }
@@ -96,7 +96,7 @@ del {
       display: none;
     }
   }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 667px) {
     .mobile {
       display: none;
     }
