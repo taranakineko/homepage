@@ -1,6 +1,6 @@
 # homepage
 
-A homepage about @Taranakineko, use [Border Card UI for Vue](https://github.com/Stapxs/Border-Card-UI) 🚧
+A homepage about @Taranakineko, use [zdhxiong / mdui](https://github.com/zdhxiong/mdui/) 🚧
 
 大概是半手搓的，代码写得有点渣且乱 ~~，连 commit 信息都不写好，~~ 见谅（）
 

@@ -1,3 +1,4 @@
+import 'mdui/components/fab.js';
 import 'mdui/components/card.js';
 import 'mdui/components/icon.js';
 import 'mdui/components/tabs.js';
@@ -5,3 +6,6 @@ import 'mdui/components/tab.js';
 import 'mdui/components/tab-panel.js';
 import 'mdui/components/navigation-bar.js';
 import 'mdui/components/navigation-bar-item.js';
+import 'mdui/components/dialog.js';
+import 'mdui/components/button.js';
+import 'mdui/components/snackbar.js';

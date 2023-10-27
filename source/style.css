@@ -5,8 +5,8 @@ a{
     color: rgb(var(--mdui-color-tertiary-light));
     text-decoration: none;
 }
-h1, p, span{
-    color: rgb(var(--mdui-color-on-secondary-container));
+h1, h2, p, span{
+    color: #252525;
 }
 span{
     text-align: center;
@@ -16,6 +16,13 @@ h2{
     margin-top: 0px;
     font-weight: 700;
     display: flex;
+    font-size: 100%;
+}
+p{
+    line-height: 200%;
+}
+del {
+    color: #B0B0B0;
 }
 /* 自定义 class */
 .miao{
@@ -60,9 +67,23 @@ h2{
 .me-body{
     padding: 0 10px;
 }
+.fab-footer{
+    right: 10px;
+    position: fixed;
+    bottom: 90px;
+}
+.dialog-footer{
+    text-align: center;
+}
 
 @media screen and (prefers-color-scheme: dark){
     a{
         color: rgb(var(--mdui-color-tertiary-dark));
+    }
+    h1, h2, p, span{
+        color: #f8f9fa;
+    }
+    del {
+        color: #5c5f5a;
     }
 }

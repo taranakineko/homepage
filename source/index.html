@@ -41,5 +41,30 @@
         <p>Made with <a href="https://github.com/zdhxiong/mdui/" target="_blank">zdhxiong / mdui</a> | <a href="https://github.com/taranakineko/homepage/" target="_blank">Github Repo</a></p>
       </mdui-card>
     </div>
+    <div class="fab-footer">
+      <mdui-fab class="open-snackbar" icon="auto_awesome"></mdui-fab>
+    </div>
+    <mdui-snackbar close-on-outside-click class="snackbar" id="say"></mdui-snackbar>
+    <script>
+      const snackbar = document.querySelector(".snackbar");
+      const openButton = document.querySelector(".open-snackbar");
+      var len = 10,
+      txt = new Array(len);
+      txt[0] = "还在施工中哦",
+      txt[1] = "不要大力拍打或滑动哟",
+      txt[2] = "当 0 或 1 都是可以的喵",
+      txt[3] = "传来樱桃青轴般的段落感。 （（",
+      txt[4] = "前面的区域，以后再来探索吧",
+      txt[5] = "nya~",
+      txt[6] = "守られることはもうきっとないけど",
+      txt[7] = "歌は、言語関係ないですからね。",
+      txt[8] = "不是写出了 Bug 就是在写出 Bug 的路上",
+      txt[9] = "Hope...",
+      openButton.addEventListener("click", () => {
+        snackbar.open = true;
+        rnd = Math.floor(Math.random() * len);
+        document.getElementById('say').innerHTML=(txt[rnd]);
+      });
+    </script>
   </body>
 </html>
