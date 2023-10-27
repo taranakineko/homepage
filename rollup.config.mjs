@@ -6,7 +6,7 @@ import copy from 'rollup-plugin-copy'
 
 export default {
   input: [
-    'src/main.js',
+    'src/main-test.js',
   ],
   plugins: [
     resolve(),

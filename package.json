@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@material/web": "^1.0.0",
+    "@mdui/icons": "^1.0.1",
     "@rollup/plugin-node-resolve": "^15.2.1",
     "@web/rollup-plugin-copy": "^0.4.0",
+    "mdui": "^2.0.1",
     "rollup-plugin-summary": "^2.0.0"
   }
 }

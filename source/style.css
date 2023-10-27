@@ -1,0 +1,68 @@
+* {
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; /* 深色浅色模式切换动画 */
+}
+a{
+    color: rgb(var(--mdui-color-tertiary-light));
+    text-decoration: none;
+}
+h1, p, span{
+    color: rgb(var(--mdui-color-on-secondary-container));
+}
+span{
+    text-align: center;
+}
+h2{
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-weight: 700;
+    display: flex;
+}
+/* 自定义 class */
+.miao{
+    /* 页边距 */
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1%;
+    max-width: 700px;
+    min-width: 360px;
+}
+.hi{
+    text-align: center;
+    margin: 0 auto;
+    margin: 30px 20px 0 20px;
+}
+.avatar{
+    width: 6rem;
+    border-radius: 50%;
+    --main-size: ;
+    height: var(--main-size);
+}
+.footer{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 7em;
+    margin-left: 5%;
+    margin-top: 20px;
+    width: 90%;
+}
+.pane {
+    box-sizing: border-box;
+    overflow: auto;
+    width: 90%;
+    height: 4em;
+}
+.me-body{
+    padding: 0 10px;
+}
+
+@media screen and (prefers-color-scheme: dark){
+    a{
+        color: rgb(var(--mdui-color-tertiary-dark));
+    }
+}

@@ -1,224 +1,45 @@
-<!DOCTYPE html>
-<head>
+<!doctype html>
+<html lang="zh-CN" class="mdui-theme-auto">
+  <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-</head>
-<body>
-    <script src="./src/main.js"></script>
-    <style>
-        * {
-            transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; /* 深色浅色模式切换动画 */
-            color: var(--md-sys-color-primary);
-        }
-        :root,:host {
-	        --md-sys-color-background: #fff8f3;
-	        --md-sys-color-on-background: #201b12;
-	        --md-sys-color-surface: #fff8f3;
-            --md-sys-color-surface-dim: #e4d8cb;
-            --md-sys-color-surface-bright: #fff8f3;
-            --md-sys-color-surface-container-lowest: #ffffff;
-            --md-sys-color-surface-container-low: #fef2e4;
-            --md-sys-color-surface-container: #f8ecde;
-            --md-sys-color-surface-container-high: #f3e6d8;
-            --md-sys-color-surface-container-highest: #ede1d3;
-            --md-sys-color-on-surface: #201b12;
-            --md-sys-color-surface-variant: #f2e0c9;
-            --md-sys-color-on-surface-variant: #504534;
-            --md-sys-color-inverse-surface: #362f26;
-            --md-sys-color-inverse-on-surface: #fbefe1;
-            --md-sys-color-outline: #837562;
-            --md-sys-color-outline-variant: #d5c4ae;
-            --md-sys-color-shadow: #000000;
-            --md-sys-color-scrim: #000000;
-            --md-sys-color-surface-tint: #7f5700;
-            --md-sys-color-primary: #7f5700;
-            --md-sys-color-on-primary: #ffffff;
-            --md-sys-color-primary-container: #f7b337;
-            --md-sys-color-on-primary-container: #442d00;
-            --md-sys-color-inverse-primary: #ffba3e;
-            --md-sys-color-secondary: #765a2b;
-            --md-sys-color-on-secondary: #ffffff;
-            --md-sys-color-secondary-container: #ffdca9;
-            --md-sys-color-on-secondary-container: #5c4316;
-            --md-sys-color-tertiary: #566500;
-            --md-sys-color-on-tertiary: #ffffff;
-            --md-sys-color-tertiary-container: #b6ca54;
-            --md-sys-color-on-tertiary-container: #2d3600;
-            --md-sys-color-error: #ba1a1a;
-            --md-sys-color-on-error: #ffffff;
-            --md-sys-color-error-container: #ffdad6;
-            --md-sys-color-on-error-container: #410002;
-            --catalog-shape-xl: 28px;
-            --md-primary-tab-container-shape: 28px;
-        }
-        @media (prefers-color-scheme: dark) {
-            :root,:host {
-                --md-sys-color-background: #18130b;
-                --md-sys-color-on-background: #ede1d3;
-                --md-sys-color-surface: #18130b;
-                --md-sys-color-surface-dim: #18130b;
-                --md-sys-color-surface-bright: #3f382f;
-                --md-sys-color-surface-container-lowest: #120d06;
-                --md-sys-color-surface-container-low: #201b12;
-                --md-sys-color-surface-container: #251f16;
-                --md-sys-color-surface-container-high: #2f2920;
-                --md-sys-color-surface-container-highest: #3b342a;
-                --md-sys-color-on-surface: #ede1d3;
-                --md-sys-color-surface-variant: #504534;
-                --md-sys-color-on-surface-variant: #d5c4ae;
-                --md-sys-color-inverse-surface: #ede1d3;
-                --md-sys-color-inverse-on-surface: #362f26;
-                --md-sys-color-outline: #9d8f7b;
-                --md-sys-color-outline-variant: #504534;
-                --md-sys-color-shadow: #000000;
-                --md-sys-color-scrim: #000000;
-                --md-sys-color-surface-tint: #ffba3e;
-                --md-sys-color-primary: #ffd28d;
-                --md-sys-color-on-primary: #432c00;
-                --md-sys-color-primary-container: #e5a427;
-                --md-sys-color-on-primary-container: #342100;
-                --md-sys-color-inverse-primary: #7f5700;
-                --md-sys-color-secondary: #e6c188;
-                --md-sys-color-on-secondary: #432c02;
-                --md-sys-color-secondary-container: #543b0f;
-                --md-sys-color-on-secondary-container: #f5cf95;
-                --md-sys-color-tertiary: #cee36a;
-                --md-sys-color-on-tertiary: #2c3400;
-                --md-sys-color-tertiary-container: #a5b945;
-                --md-sys-color-on-tertiary-container: #212800;
-                --md-sys-color-error: #ffb4ab;
-                --md-sys-color-on-error: #690005;
-                --md-sys-color-error-container: #93000a;
-                --md-sys-color-on-error-container: #ffdad6;
-            }
-        }
-        body{
-            background-color: var(--md-sys-color-surface-container);
-        }
-        .miao{
-            /* 页边距 */
-            padding-right: 0px;
-            padding-left: 0px;
-            padding-bottom: 1%;
-            padding-top: 1%;
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: 1%;
-            max-width: 700px;
-            min-width: 360px;
-            background-color: var(--md-sys-color-background);
-            border-radius: var(--catalog-shape-xl);
-        }
-        .hi{
-            text-align: center;
-            margin: 0 auto;
-            margin: 30px 20px 0 20px;
-        }
-        .avatar{
-            width: 6rem;
-            border-radius: 50%;
-            --main-size: ;
-            height: var(--main-size);
-        }
-        .down-right{
-            position: absolute;
-            right: 2%;
-            bottom: 4%;
-        }
-        .pane {
-            box-sizing: border-box;
-            overflow: auto;
-            width: 90%;
-            height: 4em;
-            background-color: var(--md-sys-color-surface-container);
-            border-radius: var(--catalog-shape-xl);
-        }
-        .footer{
-            text-align: center;
-            box-sizing: border-box;
-            padding: 10px;
-            margin-bottom: 10px;
-            height: 7em;
-            margin-left: 5%;
-            margin-top: 20px;
-        }
-        svg{
-            fill: var(--md-sys-color-primary);
-        }
-        span{
-            text-align: center;
-        }
-    </style>
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/mdui@2.0.1/mdui.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <script src="./src/main-test.js" defer></script>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <mdui-navigation-bar value="start" alignment="center">
+      <mdui-navigation-bar-item icon="restart_alt--outlined" value="start" href="indexx.html">Start</mdui-navigation-bar-item>
+      <mdui-navigation-bar-item icon="device_unknown--outlined" value="me" href="me.html">介绍</mdui-navigation-bar-item>
+      <mdui-navigation-bar-item icon="link--outlined" value="links">链接</mdui-navigation-bar-item>
+      <mdui-navigation-bar-item icon="face_retouching_natural--outlined" value="thanks">感谢</mdui-navigation-bar-item>
+    </mdui-navigation-bar>
     <div class="miao">
-        <div class="hi">
-            <img class="avatar" width="200" height="200" src="https://fastly.jsdelivr.net/gh/taranakineko/homepage/images/taranaki.webp" alt="头像" />
-            <h1>TaranakiNeko</h1>
-        </div>
-    <div style="border-radius: var(--catalog-shape-xl); background-color: var(--md-sys-color-background); margin: 0px 35px 0px 35px">
-        <md-tabs aria-label="Content to view";">
-            <md-primary-tab id="start" onclick="TabOne()">Start</md-primary-tab>
-            <md-primary-tab onclick="TabTwo()">介绍</md-primary-tab>
-            <md-primary-tab onclick="TabThree()">链接</md-primary-tab>
-            <md-primary-tab onclick="TabFour()">鸣谢</md-primary-tab>
-        </md-tabs>
-    </div>
-
-      <div id="one" style="display:none">
-        <div class="pane" style="margin: 30px 5px 0px 5%; text-align: center; line-height: 4em">
-            <span>A 🐱cat lying on the ⌨️keyboard.</span>
-        </div>
-        <div class="pane" style="margin: 20px 5px 0px 5%; text-align: center; font-style:italic; line-height: 200%; padding: 20px; height: 6.5em;">
-            <div>
-                <span>
-                    🚧 Somethings are not finished yet, please wait for me to finish...!
-                    <br>
-                    有些事情还未结束哦...
-            </span>
-            </div>
-        </div>
+      <div class="hi">
+        <img class="avatar" width="200" height="200" src="https://fastly.jsdelivr.net/gh/taranakineko/homepage/images/taranaki.webp" alt="头像" />
+        <h1>TaranakiNeko</h1>
       </div>
-      <div id="two" style="display:none"><p>Guangzhou Metor</p></div>
-      <div id="three" style="display:none"><p>Fuzhou</p></div>
-      <div id="four" style="display:none"><p>沉舟侧畔千帆过</p></div>
-
-      <div class="footer pane">
-        <div style="margin: 0px 15px 0px 15px;">
-                <p>Copyright © 2022 - Now taranakiNeko</p>
-                <p>Made with <a href="https://github.com/Stapxs/Border-Card-UI/" target="_blank">Border Card UI for Vue</a> | <a href="https://github.com/taranakineko/homepage/" target="_blank">Github Repo</a></p>
-        </div>
+      <mdui-card class="pane" style="margin: 30px 5px 0px 5%; text-align: center; line-height: 4em">
+        <span>A 🐱cat lying on the ⌨️keyboard.</span>
+      </mdui-card>
+      <mdui-card class="pane" style="margin: 20px 5px 0px 5%; text-align: center; font-style:italic; line-height: 200%; padding: 20px; height: 100%;">
+        <span>
+          🚧 Somethings are not finished yet, please wait for me to finish...!
+          <br>
+          有些事情还未结束哦...
+        </span>
+      </mdui-card>
+      <mdui-card class="footer pane" style="margin: 20px 5px 0px 5%; height: 100%;">
+        <p>Copyright © 2022 - Now taranakiNeko</p>
+        <p>Made with <a href="https://github.com/zdhxiong/mdui/" target="_blank">zdhxiong / mdui</a> | <a href="https://github.com/taranakineko/homepage/" target="_blank">Github Repo</a></p>
+      </mdui-card>
     </div>
-    </div>
-
-      <script>
-        var one = document.getElementById('one');
-        var two = document.getElementById('two');
-        var three = document.getElementById('three');
-        var four = document.getElementById('four');
-        start.click();
-        function TabOne() {
-            one.style.display = 'block';
-            two.style.display = 'none';
-            three.style.display = 'none';
-            four.style.display = 'none';
-        }
-        function TabTwo() {
-            one.style.display = 'none';
-            two.style.display = 'block';
-            three.style.display = 'none';
-            four.style.display = 'none';
-        }
-        function TabThree() {
-            one.style.display = 'none';
-            two.style.display = 'none';
-            three.style.display = 'block';
-            four.style.display = 'none';
-        }
-        function TabFour() {
-            one.style.display = 'none';
-            two.style.display = 'none';
-            three.style.display = 'none';
-            four.style.display = 'block';
-        }
-      </script>
-      
-</body>
+  </body>
 </html>
