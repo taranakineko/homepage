@@ -46,15 +46,6 @@ svg{
     max-width: 667px;
     min-width: 360px;
 }
-.miao-links{
-    padding-top: 1%;
-    margin-top: 1%;
-    min-width: 360px;
-    display: flex;
-    gap: 2%;
-    width: 100%;
-    justify-content: center;
-}
 .hi{
     text-align: center;
     margin: 0 auto;
@@ -93,14 +84,6 @@ svg{
 .dialog-footer{
     text-align: center;
 }
-.link-left{
-    width: 40%;
-    padding: 20px;
-}
-.link-right{
-    width: 40%;
-    padding: 20px;
-}
 
 @media screen and (prefers-color-scheme: dark){
     a{
@@ -136,3 +119,47 @@ svg{
 @supports (font-variation-settings: normal) {
     :root { font-family: 'Inter var', 'Noto Color Emoji', sans-serif; }
   }
+
+@media screen and (min-width: 890px) {
+    .link-left{
+        width: 40%;
+        padding: 20px;
+    }
+    .link-right{
+        width: 40%;
+        padding: 20px;
+    }
+    .miao-links{
+        padding-top: 1%;
+        margin-top: 1%;
+        min-width: 360px;
+        display: flex;
+        gap: 2%;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .miao-links{
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 1%;
+        padding-top: 1%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 1%;
+        max-width: 667px;
+        min-width: 360px;
+    }
+    .link-left{
+        width: 98%;
+        padding: 20px;
+        margin: 20px 5px 0px 5px;
+    }
+    .link-right{
+        width: 98%;
+        padding: 20px;
+        margin: 20px 5px 0px 5px;
+    }
+}
