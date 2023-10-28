@@ -9,13 +9,17 @@ export default {
     'src/main-test.js',
   ],
   plugins: [
-    resolve(),
-    summary(),
-    terser(),
     copy({
       targets: [
         { src: 'source/*', dest: 'build'}
-      ]})
+      ]}),
+    resolve(),
+    summary(),
+    terser({
+      format: {
+        comments: false
+      }
+    }),
   ],
   output: {
     dir: 'build/src',

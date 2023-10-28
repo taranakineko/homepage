@@ -7,7 +7,7 @@
 }
 
 a{
-    color: rgb(var(--mdui-color-tertiary-light));
+    color: rgb(var(--mdui-color-primary-light));
     text-decoration: none;
 }
 h1, h2, p, span{
@@ -29,6 +29,10 @@ p{
 del {
     color: #B0B0B0;
 }
+svg{
+    width: 40px;
+    height: 40px;
+}
 /* 自定义 class */
 .miao{
     /* 页边距 */
@@ -41,6 +45,15 @@ del {
     margin-top: 1%;
     max-width: 667px;
     min-width: 360px;
+}
+.miao-links{
+    padding-top: 1%;
+    margin-top: 1%;
+    min-width: 360px;
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    justify-content: center;
 }
 .hi{
     text-align: center;
@@ -80,10 +93,18 @@ del {
 .dialog-footer{
     text-align: center;
 }
+.link-left{
+    width: 40%;
+    padding: 20px;
+}
+.link-right{
+    width: 40%;
+    padding: 20px;
+}
 
 @media screen and (prefers-color-scheme: dark){
     a{
-        color: rgb(var(--mdui-color-tertiary-dark));
+        color: rgb(var(--mdui-color-primary-dark));
     }
     h1, h2, p, span{
         color: #f8f9fa;

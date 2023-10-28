@@ -1,3 +1,5 @@
+import { setColorScheme } from 'mdui/functions/setColorScheme.js';
+setColorScheme('#ff8c00');
 import 'mdui/components/fab.js';
 import 'mdui/components/card.js';
 import 'mdui/components/tabs.js';
@@ -10,5 +12,10 @@ import 'mdui/components/navigation-rail-item.js';
 import 'mdui/components/dialog.js';
 import 'mdui/components/button.js';
 import 'mdui/components/snackbar.js';
-import { setColorScheme } from 'mdui/functions/setColorScheme.js';
-setColorScheme('#ff8c00');
+import 'mdui/components/list.js';
+import 'mdui/components/list-item.js';
+import 'mdui/components/list-subheader.js';
+import 'mdui/components/avatar.js';
+import 'mdui/components/collapse.js';
+import 'mdui/components/collapse-item.js';
+import '@mdui/icons/open-in-new.js';
