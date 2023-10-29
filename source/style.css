@@ -1,13 +1,8 @@
-@import url(https://fastly.jsdelivr.net/npm/inter-ui@3.19.3/inter.min.css);
-@import url(https://fastly.jsdelivr.net/npm/mdui@2.0.1/mdui.css);
-@import url(https://fonts.googleapis.com/icon?family=Material+Icons+Outlined);
-@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-
 * {
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; /* 深色浅色模式切换动画 */
 }
 :root{
-    font-family: 'Inter', 'Noto Color Emoji', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* 笑死，老自动填充了 */
+    font-family: 'Inter', 'Noto Color Emoji', system-ui, sans-serif; /* 笑死，老自动填充了 */
     font-feature-settings: "case","cpsp","ss04","cv01","cv02","cv03","cv04","cv06","cv11";
 }
 
