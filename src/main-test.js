@@ -19,3 +19,4 @@ import 'mdui/components/avatar.js';
 import 'mdui/components/collapse.js';
 import 'mdui/components/collapse-item.js';
 import '@mdui/icons/open-in-new.js';
+import 'mdui/components/circular-progress.js';
