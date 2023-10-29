@@ -1,3 +1,8 @@
+@import url(https://fastly.jsdelivr.net/npm/inter-ui@3.19.3/inter.min.css);
+@import url(https://fastly.jsdelivr.net/npm/mdui@2.0.1/mdui.css);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons+Outlined);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
 * {
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; /* 深色浅色模式切换动画 */
 }
