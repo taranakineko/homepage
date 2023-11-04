@@ -98,6 +98,10 @@ svg{
 }
 
 @media screen and (max-width: 667px) {
+    body{
+        padding-bottom: 80px !important;
+        padding-left: 0px !important;
+    }
     .mobile {
       display: block;
     }
@@ -106,6 +110,10 @@ svg{
     }
   }
 @media screen and (min-width: 667px) {
+    body {
+        padding-bottom: 0px !important;
+        padding-left: 80px !important;
+    }
     .mobile {
       display: none;
     }
