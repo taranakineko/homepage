@@ -7,9 +7,13 @@
 }
 
 a{
-    color: rgb(var(--mdui-color-primary-light));
+    color: rgb(var(--mdui-color-primary));
     text-decoration: none;
 }
+a:hover{
+    color: rgb(var(--mdui-color-primary));
+    text-decoration: underline;
+  }
 h1, h2, p, span{
     color: #252525;
 }
@@ -86,14 +90,14 @@ svg{
 }
 
 @media screen and (prefers-color-scheme: dark){
-    a{
-        color: rgb(var(--mdui-color-primary-dark));
-    }
     h1, h2, p, span{
         color: #f8f9fa;
     }
     del {
         color: #5c5f5a;
+    }
+    mdui-card {
+        background-color: rgb(var(--mdui-color-surface-container));
     }
 }
 
