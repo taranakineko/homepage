@@ -1,5 +1,5 @@
 import { setColorScheme } from 'mdui/functions/setColorScheme.js';
-setColorScheme('#ff8c00');
+setColorScheme('#AEC9D0');
 import 'mdui/components/fab.js';
 import 'mdui/components/card.js';
 import 'mdui/components/tabs.js';
