@@ -13,7 +13,10 @@
   },
   "dependencies": {
     "@mdui/icons": "^1.0.2",
+    "marked": "^10.0.0",
     "mdui": "^2.0.2",
+    "sass": "^1.69.5",
+    "scss": "^0.2.4",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },
