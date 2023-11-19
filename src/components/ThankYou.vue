@@ -38,7 +38,7 @@ import { ref, onMounted } from 'vue'
     OpenTheSnackbar.value.addEventListener("click", () => {
         TheSnackbar.value.open = true;
         const rnd = Math.floor(Math.random() * len);
-        document.getElementById('say').innerHTML=(txt[rnd]);
+        TheSnackbar.value.innerHTML=(txt[rnd]);
     }
     )})
 </script>
