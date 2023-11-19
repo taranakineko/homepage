@@ -8,7 +8,7 @@
                 src="https://fastly.jsdelivr.net/gh/taranakineko/homepage/source/images/taranaki.webp"
                 alt="头像"
             />
-            <h1>TaranakiNeko</h1>
+            <h1 class="name">TaranakiNeko</h1>
         </div>
         <mdui-card
             variant="elevated"
@@ -87,3 +87,45 @@ onMounted(() => {
         })
 })
 </script>
+
+<style lang="scss">
+.avatar {
+    transition: 0.5s;
+    &:hover {
+        rotate: 360deg;
+    }
+    &::before {
+        rotate: 0;
+    }
+    &::after {
+        rotate: 360deg;
+    }
+}
+
+.name {
+    &:hover {
+        animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+    }
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-0.5px, 0, 0);
+    }
+  
+    20%, 80% {
+      transform: translate3d(1px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-2px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(2px, 0, 0);
+    }
+  }
+</style>

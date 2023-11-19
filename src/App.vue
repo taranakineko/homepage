@@ -48,38 +48,38 @@ function OpenThanks() {
 <template>
     <div class="desktop">
         <mdui-navigation-rail value="{{ to.path }}" alignment="center" ref="NaviRail">
-            <mdui-navigation-rail-item icon="restart_alt--outlined" value="start" @click="OpenStart"
+            <mdui-navigation-rail-item icon="restart_alt--outlined" value="start" v-on:click="OpenStart()"
                 >Start</mdui-navigation-rail-item
             >
-            <mdui-navigation-rail-item icon="device_unknown--outlined" value="me" @click="OpenMe"
+            <mdui-navigation-rail-item icon="device_unknown--outlined" value="me" v-on:click="OpenMe()"
                 >介绍</mdui-navigation-rail-item
             >
-            <mdui-navigation-rail-item icon="link--outlined" value="links" @click="OpenLinks"
+            <mdui-navigation-rail-item icon="link--outlined" value="links" v-on:click="OpenLinks()"
                 >链接</mdui-navigation-rail-item
             >
             <mdui-navigation-rail-item
                 icon="face_retouching_natural--outlined"
                 value="thanks"
-                @click="OpenThanks"
+                v-on:click="OpenThanks()"
                 >感谢</mdui-navigation-rail-item
             >
         </mdui-navigation-rail>
     </div>
     <div class="mobile">
         <mdui-navigation-bar value="{{ to.path }}" alignment="center" ref="NaviBar">
-            <mdui-navigation-bar-item icon="restart_alt--outlined" value="start" @click="OpenStart"
+            <mdui-navigation-bar-item icon="restart_alt--outlined" value="start" v-on:click="OpenStart()"
                 >Start</mdui-navigation-bar-item
             >
-            <mdui-navigation-bar-item icon="device_unknown--outlined" value="me" @click="OpenMe"
+            <mdui-navigation-bar-item icon="device_unknown--outlined" value="me" v-on:click="OpenMe()"
                 >介绍</mdui-navigation-bar-item
             >
-            <mdui-navigation-bar-item icon="link--outlined" value="links" @click="OpenLinks"
+            <mdui-navigation-bar-item icon="link--outlined" value="links" v-on:click="OpenLinks()"
                 >链接</mdui-navigation-bar-item
             >
             <mdui-navigation-bar-item
                 icon="face_retouching_natural--outlined"
                 value="thanks"
-                @click="OpenThanks"
+                v-on:click="OpenThanks"
                 >感谢</mdui-navigation-bar-item
             >
         </mdui-navigation-bar>
