@@ -6,6 +6,12 @@ const NaviBar = ref<any>(null)
 const router = useRouter()
 router.beforeEach((to, from, next) => {
       switch (to.path) {
+        case '/':
+          NaviRail.value.value = 'start'
+          NaviBar.value.value = 'start'
+          break
+      }
+      switch (to.path) {
         case '/me':
           NaviRail.value.value = 'me'
           NaviBar.value.value = 'me'
