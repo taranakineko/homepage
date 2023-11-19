@@ -1,0 +1,173 @@
+* {
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; /* 深色浅色模式切换动画 */
+}
+:root{
+  font-family: 'Inter', 'Noto Color Emoji', system-ui, sans-serif; /* 笑死，老自动填充了 */
+  font-feature-settings: "case","cpsp","ss04","cv01","cv02","cv03","cv04","cv06","cv11";
+}
+.miao a{
+  color: rgb(var(--mdui-color-primary));
+  text-decoration: none;
+}
+.miao a:hover{
+  color: rgb(var(--mdui-color-primary));
+  text-decoration: underline;
+}
+h1, h2, p, span{
+  color: #252525;
+}
+span{
+  text-align: center;
+}
+h2{
+  margin-bottom: 10px;
+  margin-top: 0px;
+  font-weight: 667;
+  display: flex;
+  font-size: 100%;
+}
+p{
+  line-height: 200%;
+}
+del {
+  color: #B0B0B0;
+}
+svg{
+  width: 40px;
+  height: 40px;
+}
+/* 自定义 class */
+.miao{
+  /* 页边距 */
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1%;
+  max-width: 667px;
+  min-width: 360px;
+}
+.avatar{
+  width: 6rem;
+  border-radius: 50%;
+  --main-size: ;
+  height: var(--main-size);
+}
+.footer{
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 7em;
+  margin-left: 5%;
+  margin-top: 20px;
+  width: 90%;
+}
+.pane {
+  box-sizing: border-box;
+  overflow: auto;
+  width: 90%;
+  height: 4em;
+}
+.me-body{
+  padding: 0 10px;
+}
+.fab-footer{
+  right: 10px;
+  position: fixed;
+  bottom: 90px;
+}
+.dialog-footer{
+  text-align: center;
+}
+
+@media screen and (prefers-color-scheme: dark){
+  h1, h2, p, span{
+      color: #f8f9fa;
+  }
+  del {
+      color: #5c5f5a;
+  }
+  mdui-card {
+      background-color: rgb(var(--mdui-color-surface-container));
+  }
+}
+
+@media screen and (max-width: 667px) {
+  body{
+      padding-bottom: 80px !important;
+      padding-left: 0px !important;
+      width: auto !important;
+  }
+  .mobile {
+    display: block;
+  }
+  .desktop{
+    display: none;
+  }
+}
+@media screen and (min-width: 667px) {
+  body {
+      padding-bottom: 0px !important;
+      padding-left: 80px !important;
+      width: auto !important;
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop{
+    display: block;
+  }
+  .fab-footer{
+      bottom: 10px;
+  }
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', 'Noto Color Emoji', sans-serif; }
+}
+
+@media screen and (min-width: 890px) {
+  .link-left{
+      width: 40%;
+      padding: 20px;
+  }
+  .link-right{
+      width: 40%;
+      padding: 20px;
+  }
+  .miao-links{
+      padding-top: 1%;
+      margin-top: 1%;
+      min-width: 360px;
+      display: flex;
+      gap: 2%;
+      width: 100%;
+      justify-content: center;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .miao-links{
+      padding-right: 0px;
+      padding-left: 0px;
+      padding-bottom: 1%;
+      padding-top: 1%;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 1%;
+      max-width: 667px;
+      min-width: 360px;
+  }
+  .link-left{
+      width: 98%;
+      padding: 20px;
+      margin: 20px 5px 0px 5px;
+  }
+  .link-right{
+      width: 98%;
+      padding: 20px;
+      margin: 20px 5px 0px 5px;
+  }
+}
