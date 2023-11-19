@@ -1,6 +1,10 @@
 <template>
     <div class="miao">
-        <mdui-card variant="elevated" class="hover" style="margin: 20px 5px 0px 5px; width: 98%; padding: 20px">
+        <mdui-card
+            variant="elevated"
+            class="hover"
+            style="margin: 20px 5px 0px 5px; width: 98%; padding: 20px"
+        >
             <h2>TaranakiNeko 是谁？🤔</h2>
             <div class="me-body">
                 <p>TaranakiNeko 就是 TaranakiNeko 啊，没问题啊！非常的合理不是嘛</p>
@@ -13,7 +17,11 @@
                 <p>但似乎被叫「千畔」更多一些</p>
             </div>
         </mdui-card>
-        <mdui-card variant="elevated" class="hover" style="margin: 20px 5px 0px 5px; width: 98%; padding: 20px">
+        <mdui-card
+            variant="elevated"
+            class="hover"
+            style="margin: 20px 5px 0px 5px; width: 98%; padding: 20px"
+        >
             <h2>名字从何而来？😮</h2>
             <div class="me-body">
                 <p>
@@ -24,7 +32,11 @@
                 <p>至于 「千畔」 嘛... 出自于「沉舟侧畔千帆过，病树前头万木春」</p>
             </div>
         </mdui-card>
-        <mdui-card variant="elevated" class="hover" style="margin: 20px 5px 0px 5px; width: 98%; padding: 20px">
+        <mdui-card
+            variant="elevated"
+            class="hover"
+            style="margin: 20px 5px 0px 5px; width: 98%; padding: 20px"
+        >
             <h2>那其他的呢？👀</h2>
             <div class="me-body">
                 <p>千畔会随机使用拼音或者注音，虽说大部分时候都是使用拼音吧</p>

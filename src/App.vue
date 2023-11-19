@@ -48,10 +48,16 @@ function OpenThanks() {
 <template>
     <div class="desktop">
         <mdui-navigation-rail value="{{ to.path }}" alignment="center" ref="NaviRail">
-            <mdui-navigation-rail-item icon="restart_alt--outlined" value="start" v-on:click="OpenStart()"
+            <mdui-navigation-rail-item
+                icon="restart_alt--outlined"
+                value="start"
+                v-on:click="OpenStart()"
                 >Start</mdui-navigation-rail-item
             >
-            <mdui-navigation-rail-item icon="device_unknown--outlined" value="me" v-on:click="OpenMe()"
+            <mdui-navigation-rail-item
+                icon="device_unknown--outlined"
+                value="me"
+                v-on:click="OpenMe()"
                 >介绍</mdui-navigation-rail-item
             >
             <mdui-navigation-rail-item icon="link--outlined" value="links" v-on:click="OpenLinks()"
@@ -67,10 +73,16 @@ function OpenThanks() {
     </div>
     <div class="mobile">
         <mdui-navigation-bar value="{{ to.path }}" alignment="center" ref="NaviBar">
-            <mdui-navigation-bar-item icon="restart_alt--outlined" value="start" v-on:click="OpenStart()"
+            <mdui-navigation-bar-item
+                icon="restart_alt--outlined"
+                value="start"
+                v-on:click="OpenStart()"
                 >Start</mdui-navigation-bar-item
             >
-            <mdui-navigation-bar-item icon="device_unknown--outlined" value="me" v-on:click="OpenMe()"
+            <mdui-navigation-bar-item
+                icon="device_unknown--outlined"
+                value="me"
+                v-on:click="OpenMe()"
                 >介绍</mdui-navigation-bar-item
             >
             <mdui-navigation-bar-item icon="link--outlined" value="links" v-on:click="OpenLinks()"

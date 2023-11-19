@@ -122,7 +122,6 @@ onMounted(() => {
 })
 </script>
 
-
 <style lang="scss">
 .link-left {
     transition: 0.5s;
