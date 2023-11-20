@@ -7,11 +7,11 @@
     font-family: 'Inter', 'Noto Color Emoji', system-ui, sans-serif; /* 笑死，老自动填充了 */
     font-feature-settings: 'case', 'cpsp', 'ss04', 'cv01', 'cv02', 'cv03', 'cv04', 'cv06', 'cv11';
 }
-.miao a {
+a {
     color: rgb(var(--mdui-color-primary));
     text-decoration: none;
 }
-.miao a:hover {
+a:hover {
     color: rgb(var(--mdui-color-primary));
     text-decoration: underline;
 }
