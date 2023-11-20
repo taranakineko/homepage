@@ -126,26 +126,26 @@ onMounted(() => {
 .link-left {
     transition: 0.5s;
     &:hover {
-        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
     }
     &::before {
         box-shadow: none;
     }
     &::after {
-        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
     }
 }
 
 .link-right {
     transition: 0.5s;
     &:hover {
-        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
     }
     &::before {
         box-shadow: none;
     }
     &::after {
-        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
     }
 }
 </style>

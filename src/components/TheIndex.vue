@@ -61,6 +61,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
+import TXT from '../config/txt.json'
 const OpenTheSnackbar = ref<any>(null)
 const TheSnackbar = ref<any>(null)
 onMounted(() => {
@@ -68,23 +69,13 @@ onMounted(() => {
     // console.log(TheSnackbar.value);
     // 2023.11.18 09:57:05 —— 2023.11.19 02:03:00
     // 他喵的终于搞定这玩意了
-    var len = 10,
-        txt = new Array(len)
-    ;(txt[0] = '还在施工中哦'),
-        (txt[1] = '不要大力拍打或滑动哟'),
-        (txt[2] = '当 0 或 1 都是可以的喵'),
-        (txt[3] = '传来樱桃青轴般的段落感。 （（'),
-        (txt[4] = '前面的区域，以后再来探索吧'),
-        (txt[5] = 'nya~'),
-        (txt[6] = '守られることはもうきっとないけど'),
-        (txt[7] = '歌は、言語関係ないですからね。'),
-        (txt[8] = '不是写出了 Bug 就是在写出 Bug 的路上'),
-        (txt[9] = 'Hope...'),
-        OpenTheSnackbar.value.addEventListener('click', () => {
-            TheSnackbar.value.open = true
-            const rnd = Math.floor(Math.random() * len)
-            TheSnackbar.value.innerHTML = txt[rnd]
-        })
+    // Refactored by Elihuso
+    var txt = TXT as String[]
+    OpenTheSnackbar.value.addEventListener('click', () => {
+        TheSnackbar.value.open = true
+        const rnd = Math.floor(Math.random() * txt.length)
+        TheSnackbar.value.innerHTML = txt[rnd]
+    })
 })
 </script>
 
