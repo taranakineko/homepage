@@ -11,7 +11,8 @@
                 <p>
                     但是你可以到
                     <a href="https://github.com/taranakineko/homepage/blob/main/README.md">这里</a>
-                    查看，稍后千畔将会把那边的内容 copy 一份到这里的
+                    查看，以后千畔将会把那边的内容 copy 一份到这里的
+                    <del>，或者是重写这一部分</del>
                 </p>
                 <p>绝对不会咕咕咕的！千畔这样说道</p>
                 <p>同时也要感谢陪伴在千畔身边的你</p>

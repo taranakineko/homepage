@@ -11,9 +11,34 @@
             <h1 class="name">TaranakiNeko</h1>
         </div>
         <mdui-card
+	    class="pane"
             variant="elevated"
-            class="pane"
-            style="margin: 30px 5px 0px 5%; text-align: center; line-height: 4em; height: 100%"
+            style="margin: 30px 5px 0px 5%;
+            padding: 20px;
+            text-align: center; 
+            font-style: italic;
+            line-height: 300%; 
+            height: 100%"
+        >
+            <span><b>
+            注意⚠️：目前访问的是 MDY-vue 分支构建的主页
+            <br>
+            所有内容都有可能随时更新
+            <br>
+            原代码见 <a href="github.com/taranakineko/homepage/tree/MDY-vue">Github Repo</a>，欢迎提出想法<del>或 pr</del>
+            </b></span>
+        </mdui-card>
+        <mdui-card
+	    class="pane"
+            variant="elevated"
+            style="
+                margin: 20px 5px 0px 5%;
+                text-align: center;
+                font-style: italic;
+                line-height: 200%;
+                padding: 20px;
+                height: 100%;
+            "
         >
             <span>A 🐱cat lying on the ⌨️keyboard.</span>
         </mdui-card>
