@@ -15,7 +15,7 @@ A homepage about @Taranakineko, use [zdhxiong/mdui](https://https://github.com/z
   - [The Inter typeface family](https://rsms.me/inter/) <!-- 使用的英文字体 -->
   - [MDN](https://developer.mozilla.org)/ <!-- 参考资料 -->
   - [Ionicons](https://ionic.io/ionicons) <!--图标-->
-  - [Fontawesome](https://fontawesome.com/icons)%3C!--吐司通知图标-->
+  - [Fontawesome](https://fontawesome.com/icons)<!--吐司通知图标-->
   - [Material Web](https://material-web.dev)<!--/ Material 3 + 调色参考 -->
 
 ---
