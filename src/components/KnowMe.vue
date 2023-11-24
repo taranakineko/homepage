@@ -3,7 +3,7 @@
         <mdui-card
             variant="elevated"
             class="hover"
-            style="margin: 20px 5px 0px 5px; width: 98%; padding: 20px"
+            style="margin: 20px 5px 0px 5%; width: 90%; padding: 20px"
         >
             <h2>TaranakiNeko 是谁？🤔</h2>
             <div class="me-body">
@@ -20,7 +20,7 @@
         <mdui-card
             variant="elevated"
             class="hover"
-            style="margin: 20px 5px 0px 5px; width: 98%; padding: 20px"
+            style="margin: 20px 5px 0px 5%; width: 90%; padding: 20px"
         >
             <h2>名字从何而来？😮</h2>
             <div class="me-body">
@@ -34,7 +34,7 @@
         <mdui-card
             variant="elevated"
             class="hover"
-            style="margin: 20px 5px 0px 5px; width: 98%; padding: 20px"
+            style="margin: 20px 5px 0px 5%; width: 90%; padding: 20px"
         >
             <h2>那其他的呢？👀</h2>
             <div class="me-body">

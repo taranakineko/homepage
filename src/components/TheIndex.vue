@@ -25,7 +25,7 @@
             <br>
             所有内容都有可能随时更新
             <br>
-            原代码见 <a href="github.com/taranakineko/homepage/tree/MDY-vue">Github Repo</a>，欢迎提出想法<del>或 pr</del>
+            原代码见 <a href="https://github.com/taranakineko/homepage/tree/MDY-vue">Github Repo</a>，欢迎提出想法<del>或 pr</del>
             </b></span>
         </mdui-card>
         <mdui-card

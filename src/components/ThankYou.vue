@@ -3,7 +3,7 @@
         <mdui-card
             variant="elevated"
             class="hover"
-            style="margin: 20px 5px 0px 5px; width: 98%; padding: 20px"
+            style="margin: 20px 5px 0px 5%; width: 90%; padding: 20px"
         >
             <h2>其他内容（或许是感谢？）</h2>
             <div class="me-body">

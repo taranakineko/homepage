@@ -193,13 +193,13 @@ svg {
         min-width: 360px;
     }
     .link-left {
-        width: 98%;
+        width: 90%;
         padding: 20px;
-        margin: 20px 5px 0px 5px;
+        margin: 20px 5px 0px 5%;
     }
     .link-right {
-        width: 98%;
+        width: 90%;
         padding: 20px;
-        margin: 20px 5px 0px 5px;
+        margin: 20px 5px 0px 5%;
     }
 }
