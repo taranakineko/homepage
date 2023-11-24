@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /me
+Disallow: /links
+Disallow: /thanks
