@@ -11,30 +11,10 @@
             <h1 class="name">TaranakiNeko</h1>
         </div>
         <mdui-card
-            class="pane"
-            variant="outlined"
-            style="
-                margin: 30px 5px 0px 5%;
-                padding: 20px;
-                text-align: center; 
-                font-style: italic;
-                line-height: 300%; 
-                height: 100%
-            "
-        >
-            <span><b>
-            注意⚠️：目前访问的是 MDY-vue 分支构建的主页
-            <br>
-            所有内容都有可能随时更新
-            <br>
-            分支代码见 <a href="https://github.com/taranakineko/homepage/tree/MDY-vue">Github Repo</a>，欢迎提出想法<del>或 pr</del>
-            </b></span>
-        </mdui-card>
-        <mdui-card
 	        class="pane"
             variant="elevated"
             style="
-                margin: 20px 5px 0px 5%;
+                margin: 30px 5px 0px 5%;
                 text-align: center;
                 font-style: italic;
                 line-height: 200%;
