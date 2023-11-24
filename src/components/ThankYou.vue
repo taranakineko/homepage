@@ -1,4 +1,11 @@
 <template>
+        <mdui-top-app-bar 
+        variant="small"
+        scroll-behavior="shrink elevate"
+    >
+        <mdui-button-icon icon="menu"></mdui-button-icon>
+        <mdui-top-app-bar-title >Thank You</mdui-top-app-bar-title>
+    </mdui-top-app-bar>
     <div class="miao">
         <mdui-card
             variant="elevated"
