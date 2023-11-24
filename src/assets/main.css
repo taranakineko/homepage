@@ -203,3 +203,16 @@ svg {
         margin: 20px 5px 0px 5%;
     }
 }
+
+/* 动画 */
+.miao,.miao-links {
+    animation: Invitation 0.5s ease both;
+}
+@keyframes Invitation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

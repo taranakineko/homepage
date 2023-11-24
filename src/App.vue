@@ -96,5 +96,6 @@ function OpenThanks() {
             >
         </mdui-navigation-bar>
     </div>
+    
     <RouterView />
 </template>

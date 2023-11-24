@@ -131,4 +131,5 @@ onMounted(() => {
         transform: translate3d(2px, 0, 0);
     }
 }
+
 </style>
