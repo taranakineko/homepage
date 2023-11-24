@@ -58,7 +58,7 @@
                         >
                         <div style="margin-left: 2.5rem">
                             <mdui-list-item
-                                href="https://bookmarks.nekoq.cyou/"
+                                href="https://bookmarks.nekoq.top/"
                                 description="看看千畔都看了什么"
                                 icon="bookmark"
                                 end-icon="open_in_new"
