@@ -2,12 +2,12 @@
     <div class="miao-fof">
         <br><br>    
         <mdui-circular-progress></mdui-circular-progress>
-        <h1 ref="h1"></h1>
-        <p ref="p1"></p>
-        <p ref="p2"></p>
+        <h1 v-html="h1"></h1>
+        <p v-html="p1"></p>
+        <p v-html="p2"></p>
         <!-- 
             分多个 p 写是因为
-            如果是 <div ref="p1"> 的话
+            如果是 <div v-html="p1"> 的话
             会导致元素排序错误（<div slot='content'> 在 <mdui-tooltip> 外）
             从而导致 <mdui-tooltip> 无法显示
             期待有新的解决方案...
@@ -17,18 +17,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
 import fof from '../config/404.json'
-const h1 = ref<any>(null)
-const p1 = ref<any>(null)
-const p2 = ref<any>(null)
-onMounted(() => {
-    // var txt = TXT as String[]
-    const rnd = Math.floor(Math.random() * fof.length)
-    h1.value.innerHTML = fof[rnd][0]
-    p1.value.innerHTML = fof[rnd][1]
-    p2.value.innerHTML = fof[rnd][2]
-})
+const rnd = Math.floor(Math.random() * fof.length)
+const h1 = fof[rnd][0]
+const p1 = fof[rnd][1]
+const p2 = fof[rnd][2]
 </script>
 
 <style lang="sass">
