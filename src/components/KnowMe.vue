@@ -6,7 +6,7 @@
         <mdui-button-icon icon="menu"></mdui-button-icon>
         <mdui-top-app-bar-title >Know Me</mdui-top-app-bar-title>
     </mdui-top-app-bar>
-    <div class="miao">
+    <div class="miao mdui-prose">
         <mdui-card
             variant="elevated"
             class="hover"
@@ -16,12 +16,9 @@
             <div class="me-body">
                 <p>TaranakiNeko 就是 TaranakiNeko 啊，没问题啊！非常的合理不是嘛</p>
                 <p>
-                    虽说名字里带有 Neko ，但无论是习惯什么的似乎都不像貓貓<del
-                        >，還不可愛（思索）</del
-                    >
+                    虽说名字里带有 Neko ，但无论是习惯什么的似乎都不像貓貓<del>，還不可愛（思索）</del>
                 </p>
-                <p>另外，你可以称呼 ta 为 「千畔」 <del>，或者是 「千帆」</del></p>
-                <p>但似乎被叫「千畔」更多一些</p>
+                <p>另外，你可以称呼 ta 为 「千畔」</p>
             </div>
         </mdui-card>
         <mdui-card
@@ -47,14 +44,11 @@
             <div class="me-body">
                 <p>千畔会随机使用拼音或者注音，虽说大部分时候都是使用拼音吧</p>
                 <p>
-                    <del
-                        >umm... 剩下的懒得写了，屏幕前的你或许可以访问
-                        <a href="https://nekoq.eu.org/about">关于 (Blog)</a> 页</del
-                    >
+                    <del>umm... 剩下的懒得写了</del>
                 </p>
                 <p><del>至于博客那边...会写的会写的不要催啦 😭（）</del></p>
                 <p>或者切换选项卡至 “链接” ，里面有千畔的 Github 主页，那里也有一些其他信息</p>
-                <p><del>但显然千畔似乎隐藏了什么 ==</del></p>
+                <p>再或者...可以通过交流得到一些信息不是？</p>
                 <p>或许以后还会更新一些内容吧…就看千畔有没有动力去做了</p>
             </div>
         </mdui-card>

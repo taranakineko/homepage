@@ -6,7 +6,7 @@
         <mdui-button-icon icon="menu"></mdui-button-icon>
         <mdui-top-app-bar-title >Thank You</mdui-top-app-bar-title>
     </mdui-top-app-bar>
-    <div class="miao">
+    <div class="miao mdui-prose">
         <mdui-card
             variant="elevated"
             class="hover"
