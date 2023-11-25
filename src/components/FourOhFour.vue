@@ -2,11 +2,34 @@
     <div class="miao-fof">
         <br><br>    
         <mdui-circular-progress></mdui-circular-progress>
-        <h1>哦，我的上帝...！</h1>
-        <p>真是不敢相信，你居然会找到这里，这简直就像萨莉舅妈烤糊了的苹果派一样糟糕！</p>
-        <p>我发誓，如果你尝试一下其他地方，你准会回到正轨的！</p>
+        <h1 ref="h1"></h1>
+        <p ref="p1"></p>
+        <p ref="p2"></p>
+        <!-- 
+            分多个 p 写是因为
+            如果是 <div ref="p1"> 的话
+            会导致元素排序错误（<div slot='content'> 在 <mdui-tooltip> 外）
+            从而导致 <mdui-tooltip> 无法显示
+            期待有新的解决方案...
+            千畔 2023.11.25
+        -->
     </div>
 </template>
+
+<script setup lang="ts">
+import { ref, onMounted } from 'vue'
+import fof from '../config/404.json'
+const h1 = ref<any>(null)
+const p1 = ref<any>(null)
+const p2 = ref<any>(null)
+onMounted(() => {
+    // var txt = TXT as String[]
+    const rnd = Math.floor(Math.random() * fof.length)
+    h1.value.innerHTML = fof[rnd][0]
+    p1.value.innerHTML = fof[rnd][1]
+    p2.value.innerHTML = fof[rnd][2]
+})
+</script>
 
 <style lang="sass">
 mdui-circular-progress
