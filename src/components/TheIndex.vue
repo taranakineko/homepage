@@ -11,7 +11,7 @@
             <h1 class="name">TaranakiNeko</h1>
         </div>
         <mdui-card
-	        class="pane"
+            class="pane"
             variant="elevated"
             style="
                 margin: 30px 5px 0px 5%;
@@ -131,5 +131,4 @@ onMounted(() => {
         transform: translate3d(2px, 0, 0);
     }
 }
-
 </style>

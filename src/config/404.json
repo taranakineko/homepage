@@ -1,4 +1,12 @@
 [
-    ["哦我的上帝！", "真是不敢相信，你居然会找到这里，这简直就像萨莉舅妈烤糊了的苹果派一样糟糕！", "我发誓，如果你尝试一下其他地方，你准会回到正轨的！"],
-    ["你的内容出了点事情。", "但这又有什么呢？", "我们不过也只是那 21.7 亿中的一丝浪花。<mdui-tooltip trigger='click hover focus' variant='rich'><div slot='content'>感谢<a href='https://skr.travel.blog/unified-endless-travel_f_starry'>「一只樱花喵」</a>提供的文案。</div><sup><mdui-badge variant='small'>*</mdui-badge></sup></mdui-tooltip>"]
+    [
+        "哦我的上帝！",
+        "真是不敢相信，你居然会找到这里，这简直就像萨莉舅妈烤糊了的苹果派一样糟糕！",
+        "我发誓，如果你尝试一下其他地方，你准会回到正轨的！"
+    ],
+    [
+        "你的内容出了点事情。",
+        "但这又有什么呢？",
+        "我们不过也只是那 21.7 亿中的一丝浪花。<mdui-tooltip trigger='click hover focus' variant='rich'><div slot='content'>感谢<a href='https://skr.travel.blog/unified-endless-travel_f_starry'>「一只樱花喵」</a>提供的文案。</div><sup><mdui-badge variant='small'>*</mdui-badge></sup></mdui-tooltip>"
+    ]
 ]

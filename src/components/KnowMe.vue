@@ -1,10 +1,7 @@
 <template>
-    <mdui-top-app-bar 
-        variant="small"
-        scroll-behavior="shrink elevate"
-    >
+    <mdui-top-app-bar variant="small" scroll-behavior="shrink elevate">
         <mdui-button-icon icon="menu"></mdui-button-icon>
-        <mdui-top-app-bar-title >Know Me</mdui-top-app-bar-title>
+        <mdui-top-app-bar-title>Know Me</mdui-top-app-bar-title>
     </mdui-top-app-bar>
     <div class="miao mdui-prose">
         <mdui-card
@@ -16,7 +13,9 @@
             <div class="me-body">
                 <p>TaranakiNeko 就是 TaranakiNeko 啊，没问题啊！非常的合理不是嘛</p>
                 <p>
-                    虽说名字里带有 Neko ，但无论是习惯什么的似乎都不像貓貓<del>，還不可愛（思索）</del>
+                    虽说名字里带有 Neko ，但无论是习惯什么的似乎都不像貓貓<del
+                        >，還不可愛（思索）</del
+                    >
                 </p>
                 <p>另外，你可以称呼 ta 为 「千畔」</p>
             </div>
@@ -29,10 +28,14 @@
             <h2>名字从何而来？😮</h2>
             <div class="me-body">
                 <p>
-                    TaranakiNeko 这个名字其实是别人<!-- 谢谢 Moe23333 起的名 -->帮忙起的（当时只有 Taranaki）
+                    TaranakiNeko 这个名字其实是别人<!-- 谢谢 Moe23333 起的名 -->帮忙起的（当时只有
+                    Taranaki）
                 </p>
                 <p>随后 Tara 自己擅自主张的加上了 Neko，于是就有了现在这个名字</p>
-                <p>至于「千畔」这个名字嘛... 出自于「沉舟侧畔千帆过，病树前头万木春」这首诗词，很熟悉不是吗</p>
+                <p>
+                    至于「千畔」这个名字嘛...
+                    出自于「沉舟侧畔千帆过，病树前头万木春」这首诗词，很熟悉不是吗
+                </p>
             </div>
         </mdui-card>
         <mdui-card

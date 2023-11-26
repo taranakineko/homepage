@@ -1,6 +1,6 @@
 <template>
     <div class="miao-fof">
-        <br><br>    
+        <br /><br />
         <mdui-circular-progress></mdui-circular-progress>
         <h1 v-html="h1"></h1>
         <p v-html="p1"></p>

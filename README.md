@@ -1,5 +1,8 @@
 # homepage-mdy-vue
 
+  > [!CAUTION]  
+  > 部分代码可能会让你出现一系列不良反应，此时请停止浏览，转而去做其他事
+
 A homepage about @Taranakineko, use [zdhxiong/mdui](https://https://github.com/zdhxiong/mdui/) and Vue🚧
 
 ~~代码写得有点渣且乱 ，连 commit 信息都不写好， 见谅（）~~
@@ -11,9 +14,9 @@ A homepage about @Taranakineko, use [zdhxiong/mdui](https://https://github.com/z
   - [Border Card UI](https://github.com/Stapxs/Border-Card-UI) <!--网页 UI 整体构成 + 模仿部分 css 配置-->
   - [Cynosura](https://cynosura.one/) <!--模仿部分 css 配置-->
   - [Simple Icons](https://simpleicons.org/) <!--社交链接图标显示-->
-  - [Github](https://github.com)/ <!--作为部分调色参考-->
+  - [Github](https://github.com/) <!--作为部分调色参考-->
   - [The Inter typeface family](https://rsms.me/inter/) <!-- 使用的英文字体 -->
-  - [MDN](https://developer.mozilla.org)/ <!-- 参考资料 -->
+  - [MDN](https://developer.mozilla.org/) <!-- 参考资料 -->
   - [Ionicons](https://ionic.io/ionicons) <!--图标-->
   - [Fontawesome](https://fontawesome.com/icons)<!--吐司通知图标-->
   - [Material Web](https://material-web.dev)<!--/ Material 3 + 调色参考 -->

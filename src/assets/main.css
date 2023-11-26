@@ -107,7 +107,7 @@ svg {
 .dialog-footer {
     text-align: center;
 }
-div.mdui-prose h2{
+div.mdui-prose h2 {
     font-size: 16pt;
     line-height: 24pt;
 }
@@ -207,14 +207,15 @@ div.mdui-prose h2{
 }
 
 /* 动画 */
-.miao,.miao-links {
+.miao,
+.miao-links {
     animation: Invitation 0.5s ease both;
 }
 @keyframes Invitation {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}

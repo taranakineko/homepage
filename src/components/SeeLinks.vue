@@ -1,15 +1,12 @@
 <!-- eslint-disable vue/no-deprecated-slot-attribute -->
 <template>
-        <mdui-top-app-bar 
-        variant="small"
-        scroll-behavior="shrink elevate"
-    >
+    <mdui-top-app-bar variant="small" scroll-behavior="shrink elevate">
         <mdui-button-icon icon="menu"></mdui-button-icon>
-        <mdui-top-app-bar-title >See Links</mdui-top-app-bar-title>
+        <mdui-top-app-bar-title>See Links</mdui-top-app-bar-title>
     </mdui-top-app-bar>
     <div class="miao-links mdui-prose">
         <mdui-card variant="elevated" class="link-left">
-            <h2 style="margin-bottom: 10px;">这是关于 千畔 的链接！🔗</h2>
+            <h2 style="margin-bottom: 10px">这是关于 千畔 的链接！🔗</h2>
             <div class="me-body">
                 <mdui-list>
                     <mdui-list-item href="https://nekoq.eu.org" end-icon="open_in_new">
@@ -79,7 +76,7 @@
             </div>
         </mdui-card>
         <mdui-card variant="elevated" class="link-right">
-            <h2 style="margin-bottom: 10px;">这是友链！🫂</h2>
+            <h2 style="margin-bottom: 10px">这是友链！🫂</h2>
             <mdui-list>
                 <mdui-list-item href="https://moe23333.vercel.app/" end-icon="open_in_new">
                     <mdui-avatar
