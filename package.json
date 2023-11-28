@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@mdui/icons": "^1.0.2",
-    "@vercel/analytics": "^1.1.1",
     "marked": "^10.0.0",
     "mdui": "^2.0.2",
     "sass": "^1.69.5",
