@@ -56,7 +56,12 @@
         </mdui-card>
     </div>
     <div class="fab-footer">
-        <mdui-fab class="openSnackbar" ref="OpenTheSnackbar" icon="auto_awesome"></mdui-fab>
+        <mdui-fab
+            class="openSnackbar"
+            ref="OpenTheSnackbar"
+            icon="auto_awesome"
+            data-umami-event="TheIndex Snackbar"
+        ></mdui-fab>
     </div>
     <mdui-snackbar
         close-on-outside-click

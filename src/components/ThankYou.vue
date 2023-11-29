@@ -12,11 +12,20 @@
             <h2>Thanks 感谢</h2>
             <div class="me-body">
                 <mdui-list>
-                    <mdui-list-item headline="@Moe23333" description="Inter 字体设置参考 + 网站细节修改建议"></mdui-list-item>
-                    <mdui-list-item headline="@SkyNext" description="网站细节修改建议"></mdui-list-item>
+                    <mdui-list-item
+                        headline="@Moe23333"
+                        description="Inter 字体设置参考 + 网站细节修改建议"
+                    ></mdui-list-item>
+                    <mdui-list-item
+                        headline="@SkyNext"
+                        description="网站细节修改建议"
+                    ></mdui-list-item>
                     <mdui-list-item headline="@Elihuso" description="重构部分代码"></mdui-list-item>
                     <mdui-list-item headline="mdui" description="前端组件库"></mdui-list-item>
-                    <mdui-list-item headline="And other more..." description="千畔先吃个早餐，稍等再继续补充"></mdui-list-item>
+                    <mdui-list-item
+                        headline="And other more..."
+                        description="千畔先吃个早餐，稍等再继续补充"
+                    ></mdui-list-item>
                 </mdui-list>
             </div>
         </mdui-card>
@@ -36,7 +45,12 @@
         </mdui-card>
     </div>
     <div class="fab-footer">
-        <mdui-fab class="openSnackbar" ref="OpenTheSnackbar" icon="auto_awesome"></mdui-fab>
+        <mdui-fab
+            class="openSnackbar"
+            ref="OpenTheSnackbar"
+            icon="auto_awesome"
+            data-umami-event="ThankYou Snackbar"
+        ></mdui-fab>
     </div>
     <mdui-snackbar
         close-on-outside-click

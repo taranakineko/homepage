@@ -100,7 +100,7 @@
         </mdui-card>
     </div>
     <div class="fab-footer">
-        <mdui-fab ref="OpenDialog" icon="info"></mdui-fab>
+        <mdui-fab ref="OpenDialog" icon="info" data-umami-event="SeeLinks Dialog"></mdui-fab>
     </div>
     <mdui-dialog ref="TheDialog">
         <div class="dialog-footer">
