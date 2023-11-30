@@ -9,21 +9,9 @@
         "但这又有什么呢？",
         "我们不过也只是那 21.7 亿中的一丝浪花。<mdui-tooltip trigger='click hover focus' variant='rich'><div slot='content'>感谢<a href='https://skr.travel.blog/unified-endless-travel_f_starry'>「一只樱花喵」</a>提供的文案。</div><sup><mdui-badge variant='small'>*</mdui-badge></sup></mdui-tooltip>"
     ],
-    [
-        "🚧",
-        "🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧",
-        ""
-    ],
-    [
-        "",
-        "这个网页遇到问题，需要重新启动",
-        "我们只收集某些错误信息，然后为您重新启动。"
-    ],
-    [
-        "嗯...",
-        "显然千畔没活了",
-        "要不然你帮我想点？（bushi）"
-    ],
+    ["🚧", "🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧", ""],
+    ["", "这个网页遇到问题，需要重新启动", "我们只收集某些错误信息，然后为您重新启动。"],
+    ["嗯...", "显然千畔没活了", "要不然你帮我想点？（bushi）"],
     [
         "<div style='color: rgb(var(--mdui-color-background))'>welcome to the mind fxxk</font>",
         "",

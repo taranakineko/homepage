@@ -193,7 +193,6 @@ div.mdui-prose h2 {
     }
     .thanks-body {
         width: 40%;
-        /* padding: 20px; */
     }
 }
 
@@ -218,6 +217,20 @@ div.mdui-prose h2 {
         width: 90%;
         padding: 20px;
         margin: 20px 5px 0px 5%;
+    }
+    .miao-thanks {
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 1%;
+        padding-top: 1%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 1%;
+        max-width: 667px;
+        min-width: 360px;
+    }
+    .thanks-body {
+        width: 95%;
     }
 }
 
