@@ -173,6 +173,7 @@ div.mdui-prose h2 {
     .link-right {
         width: 40%;
         padding: 20px;
+        height: min-content;
     }
     .miao-links {
         padding-top: 1%;
