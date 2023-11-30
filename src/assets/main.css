@@ -107,6 +107,9 @@ svg {
 .dialog-footer {
     text-align: center;
 }
+.me-body {
+    padding-left: 10px;
+}
 div.mdui-prose h2 {
     font-size: 16pt;
     line-height: 24pt;
@@ -179,6 +182,18 @@ div.mdui-prose h2 {
         gap: 2%;
         width: 100%;
         justify-content: center;
+    }
+    .miao-thanks {
+        padding-top: 1%;
+        margin-top: 1%;
+        min-width: 360px;
+        display: flex;
+        width: 97%;
+        gap: 1px;
+    }
+    .thanks-body {
+        width: 40%;
+        /* padding: 20px; */
     }
 }
 
