@@ -3,58 +3,64 @@
         <mdui-button-icon icon="menu"></mdui-button-icon>
         <mdui-top-app-bar-title>Know Me</mdui-top-app-bar-title>
     </mdui-top-app-bar>
-    <div class="miao mdui-prose">
-        <mdui-card
-            variant="elevated"
-            class="hover"
-            style="margin: 20px 5px 0px 5%; width: 90%; padding: 20px"
-        >
-            <h2>TaranakiNeko 是谁？🤔</h2>
-            <div class="me-body">
-                <p>TaranakiNeko 就是 TaranakiNeko 啊，没问题啊！非常的合理不是嘛</p>
-                <p>
-                    虽说名字里带有 Neko ，但无论是习惯什么的似乎都不像貓貓<del
-                        >，還不可愛（思索）</del
-                    >
-                </p>
-                <p>另外，你可以称呼 ta 为 「千畔」</p>
-            </div>
-        </mdui-card>
-        <mdui-card
-            variant="elevated"
-            class="hover"
-            style="margin: 20px 5px 0px 5%; width: 90%; padding: 20px"
-        >
-            <h2>名字从何而来？😮</h2>
-            <div class="me-body">
-                <p>
-                    TaranakiNeko 这个名字其实是别人<!-- 谢谢 Moe23333 起的名 -->帮忙起的（当时只有
-                    Taranaki）
-                </p>
-                <p>随后 Tara 自己擅自主张的加上了 Neko，于是就有了现在这个名字</p>
-                <p>
-                    至于「千畔」这个名字嘛...
-                    出自于「沉舟侧畔千帆过，病树前头万木春」这首诗词，很熟悉不是吗
-                </p>
-            </div>
-        </mdui-card>
-        <mdui-card
-            variant="elevated"
-            class="hover"
-            style="margin: 20px 5px 0px 5%; width: 90%; padding: 20px"
-        >
-            <h2>那其他的呢？👀</h2>
-            <div class="me-body">
-                <p>千畔会随机使用拼音或者注音，虽说大部分时候都是使用拼音吧</p>
-                <p>
-                    <del>umm... 剩下的懒得写了</del>
-                </p>
-                <p><del>至于博客那边...会写的会写的不要催啦 😭（）</del></p>
-                <p>或者切换选项卡至 “链接” ，里面有千畔的 Github 主页，那里也有一些其他信息</p>
-                <p>再或者...可以通过交流得到一些信息不是？</p>
-                <p>或许以后还会更新一些内容吧…就看千畔有没有动力去做了</p>
-            </div>
-        </mdui-card>
+    <div class="miao-thanks mdui-prose">
+        <div class="thanks-body">
+            <mdui-card
+                variant="elevated"
+                class="hover"
+                style="margin: 20px 5px 0px 5%; width: 95%; padding: 20px"
+            >
+                <h2>TaranakiNeko 是谁？🤔</h2>
+                <div class="me-body">
+                    <p>TaranakiNeko 就是 TaranakiNeko 啊，没问题啊！非常的合理不是嘛</p>
+                    <p>
+                        虽说名字里带有 Neko ，但无论是习惯什么的似乎都不像貓貓<del
+                            >，還不可愛（思索）</del
+                        >
+                    </p>
+                    <p>另外，你可以称呼 ta 为 「千畔」</p>
+                </div>
+            </mdui-card>
+        </div>
+        <div class="thanks-body">
+            <mdui-card
+                variant="elevated"
+                class="hover"
+                style="margin: 20px 5px 0px 5%; width: 95%; padding: 20px"
+            >
+                <h2>名字从何而来？😮</h2>
+                <div class="me-body">
+                    <p>
+                        TaranakiNeko 这个名字其实是别人<!-- 谢谢 Moe23333 起的名 -->帮忙起的（当时只有
+                        Taranaki）
+                    </p>
+                    <p>随后 Tara 自己擅自主张的加上了 Neko，于是就有了现在这个名字</p>
+                    <p>
+                        至于「千畔」这个名字嘛...
+                        出自于「沉舟侧畔千帆过，病树前头万木春」这首诗词，很熟悉不是吗
+                    </p>
+                </div>
+            </mdui-card>
+        </div>
+        <div class="thanks-body">
+            <mdui-card
+                variant="elevated"
+                class="hover"
+                style="margin: 20px 5px 0px 5%; width: 95%; padding: 20px"
+            >
+                <h2>那其他的呢？👀</h2>
+                <div class="me-body">
+                    <p>千畔会随机使用拼音或者注音，虽说大部分时候都是使用拼音吧</p>
+                    <p>
+                        <del>umm... 剩下的懒得写了</del>
+                    </p>
+                    <p><del>至于博客那边...会写的会写的不要催啦 😭（）</del></p>
+                    <p>或者切换选项卡至 “链接” ，里面有千畔的 Github 主页，那里也有一些其他信息</p>
+                    <p>再或者...可以通过交流得到一些信息不是？</p>
+                    <p>或许以后还会更新一些内容吧…就看千畔有没有动力去做了</p>
+                </div>
+            </mdui-card>
+        </div>
     </div>
     <div class="fab-footer">
         <mdui-fab ref="OpenDialog" icon="info" data-umami-event="KnowMe Dialog"></mdui-fab>
