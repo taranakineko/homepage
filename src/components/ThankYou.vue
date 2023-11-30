@@ -16,6 +16,7 @@
                     <mdui-list>
                         <mdui-list-item
                             href="https://umami.nekoq.eu.org/share/4lQOLAOmfO6CW9z6/主页"
+                            target="_blank"
                             description="有什么呢？"
                             end-icon="open_in_new"
                         >
@@ -23,6 +24,7 @@
                         </mdui-list-item>
                         <mdui-list-item
                             href="https://umami.nekoq.eu.org/share/gjaybUZ87J6pDCaJ/Blog"
+                            target="_blank"
                             description="这里不能看！"
                             end-icon="open_in_new"
                         >
@@ -54,7 +56,7 @@
                 class="hover"
                 style="margin: 20px 5px 0px 5%; width: 95%; padding: 20px"
             >
-                <h2>Thanks 感谢</h2>
+                <h2>Thanks 感谢 / Use 使用</h2>
                 <div class="me-body">
                     <mdui-list>
                         <mdui-list-item
@@ -69,7 +71,27 @@
                             headline="@Elihuso"
                             description="重构部分代码"
                         ></mdui-list-item>
-                        <mdui-list-item headline="mdui" description="前端组件库"></mdui-list-item>
+                        <mdui-list-item
+                            headline="Inter"
+                            href="rsms.me/inter"
+                            target="_blank"
+                            description="英文字体"
+                            end-icon="open_in_new"
+                        ></mdui-list-item>
+                        <mdui-list-item
+                            headline="mdui"
+                            href="https://github.com/zdhxiong/mdui"
+                            target="_blank"
+                            description="前端组件库"
+                            end-icon="open_in_new"
+                        ></mdui-list-item>
+                        <mdui-list-item
+                            headline="Vue3"
+                            href="https://cn.vuejs.org/"
+                            target="_blank"
+                            description="网站框架"
+                            end-icon="open_in_new"
+                        ></mdui-list-item>
                         <mdui-list-item
                             headline="And other more..."
                             description="千畔先吃个早餐，稍等再继续补充"
