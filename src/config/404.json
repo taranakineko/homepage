@@ -16,5 +16,13 @@
         "<div style='color: rgb(var(--mdui-color-background))'>welcome to the mind fxxk</font>",
         "",
         ""
+    ],
+    ["NO!!! SOMETHING ISN'T RIGHT!!", "MY ENEMY'S INVISIBLE", "I DON'T KNOW HOW TO FIGHT"],
+    ["", "残らないこんな結末を", "反逆者として背負ってくんだね"],
+    ["如果终点还在前方", "本次列车内环运行，列车终点站为...", ""],
+    [
+        "Attention please",
+        "本次列车已经到达列车终点站，请所有乘客带齐行李物品在此站下车",
+        "需要去往后续站点的乘客，请按照指引有序乘车，多谢合作"
     ]
 ]
