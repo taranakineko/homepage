@@ -67,8 +67,9 @@
                         <mdui-tab value="tab-3">Others</mdui-tab>
 
                         <mdui-tab-panel class="chip" slot="panel" value="tab-1">
+                            <mdui-tooltip content="LG V50 韩版">
                             <mdui-chip>
-                                Devices: Phone
+                                Phone
                                 <mdui-icon slot="icon">
                                     <svg
                                         role="img"
@@ -81,9 +82,10 @@
                                         />
                                     </svg>
                                 </mdui-icon> </mdui-chip
-                            >&nbsp;
+                            ></mdui-tooltip>&nbsp;
+                            <mdui-tooltip content="based Android 12">
                             <mdui-chip>
-                                LG UX based Android 12
+                                LG UX
                                 <mdui-icon slot="icon">
                                     <svg
                                         role="img"
@@ -96,9 +98,10 @@
                                         />
                                     </svg>
                                 </mdui-icon> </mdui-chip
-                            >&nbsp;
+                            ></mdui-tooltip>&nbsp;
+                            <mdui-tooltip content="RedmiBook Pro 14S">
                             <mdui-chip>
-                                Devices: PC
+                                PC
                                 <mdui-icon slot="icon">
                                     <svg
                                         role="img"
@@ -111,7 +114,8 @@
                                         />
                                     </svg>
                                 </mdui-icon> </mdui-chip
-                            >&nbsp;
+                            ></mdui-tooltip>&nbsp;
+                            <mdui-tooltip content="Windows Insider Beta Channel">
                             <mdui-chip>
                                 Windows 11 Pro
                                 <mdui-icon slot="icon">
@@ -126,10 +130,10 @@
                                         />
                                     </svg>
                                 </mdui-icon>
-                            </mdui-chip>
+                            </mdui-chip></mdui-tooltip>
                         </mdui-tab-panel>
                         <mdui-tab-panel class="chip" slot="panel" value="tab-2">
-                            <mdui-chip>
+                            <mdui-tooltip content="Firefox Nightly"><mdui-chip>
                                 Browser
                                 <mdui-icon slot="icon">
                                     <svg
@@ -143,7 +147,7 @@
                                         />
                                     </svg>
                                 </mdui-icon> </mdui-chip
-                            >&nbsp;
+                            ></mdui-tooltip>&nbsp;
                             <mdui-chip>
                                 Code Edit
                                 <mdui-icon slot="icon">
@@ -196,14 +200,14 @@
                                 <footer>— huige</footer>
                             </blockquote>
                             <p>成分有待复杂，想到什么就添加什么吧</p>
-                            <mdui-chip>
+                            <mdui-chip v-on:click="SeeSeeYourB50()">
                                 舞萌 DX
                                 <mdui-avatar
                                     slot="icon"
                                     src="https://images.weserv.nl/?url=https://imgsrc.baidu.com/forum/pic/item/fc1f4134970a304eeba8363e94c8a786c8175c68.jpg&output=webp"
                                 ></mdui-avatar> </mdui-chip
                             >&nbsp;
-                            <mdui-chip>
+                            <mdui-chip v-on:click="MaiMen()">
                                 麦门信徒
                                 <mdui-icon slot="icon">
                                     <svg
@@ -216,6 +220,12 @@
                                             d="M17.243 3.006c2.066 0 3.742 8.714 3.742 19.478H24c0-11.588-3.042-20.968-6.766-20.968-2.127 0-4.007 2.81-5.248 7.227-1.241-4.416-3.121-7.227-5.231-7.227C3.031 1.516 0 10.888 0 22.476h3.014c0-10.763 1.658-19.47 3.724-19.47 2.066 0 3.741 8.05 3.741 17.98h2.997c0-9.93 1.684-17.98 3.75-17.98Z"
                                         />
                                     </svg>
+                                </mdui-icon> </mdui-chip
+                            >&nbsp;
+                            <mdui-chip v-on:click="LagTrain()">
+                                追公交.jpg
+                                <mdui-icon slot="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M400 32H112a48 48 0 00-48 48v320a47.91 47.91 0 0016 35.74V454a26 26 0 0026 26h28a26 26 0 0026-26v-6h192v6a26 26 0 0026 26h28a26 26 0 0026-26v-18.26A47.91 47.91 0 00448 400V80a48 48 0 00-48-48zM147.47 399.82a32 32 0 1128.35-28.35 32 32 0 01-28.35 28.35zM236 288H112a16 16 0 01-16-16V144a16 16 0 0116-16h124a4 4 0 014 4v152a4 4 0 01-4 4zm20-192H112.46c-8.6 0-16-6.6-16.44-15.19A16 16 0 01112 64h287.54c8.6 0 16 6.6 16.44 15.19A16 16 0 01400 96H256zm20 32h124a16 16 0 0116 16v128a16 16 0 01-16 16H276a4 4 0 01-4-4V132a4 4 0 014-4zm60.18 243.47a32 32 0 1128.35 28.35 32 32 0 01-28.35-28.35z"/></svg>
                                 </mdui-icon> </mdui-chip
                             >&nbsp;
                         </mdui-tab-panel>
@@ -261,6 +271,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
+import { alert } from "mdui/functions/alert.js";
 const TheDialog = ref<any>(null)
 const OpenDialog = ref<any>(null)
 const CloseDialog = ref<any>(null)
@@ -268,6 +279,34 @@ onMounted(() => {
     OpenDialog.value.addEventListener('click', () => (TheDialog.value.open = true))
     CloseDialog.value.addEventListener('click', () => (TheDialog.value.open = false))
 })
+// 召唤 Dialog
+function SeeSeeYourB50(){ // 看看你的
+    alert({
+        headline: "我知道你想看什么......",
+        description: "你能找到千畔再说嘛！",
+        confirmText: "Next",
+        closeOnEsc: true,
+        closeOnOverlayClick: true
+    })
+}
+function MaiMen(){ // Amen 的变体
+    alert({
+        headline: "为什么是「麦门信徒」？",
+        description: "外出吃饭首先想到的就是麦当劳，在哪会面也是说「在麦当劳见」",
+        confirmText: "明白了",
+        closeOnEsc: true,
+        closeOnOverlayClick: true
+    })
+}
+function LagTrain(){ // 稻叶昙的歌曲
+    alert({
+        headline: "为什么是「追公交」？",
+        description: "千畔每个月出门，至少有一次是会追着公交的",
+        confirmText: "明白了",
+        closeOnEsc: true,
+        closeOnOverlayClick: true
+    })
+}
 </script>
 
 <style lang="sass">
