@@ -5,7 +5,7 @@
                 class="avatar"
                 width="200"
                 height="200"
-                src="https://fastly.jsdelivr.net/gh/taranakineko/homepage/source/images/taranaki.webp"
+                src="/images/taranaki.webp"
                 alt="头像"
             />
             <h1 class="name">TaranakiNeko</h1>
