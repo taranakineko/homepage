@@ -1,13 +1,7 @@
 <template>
     <div class="miao">
         <div style="text-align: center; margin: 0 auto; margin: 30px 20px 0 20px">
-            <img
-                class="avatar"
-                width="200"
-                height="200"
-                src="/images/taranaki.webp"
-                alt="头像"
-            />
+            <img class="avatar" width="200" height="200" src="/images/taranaki.webp" alt="头像" />
             <h1 class="name">TaranakiNeko</h1>
         </div>
         <mdui-card
