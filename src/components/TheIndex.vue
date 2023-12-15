@@ -36,18 +36,6 @@
                 有些事情还未结束哦...
             </span>
         </mdui-card>
-        <mdui-card
-            variant="elevated"
-            class="footer pane"
-            style="margin: 20px 5px 0px 5%; height: 100%"
-        >
-            <p>Copyright © 2022 - Now taranakiNeko</p>
-            <p>
-                Made with
-                <a href="https://github.com/zdhxiong/mdui/" target="_blank">zdhxiong/mdui</a> |
-                <a href="https://github.com/taranakineko/homepage/" target="_blank">Github Repo</a>
-            </p>
-        </mdui-card>
     </div>
     <div class="fab-footer">
         <mdui-fab
