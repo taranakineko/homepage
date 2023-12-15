@@ -3,7 +3,14 @@ import { useRouter, RouterView } from 'vue-router'
 import { ref, onMounted } from 'vue'
 const NaviRail = ref<any>(null)
 const NaviBar = ref<any>(null)
+const TheDialog = ref<any>(null)
+const OpenDialog = ref<any>(null)
+const CloseDialog = ref<any>(null)
 const router = useRouter()
+onMounted(() => {
+    OpenDialog.value.addEventListener('click', () => (TheDialog.value.open = true))
+    CloseDialog.value.addEventListener('click', () => (TheDialog.value.open = false))
+})
 router.beforeEach((to, from, next) => {
     switch (to.path) {
         case '/':
@@ -69,7 +76,26 @@ function OpenThanks() {
                 v-on:click="OpenThanks()"
                 >感谢</mdui-navigation-rail-item
             >
+            <mdui-button-icon
+                ref="OpenDialog"
+                icon="info"
+                slot="bottom"
+                data-umami-event="Footer Dialog"
+            ></mdui-button-icon>
         </mdui-navigation-rail>
+        <mdui-dialog class="hover" ref="TheDialog">
+            <div class="dialog-footer">
+                <p>Copyright © 2022 - Now taranakiNeko</p>
+                <p>
+                    Made with
+                    <a href="https://github.com/zdhxiong/mdui/" target="_blank">zdhxiong/mdui</a> |
+                    <a href="https://github.com/taranakineko/homepage/" target="_blank"
+                        >Github Repo</a
+                    >
+                </p>
+                <mdui-button ref="CloseDialog">关闭</mdui-button>
+            </div>
+        </mdui-dialog>
     </div>
     <div class="mobile">
         <mdui-navigation-bar value="{{ to.path }}" alignment="center" ref="NaviBar">
