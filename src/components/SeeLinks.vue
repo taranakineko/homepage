@@ -130,32 +130,7 @@
             </mdui-list>
         </mdui-card>
     </div>
-    <div class="fab-footer">
-        <mdui-fab ref="OpenDialog" icon="info" data-umami-event="SeeLinks Dialog"></mdui-fab>
-    </div>
-    <mdui-dialog ref="TheDialog">
-        <div class="dialog-footer">
-            <p>Copyright © 2022 - Now taranakiNeko</p>
-            <p>
-                Made with
-                <a href="https://github.com/zdhxiong/mdui/" target="_blank">zdhxiong/mdui</a> |
-                <a href="https://github.com/taranakineko/homepage/" target="_blank">Github Repo</a>
-            </p>
-            <mdui-button ref="CloseDialog">关闭</mdui-button>
-        </div>
-    </mdui-dialog>
 </template>
-
-<script setup lang="ts">
-import { ref, onMounted } from 'vue'
-const TheDialog = ref<any>(null)
-const OpenDialog = ref<any>(null)
-const CloseDialog = ref<any>(null)
-onMounted(() => {
-    OpenDialog.value.addEventListener('click', () => (TheDialog.value.open = true))
-    CloseDialog.value.addEventListener('click', () => (TheDialog.value.open = false))
-})
-</script>
 
 <style lang="scss">
 .link-left {

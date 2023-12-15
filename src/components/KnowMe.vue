@@ -62,9 +62,9 @@
                 <h2>标题还没想好总之是一些 tags 🏷</h2>
                 <div class="me-body">
                     <mdui-tabs value="tab-1" placement="top" full-width>
-                        <mdui-tab value="tab-1">Devices</mdui-tab>
-                        <mdui-tab value="tab-2">Use</mdui-tab>
-                        <mdui-tab value="tab-3">Others</mdui-tab>
+                        <mdui-tab value="tab-1">设备</mdui-tab>
+                        <mdui-tab value="tab-2">使用</mdui-tab>
+                        <mdui-tab value="tab-3">其他</mdui-tab>
 
                         <mdui-tab-panel class="chip" slot="panel" value="tab-1">
                             <mdui-tooltip content="LG V50 韩版">
@@ -95,6 +95,22 @@
                                             <title>Android</title>
                                             <path
                                                 d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4483-.9993.9993-.9993c.5511 0 .9993.4483.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4483.9993.9993 0 .5511-.4483.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.2439 13.8533 7.8508 12 7.8508s-3.5902.3931-5.1367 1.0989L4.841 5.4467a.4161.4161 0 00-.5677-.1521.4157.4157 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3435-4.1021-2.6892-7.5743-6.1185-9.4396"
+                                            />
+                                        </svg>
+                                    </mdui-icon> </mdui-chip></mdui-tooltip
+                            >&nbsp;
+                            <mdui-tooltip content="Mi Smart Band 7 NFC">
+                                <mdui-chip>
+                                    Smart Band
+                                    <mdui-icon slot="icon">
+                                        <svg
+                                            role="img"
+                                            viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <title>Xiaomi</title>
+                                            <path
+                                                d="M12 0C8.016 0 4.756.255 2.493 2.516.23 4.776 0 8.033 0 12.012c0 3.98.23 7.235 2.494 9.497C4.757 23.77 8.017 24 12 24c3.983 0 7.243-.23 9.506-2.491C23.77 19.247 24 15.99 24 12.012c0-3.984-.233-7.243-2.502-9.504C19.234.252 15.978 0 12 0zM4.906 7.405h5.624c1.47 0 3.007.068 3.764.827.746.746.827 2.233.83 3.676v4.54a.15.15 0 0 1-.152.147h-1.947a.15.15 0 0 1-.152-.148V11.83c-.002-.806-.048-1.634-.464-2.051-.358-.36-1.026-.441-1.72-.458H7.158a.15.15 0 0 0-.151.147v6.98a.15.15 0 0 1-.152.148H4.906a.15.15 0 0 1-.15-.148V7.554a.15.15 0 0 1 .15-.149zm12.131 0h1.949a.15.15 0 0 1 .15.15v8.892a.15.15 0 0 1-.15.148h-1.949a.15.15 0 0 1-.151-.148V7.554a.15.15 0 0 1 .151-.149zM8.92 10.948h2.046c.083 0 .15.066.15.147v5.352a.15.15 0 0 1-.15.148H8.92a.15.15 0 0 1-.152-.148v-5.352a.15.15 0 0 1 .152-.147Z"
                                             />
                                         </svg>
                                     </mdui-icon> </mdui-chip></mdui-tooltip
@@ -262,32 +278,10 @@
             </mdui-card>
         </div>
     </div>
-    <div class="fab-footer">
-        <mdui-fab ref="OpenDialog" icon="info" data-umami-event="KnowMe Dialog"></mdui-fab>
-    </div>
-    <mdui-dialog class="hover" ref="TheDialog">
-        <div class="dialog-footer">
-            <p>Copyright © 2022 - Now taranakiNeko</p>
-            <p>
-                Made with
-                <a href="https://github.com/zdhxiong/mdui/" target="_blank">zdhxiong/mdui</a> |
-                <a href="https://github.com/taranakineko/homepage/" target="_blank">Github Repo</a>
-            </p>
-            <mdui-button ref="CloseDialog">关闭</mdui-button>
-        </div>
-    </mdui-dialog>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
 import { alert } from 'mdui/functions/alert.js'
-const TheDialog = ref<any>(null)
-const OpenDialog = ref<any>(null)
-const CloseDialog = ref<any>(null)
-onMounted(() => {
-    OpenDialog.value.addEventListener('click', () => (TheDialog.value.open = true))
-    CloseDialog.value.addEventListener('click', () => (TheDialog.value.open = false))
-})
 // 召唤 Dialog
 function SeeSeeYourB50() {
     // 看看你的
