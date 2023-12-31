@@ -234,8 +234,7 @@ div.mdui-prose h2 {
 }
 
 /* 动画 */
-.miao,
-.miao-links {
+body {
     animation: Invitation 0.5s ease both;
 }
 @keyframes Invitation {
