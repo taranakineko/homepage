@@ -36,6 +36,12 @@ router.beforeEach((to, from, next) => {
             NaviBar.value.value = 'thanks'
             break
     }
+    switch (to.path) {
+        case '/setting':
+            NaviRail.value.value = 'setting'
+            NaviBar.value.value = 'setting'
+            break
+    }
     next()
 })
 function OpenStart() {
@@ -49,6 +55,9 @@ function OpenLinks() {
 }
 function OpenThanks() {
     router.push('/thanks')
+}
+function OpenSetting() {
+    router.push('/setting')
 }
 </script>
 
@@ -67,7 +76,10 @@ function OpenThanks() {
                 v-on:click="OpenMe()"
                 >{{ $t('app_me') }}</mdui-navigation-rail-item
             >
-            <mdui-navigation-rail-item icon="link--outlined" value="links" v-on:click="OpenLinks()"
+            <mdui-navigation-rail-item
+                icon="link--outlined"
+                value="links"
+                v-on:click="OpenLinks()"
                 >{{ $t('app_links') }}</mdui-navigation-rail-item
             >
             <mdui-navigation-rail-item
@@ -75,6 +87,12 @@ function OpenThanks() {
                 value="thanks"
                 v-on:click="OpenThanks()"
                 >{{ $t('app_thanks') }}</mdui-navigation-rail-item
+            >
+            <mdui-navigation-rail-item
+                icon="settings--outlined"
+                value="setting"
+                v-on:click="OpenSetting()"
+                >{{ $t('app_setting') }}</mdui-navigation-rail-item
             >
             <mdui-button-icon
                 ref="OpenDialog"
@@ -111,7 +129,10 @@ function OpenThanks() {
                 v-on:click="OpenMe()"
                 >{{ $t('app_me') }}</mdui-navigation-bar-item
             >
-            <mdui-navigation-bar-item icon="link--outlined" value="links" v-on:click="OpenLinks()"
+            <mdui-navigation-bar-item
+                icon="link--outlined"
+                value="links"
+                v-on:click="OpenLinks()"
                 >{{ $t('app_links') }}</mdui-navigation-bar-item
             >
             <mdui-navigation-bar-item
@@ -119,6 +140,12 @@ function OpenThanks() {
                 value="thanks"
                 v-on:click="OpenThanks"
                 >{{ $t('app_thanks') }}</mdui-navigation-bar-item
+            >
+            <mdui-navigation-bar-item
+                icon="settings--outlined"
+                value="setting"
+                v-on:click="OpenSetting()"
+                >{{ $t('app_setting') }}</mdui-navigation-bar-item
             >
         </mdui-navigation-bar>
     </div>
