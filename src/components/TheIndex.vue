@@ -77,7 +77,9 @@ import { ref, onMounted } from 'vue'
 import TXT from '../config/txt.json'
 const OpenTheSnackbar = ref<any>(null)
 const TheSnackbar = ref<any>(null)
-app.config.globalProperties.$i18n.locale = localStorage.getItem('lanauage')
+if (localStorage.getItem('lanauage')) {
+    app.config.globalProperties.$i18n.locale = localStorage.getItem('lanauage') as string
+}
 onMounted(() => {
     // console.log(OpenTheSnackbar.value);
     // console.log(TheSnackbar.value);
