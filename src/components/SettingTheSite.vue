@@ -18,17 +18,17 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 const lang = ref<any>(null)
-console.log(document.cookie.match('(lanauage=)(.*?)(;|$)'))
-const la = document.cookie.match('(lanauage=)(.*?)(;|$)') // 调试用
-const lanauage = document.cookie.match('(lanauage=)(.*?)(;|$)')
+console.log(localStorage.getItem("lanauage"))
+const la = localStorage.getItem("lanauage") // 调试用
+const lanauage = localStorage.getItem("lanauage")
 onMounted(() => {
     console.log(lang.value.value) // 调试用
-    if (document.cookie.includes("lanauage")) { // 判断是否有 lanauage cookie
-        lang.value.value = lanauage[2]
+    if (localStorage.getItem("lanauage")) { // 判断是否有 lanauage，感觉有点多此一举
+        lang.value.value = lanauage
     }
     lang.value.addEventListener('click', () => {
         console.log(lang.value.value) // 调试用
-        document.cookie = "lanauage=" + lang.value.value
+        localStorage.setItem("lanauage", lang.value.value)
     })
 })
 </script>
