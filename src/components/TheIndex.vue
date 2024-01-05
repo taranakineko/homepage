@@ -16,7 +16,7 @@
                 height: 100%;
             "
         >
-            <span>A 🐱cat lying on the ⌨️keyboard.</span>
+            <span>{{ $t('index_cat') }}</span>
         </mdui-card>
         <mdui-card
             variant="elevated"
@@ -31,9 +31,9 @@
             "
         >
             <span>
-                🚧 Somethings are not finished yet, please wait for me to finish...!
+                {{ $t('index_something') }}
                 <br />
-                有些事情还未结束哦...
+                {{ $t('index_something_CN') }}
             </span>
         </mdui-card>
         <mdui-card
@@ -72,10 +72,12 @@
 </template>
 
 <script setup lang="ts">
+import app from '@/main'
 import { ref, onMounted } from 'vue'
 import TXT from '../config/txt.json'
 const OpenTheSnackbar = ref<any>(null)
 const TheSnackbar = ref<any>(null)
+app.config.globalProperties.$i18n.locale = localStorage.getItem('lanauage')
 onMounted(() => {
     // console.log(OpenTheSnackbar.value);
     // console.log(TheSnackbar.value);

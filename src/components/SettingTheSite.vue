@@ -7,8 +7,8 @@
         <div>
             <p>{{ $t('setting_lanage') }}</p>
             <mdui-radio-group ref="lang" id="lang">
-                <mdui-radio value="zh-CN">中文</mdui-radio>
-                <mdui-radio value="zh-MS">zh-MS</mdui-radio>
+                <mdui-radio value="zh-CN">{{ $t('setting_lanage_chinese') }}</mdui-radio>
+                <mdui-radio value="zh-MS">{{ $t('setting_lanage_zhms') }}</mdui-radio>
             </mdui-radio-group>
         </div>
     </div>

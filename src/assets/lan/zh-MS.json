@@ -1,3 +1,12 @@
 {
-    "setting_lanage": "23333"
+    "app_start": "开始",
+    "app_me": "介绍",
+    "app_links": "链接",
+    "app_thanks": "感谢",
+    "index_cat": "一个猫🐱说谎的上这⌨️键盘。",
+    "index_something": "🚧 一些东西不是尚未完成, 请等给我的完成...!",
+    "index_something_CN": "一些东西还没有结束了...",
+    "setting_lanage": "语言建立",
+    "setting_lanage_chinese": "中文",
+    "setting_lanage_zhms": "zh-MS （英语）"
 }

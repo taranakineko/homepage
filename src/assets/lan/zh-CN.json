@@ -1,3 +1,12 @@
 {
-    "setting_lanage": "语言语言设置"
+    "app_start": "开始",
+    "app_me": "介绍",
+    "app_links": "链接",
+    "app_thanks": "感谢",
+    "index_cat": "A 🐱cat lying on the ⌨️keyboard.",
+    "index_something": "🚧 Somethings are not finished yet, please wait for me to finish...!",
+    "index_something_CN": "有些事情还未结束哦...",
+    "setting_lanage": "语言设置",
+    "setting_lanage_chinese": "中文",
+    "setting_lanage_zhms": "zh-MS"
 }

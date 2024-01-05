@@ -59,22 +59,22 @@ function OpenThanks() {
                 icon="restart_alt--outlined"
                 value="start"
                 v-on:click="OpenStart()"
-                >Start</mdui-navigation-rail-item
+                >{{ $t('app_start') }}</mdui-navigation-rail-item
             >
             <mdui-navigation-rail-item
                 icon="device_unknown--outlined"
                 value="me"
                 v-on:click="OpenMe()"
-                >介绍</mdui-navigation-rail-item
+                >{{ $t('app_me') }}</mdui-navigation-rail-item
             >
             <mdui-navigation-rail-item icon="link--outlined" value="links" v-on:click="OpenLinks()"
-                >链接</mdui-navigation-rail-item
+                >{{ $t('app_links') }}</mdui-navigation-rail-item
             >
             <mdui-navigation-rail-item
                 icon="face_retouching_natural--outlined"
                 value="thanks"
                 v-on:click="OpenThanks()"
-                >感谢</mdui-navigation-rail-item
+                >{{ $t('app_thanks') }}</mdui-navigation-rail-item
             >
             <mdui-button-icon
                 ref="OpenDialog"
@@ -103,22 +103,22 @@ function OpenThanks() {
                 icon="restart_alt--outlined"
                 value="start"
                 v-on:click="OpenStart()"
-                >Start</mdui-navigation-bar-item
+                >{{ $t('app_start') }}</mdui-navigation-bar-item
             >
             <mdui-navigation-bar-item
                 icon="device_unknown--outlined"
                 value="me"
                 v-on:click="OpenMe()"
-                >介绍</mdui-navigation-bar-item
+                >{{ $t('app_me') }}</mdui-navigation-bar-item
             >
             <mdui-navigation-bar-item icon="link--outlined" value="links" v-on:click="OpenLinks()"
-                >链接</mdui-navigation-bar-item
+                >{{ $t('app_links') }}</mdui-navigation-bar-item
             >
             <mdui-navigation-bar-item
                 icon="face_retouching_natural--outlined"
                 value="thanks"
                 v-on:click="OpenThanks"
-                >感谢</mdui-navigation-bar-item
+                >{{ $t('app_thanks') }}</mdui-navigation-bar-item
             >
         </mdui-navigation-bar>
     </div>
