@@ -4,6 +4,7 @@ import Me from '../components/KnowMe.vue'
 import Links from '../components/SeeLinks.vue'
 import Thanks from '../components/ThankYou.vue'
 import FourOhFour from '../components/FourOhFour.vue'
+import Setting from '../components/SettingTheSite.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +28,11 @@ const router = createRouter({
             path: '/thanks',
             name: 'thanks',
             component: Thanks
+        },
+        {
+            path: '/setting',
+            name: 'setting',
+            component: Setting
         },
         {
             path: '/:pathMatch(.*)*',
