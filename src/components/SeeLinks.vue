@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/no-deprecated-slot-attribute -->
 <template>
     <mdui-top-app-bar variant="small" scroll-behavior="shrink elevate">
-        <mdui-button-icon icon="menu"></mdui-button-icon>
+        <mdui-button-icon icon="menu--outlined"></mdui-button-icon>
         <mdui-top-app-bar-title>See Links</mdui-top-app-bar-title>
     </mdui-top-app-bar>
     <div class="miao-links mdui-prose">
@@ -9,14 +9,14 @@
             <h2 style="margin-bottom: 10px">这是关于 千畔 的链接！🔗</h2>
             <div class="me-body">
                 <mdui-list>
-                    <mdui-list-item href="https://nekoq.eu.org" end-icon="open_in_new">
+                    <mdui-list-item href="https://nekoq.eu.org" end-icon="open_in_new--outlined">
                         Blog
                     </mdui-list-item>
                     <mdui-list-item
                         href="https://alive.bar/@TaranakiNeko"
                         target="_blank"
                         description="@TaranakiNeko@alive.bar"
-                        end-icon="open_in_new"
+                        end-icon="open_in_new--outlined"
                     >
                         Mastodon
                     </mdui-list-item>
@@ -24,7 +24,7 @@
                         href="https://twitter.com/taranakineko"
                         target="_blank"
                         description="@taranakineko"
-                        end-icon="open_in_new"
+                        end-icon="open_in_new--outlined"
                     >
                         Twitter
                     </mdui-list-item>
@@ -32,7 +32,7 @@
                         href="https://t.me/taranaki_neko"
                         target="_blank"
                         description="Tara - 千畔 换乘站"
-                        end-icon="open_in_new"
+                        end-icon="open_in_new--outlined"
                     >
                         Telegram
                     </mdui-list-item>
@@ -40,7 +40,7 @@
                         href="https://github.com/taranakineko"
                         target="_blank"
                         description="@taranakineko"
-                        end-icon="open_in_new"
+                        end-icon="open_in_new--outlined"
                     >
                         Github
                     </mdui-list-item>
@@ -48,14 +48,14 @@
                         href="https://instagram.com/taranakineko"
                         target="_blank"
                         description="@taranakineko"
-                        end-icon="open_in_new"
+                        end-icon="open_in_new--outlined"
                     >
                         Instagram
                     </mdui-list-item>
                 </mdui-list>
                 <mdui-collapse>
                     <mdui-collapse-item>
-                        <mdui-list-item slot="header" icon="view_list" description="有什么呢"
+                        <mdui-list-item slot="header" icon="view_list--outlined" description="有什么呢"
                             >Others</mdui-list-item
                         >
                         <div style="margin-left: 2.5rem">
@@ -63,8 +63,8 @@
                                 href="https://bookmarks.nekoq.top/"
                                 target="_blank"
                                 description="看看千畔都看了什么"
-                                icon="bookmark"
-                                end-icon="open_in_new"
+                                icon="bookmark--outlined"
+                                end-icon="open_in_new--outlined"
                             >
                                 BookMarks
                             </mdui-list-item>
@@ -72,8 +72,8 @@
                                 href="https://github.com/users/taranakineko/projects/1/views/1"
                                 target="_blank"
                                 description="填坑计划！"
-                                icon="checklist"
-                                end-icon="open_in_new"
+                                icon="checklist--outlined"
+                                end-icon="open_in_new--outlined"
                             >
                                 Project
                             </mdui-list-item>
@@ -88,7 +88,7 @@
                 <mdui-list-item
                     href="https://moe23333.vercel.app/"
                     target="_blank"
-                    end-icon="open_in_new"
+                    end-icon="open_in_new--outlined"
                 >
                     <mdui-avatar
                         slot="icon"
@@ -99,7 +99,7 @@
                 <mdui-list-item
                     href="https://winsloweric.com/"
                     target="_blank"
-                    end-icon="open_in_new"
+                    end-icon="open_in_new--outlined"
                 >
                     <mdui-avatar
                         slot="icon"
@@ -107,11 +107,11 @@
                     ></mdui-avatar>
                     Pivot of Winslow
                 </mdui-list-item>
-                <mdui-list-item href="https://shef.cc/" target="_blank" end-icon="open_in_new"
+                <mdui-list-item href="https://shef.cc/" target="_blank" end-icon="open_in_new--outlined"
                     ><mdui-avatar slot="icon" src="https://shef.cc/logo.png"></mdui-avatar>
                     SheepChef
                 </mdui-list-item>
-                <mdui-list-item href="https://sunyz.net/" target="_blank" end-icon="open_in_new"
+                <mdui-list-item href="https://sunyz.net/" target="_blank" end-icon="open_in_new--outlined"
                     ><mdui-avatar
                         slot="icon"
                         src="https://cdn.sunyz.net/avatar@128x128.webp"
@@ -122,7 +122,7 @@
                     href="https://blog.nekoq.top/links"
                     target="_blank"
                     description="will open new website"
-                    end-icon="open_in_new"
+                    end-icon="open_in_new--outlined"
                 >
                     Motto motto...
                     <!-- https://www.youtube.com/watch?v=7uiKC1P7__U -->

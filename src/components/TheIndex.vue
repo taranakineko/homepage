@@ -59,7 +59,7 @@
         <mdui-fab
             class="openSnackbar"
             ref="OpenTheSnackbar"
-            icon="auto_awesome"
+            icon="auto_awesome--outlined"
             data-umami-event="TheIndex Snackbar"
         ></mdui-fab>
     </div>

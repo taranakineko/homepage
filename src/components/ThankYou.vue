@@ -1,6 +1,6 @@
 <template>
     <mdui-top-app-bar variant="small" scroll-behavior="shrink elevate">
-        <mdui-button-icon icon="menu"></mdui-button-icon>
+        <mdui-button-icon icon="menu--outlined"></mdui-button-icon>
         <mdui-top-app-bar-title>Thank You</mdui-top-app-bar-title>
     </mdui-top-app-bar>
     <div class="miao-thanks mdui-prose">
@@ -18,7 +18,7 @@
                             href="https://umami.nekoq.eu.org/share/4lQOLAOmfO6CW9z6/主页"
                             target="_blank"
                             description="有什么呢？"
-                            end-icon="open_in_new"
+                            end-icon="open_in_new--outlined"
                         >
                             主页
                         </mdui-list-item>
@@ -26,7 +26,7 @@
                             href="https://umami.nekoq.eu.org/share/gjaybUZ87J6pDCaJ/Blog"
                             target="_blank"
                             description="这里不能看！"
-                            end-icon="open_in_new"
+                            end-icon="open_in_new--outlined"
                         >
                             博客
                         </mdui-list-item>
@@ -76,21 +76,21 @@
                             href="rsms.me/inter"
                             target="_blank"
                             description="英文字体"
-                            end-icon="open_in_new"
+                            end-icon="open_in_new--outlined"
                         ></mdui-list-item>
                         <mdui-list-item
                             headline="mdui"
                             href="https://github.com/zdhxiong/mdui"
                             target="_blank"
                             description="前端组件库"
-                            end-icon="open_in_new"
+                            end-icon="open_in_new--outlined"
                         ></mdui-list-item>
                         <mdui-list-item
                             headline="Vue3"
                             href="https://cn.vuejs.org/"
                             target="_blank"
                             description="网站框架"
-                            end-icon="open_in_new"
+                            end-icon="open_in_new--outlined"
                         ></mdui-list-item>
                         <mdui-list-item
                             headline="And other more..."
@@ -105,7 +105,7 @@
         <mdui-fab
             class="openSnackbar"
             ref="OpenTheSnackbar"
-            icon="auto_awesome"
+            icon="auto_awesome--outlined"
             data-umami-event="ThankYou Snackbar"
         ></mdui-fab>
     </div>

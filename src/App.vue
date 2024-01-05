@@ -78,7 +78,7 @@ function OpenThanks() {
             >
             <mdui-button-icon
                 ref="OpenDialog"
-                icon="info"
+                icon="info--outlined"
                 slot="bottom"
                 data-umami-event="Footer Dialog"
             ></mdui-button-icon>
