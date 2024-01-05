@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRouter, RouterView } from 'vue-router'
-import { ref, onMounted} from 'vue'
+import { ref, onMounted } from 'vue'
 const NaviRail = ref<any>(null)
 const NaviBar = ref<any>(null)
 const TheDialog = ref<any>(null)

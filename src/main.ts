@@ -22,11 +22,11 @@ const messages = {
 }
 // 初始化 i18n
 export const i18n = createI18n({
-  legacy: false,
-  locale: 'zh-CN',
-  fallbackLocale: 'zh-CN',
-  silentFallbackWarn: true,
-  messages
+    legacy: false,
+    locale: 'zh-CN',
+    fallbackLocale: 'zh-CN',
+    silentFallbackWarn: true,
+    messages
 })
 
 const app = createApp(App)

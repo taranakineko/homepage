@@ -55,7 +55,10 @@
                 </mdui-list>
                 <mdui-collapse>
                     <mdui-collapse-item>
-                        <mdui-list-item slot="header" icon="view_list--outlined" description="有什么呢"
+                        <mdui-list-item
+                            slot="header"
+                            icon="view_list--outlined"
+                            description="有什么呢"
                             >Others</mdui-list-item
                         >
                         <div style="margin-left: 2.5rem">
@@ -107,11 +110,17 @@
                     ></mdui-avatar>
                     Pivot of Winslow
                 </mdui-list-item>
-                <mdui-list-item href="https://shef.cc/" target="_blank" end-icon="open_in_new--outlined"
+                <mdui-list-item
+                    href="https://shef.cc/"
+                    target="_blank"
+                    end-icon="open_in_new--outlined"
                     ><mdui-avatar slot="icon" src="https://shef.cc/logo.png"></mdui-avatar>
                     SheepChef
                 </mdui-list-item>
-                <mdui-list-item href="https://sunyz.net/" target="_blank" end-icon="open_in_new--outlined"
+                <mdui-list-item
+                    href="https://sunyz.net/"
+                    target="_blank"
+                    end-icon="open_in_new--outlined"
                     ><mdui-avatar
                         slot="icon"
                         src="https://cdn.sunyz.net/avatar@128x128.webp"
