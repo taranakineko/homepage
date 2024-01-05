@@ -5,7 +5,7 @@ import App from './App.vue'
 import router from './router'
 
 import zh from './assets/lan/zh-CN.json'
-import zh_ms from './assets/lan/zh-CN.json'
+import zh_ms from './assets/lan/zh-MS.json'
 
 import './assets/main.css'
 import 'mdui/mdui.css'
@@ -20,6 +20,7 @@ const messages = {
     'zh-CN': zh,
     'zh-MS': zh_ms
 }
+
 // 初始化 i18n
 export const i18n = createI18n({
     legacy: false,

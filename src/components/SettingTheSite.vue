@@ -15,20 +15,26 @@
 </template>
 
 <script setup lang="ts">
+import app from '@/main'
 import { ref, onMounted } from 'vue'
 const lang = ref<any>(null)
 console.log(localStorage.getItem('lanauage'))
 const lanauage = localStorage.getItem('lanauage')
 onMounted(() => {
+    // 显示设置
     if (localStorage.getItem('lanauage')) {
-        // 判断是否有 lanauage，感觉有点多此一举
         lang.value.value = lanauage
+        app.config.globalProperties.$i18n.locale = lang.value.value
+        app.config.globalProperties.$i18n.fallbackLocale = lang.value.value
     } else {
         lang.value.value = 'zh-CN'
     }
 
+    // 当有更新时
     lang.value.addEventListener('click', () => {
         localStorage.setItem('lanauage', lang.value.value)
+        app.config.globalProperties.$i18n.locale = lang.value.value
+        app.config.globalProperties.$i18n.fallbackLocale = lang.value.value
     })
 })
 </script>
