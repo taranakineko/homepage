@@ -10,7 +10,7 @@
                 class="hover"
                 style="margin: 20px 5px 0px 5%; width: 95%; padding: 20px"
             >
-                <h2>TaranakiNeko 是谁？🤔</h2>
+                <h2>{{ $t('know_who_h2') }}</h2>
                 <div class="me-body">
                     <p>TaranakiNeko 就是 TaranakiNeko 啊，没问题啊！非常的合理不是嘛</p>
                     <p>
@@ -28,7 +28,7 @@
                 class="hover"
                 style="margin: 20px 5px 0px 5%; width: 95%; padding: 20px"
             >
-                <h2>名字从何而来？😮</h2>
+                <h2>{{ $t('know_name_h2') }}</h2>
                 <div class="me-body">
                     <p>
                         TaranakiNeko 这个名字其实是别人<!-- 谢谢 Moe23333 起的名 -->帮忙起的（当时只有
@@ -48,7 +48,7 @@
                 class="hover"
                 style="margin: 20px 5px 0px 5%; width: 95%; padding: 20px"
             >
-                <h2>那么 nekoq.top 呢？🤨</h2>
+                <h2>{{ $t('know_domain_h2') }}</h2>
                 <div class="me-body">
                     <p>之前注册域名的时候用的是 nekoq</p>
                     <p>neko 很好理解，就是猫猫嘛</p>
@@ -61,7 +61,7 @@
                 class="hover"
                 style="margin: 20px 5px 0px 5%; width: 95%; padding: 20px"
             >
-                <h2>标题还没想好总之是一些 tags 🏷</h2>
+                <h2>{{ $t('know_tag_h2') }}</h2>
                 <div class="me-body">
                     <mdui-tabs value="tab-1" placement="top" full-width>
                         <mdui-tab value="tab-1">设备</mdui-tab>
@@ -266,7 +266,7 @@
                 class="hover"
                 style="margin: 20px 5px 0px 5%; width: 95%; padding: 20px"
             >
-                <h2>那其他的呢？👀</h2>
+                <h2>{{ $t('know_other_h2') }}</h2>
                 <div class="me-body">
                     <p>千畔会随机使用拼音或者注音，虽说大部分时候都是使用拼音吧</p>
                     <p>
@@ -283,7 +283,12 @@
 </template>
 
 <script setup lang="ts">
+import app from '@/main'
 import { alert } from 'mdui/functions/alert.js'
+// 应用翻译
+if (localStorage.getItem('lanauage')) {
+    app.config.globalProperties.$i18n.locale = localStorage.getItem('lanauage') as string
+}
 // 召唤 Dialog
 function SeeSeeYourB50() {
     // 看看你的

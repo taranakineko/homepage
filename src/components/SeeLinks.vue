@@ -6,7 +6,7 @@
     </mdui-top-app-bar>
     <div class="miao-links mdui-prose">
         <mdui-card variant="elevated" class="link-left">
-            <h2 style="margin-bottom: 10px">这是关于 千畔 的链接！🔗</h2>
+            <h2 style="margin-bottom: 10px">{{ $t('links_mylinks_h2') }}</h2>
             <div class="me-body">
                 <mdui-list>
                     <mdui-list-item href="https://nekoq.eu.org" end-icon="open_in_new--outlined">
@@ -58,14 +58,14 @@
                         <mdui-list-item
                             slot="header"
                             icon="view_list--outlined"
-                            description="有什么呢"
+                            :description="$t('thanks_analytics_homepage_desc')"
                             >Others</mdui-list-item
                         >
                         <div style="margin-left: 2.5rem">
                             <mdui-list-item
                                 href="https://bookmarks.nekoq.top/"
                                 target="_blank"
-                                description="看看千畔都看了什么"
+                                :description="$t('links_mylinks_other_bookmark')"
                                 icon="bookmark--outlined"
                                 end-icon="open_in_new--outlined"
                             >
@@ -74,7 +74,7 @@
                             <mdui-list-item
                                 href="https://github.com/users/taranakineko/projects/1/views/1"
                                 target="_blank"
-                                description="填坑计划！"
+                                :description="$t('links_mylinks_other_project')"
                                 icon="checklist--outlined"
                                 end-icon="open_in_new--outlined"
                             >
@@ -86,7 +86,7 @@
             </div>
         </mdui-card>
         <mdui-card variant="elevated" class="link-right">
-            <h2 style="margin-bottom: 10px">这是友链！🫂</h2>
+            <h2 style="margin-bottom: 10px">{{ $t('links_friendslinks_h2') }}</h2>
             <mdui-list>
                 <mdui-list-item
                     href="https://moe23333.vercel.app/"
@@ -140,6 +140,13 @@
         </mdui-card>
     </div>
 </template>
+
+<script setup lang="ts">
+import app from '@/main'
+if (localStorage.getItem('lanauage')) {
+    app.config.globalProperties.$i18n.locale = localStorage.getItem('lanauage') as string
+}
+</script>
 
 <style lang="scss">
 .link-left {
