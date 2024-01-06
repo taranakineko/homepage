@@ -49,9 +49,11 @@
     "thanks_othing_h2": "其他内容？",
     "setting": "Setting 🚧",
     "setting_lanage": "语言设置",
-    "setting_lanage_chinese": "中文",
+    "setting_lanage_chinese": "中文（默认设置）",
     "setting_lanage_zhms": "基于 zh_qp 的使用 ChatGPT 辅助重写的 zh-MS",
-    "setting_lanage_zhgl": "Google 生草翻译（16 次）",
+    "setting_lanage_zhgl": "Google 生草翻译",
+    "setting_lanage_warning": "一些警告",
+    "setting_lanage_warning_p": "目前翻译还存在一些问题，以后会慢慢修改的，目前还请以默认设置（中文）为准",
     "setting_delete": "清除所有设置",
     "setting_delete_button": "清除"
 }

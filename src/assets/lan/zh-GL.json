@@ -52,6 +52,8 @@
     "setting_lanage_chinese": "中国人",
     "setting_lanage_zhms": "zh-qp 篮子上的 zh-ms ",
     "setting_lanage_zhgl": "新郎Erba的翻译",
+    "setting_lanage_warning": "领导",
+    "setting_lanage_warning_p": "现在，当前的措施现在可以在下一步中提供。",
     "setting_delete": "删除所有设置",
     "setting_delete_button": "拿"
 }

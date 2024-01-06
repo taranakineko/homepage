@@ -52,6 +52,8 @@
     "setting_lanage_chinese": "中文",
     "setting_lanage_zhms": "借助 ChatGPT 在 zh-MS 上，结合 zh_qp 进行的重写",
     "setting_lanage_zhgl": "Google 生草翻译机",
+    "setting_lanage_warning": "别说我们没有警告过你......",
+    "setting_lanage_warning_p": "在我们完成之前，坐和放宽，我们会做得更好的",
     "setting_delete": "清理所有建立",
     "setting_delete_button": "清理"
 }

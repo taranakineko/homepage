@@ -8,13 +8,23 @@
             <p>{{ $t('setting_lanage') }}</p>
             <div class="setting-mdui">
                 <mdui-select variant="filled" value="zh-CN" ref="lang">
-                    <mdui-menu-item value="zh-CN">{{
+                    <mdui-menu-item end-aligned value="zh-CN">{{
                         $t('setting_lanage_chinese')
                     }}</mdui-menu-item>
                     <mdui-menu-item value="zh-MS">{{ $t('setting_lanage_zhms') }}</mdui-menu-item>
                     <mdui-menu-item value="zh-GL">{{ $t('setting_lanage_zhgl') }}</mdui-menu-item>
                 </mdui-select>
             </div>
+            <mdui-list>
+                <mdui-collapse>
+                    <mdui-collapse-item>
+                        <mdui-list-item slot="header" icon="warning--outlined">{{ $t('setting_lanage_warning') }}</mdui-list-item>
+                        <div style="margin-left: 2.5rem">
+                            <mdui-list-item>{{ $t('setting_lanage_warning_p') }}</mdui-list-item>
+                        </div>
+                    </mdui-collapse-item>
+                </mdui-collapse>
+            </mdui-list>
         </div>
         <div class="setting">
             <p>{{ $t('setting_delete') }}</p>
@@ -40,7 +50,7 @@ onMounted(() => {
         // lang.value.value = lanauage
         lang.value.value = lanauage
         app.config.globalProperties.$i18n.locale = lang.value.value
-        app.config.globalProperties.$i18n.fallbackLocale = lang.value.value
+        // app.config.globalProperties.$i18n.fallbackLocale = lang.value.value
     } else {
         lang.value.value = 'zh-CN'
     }
@@ -53,7 +63,7 @@ onMounted(() => {
         // console.log(langTest.value.value + '被选中了')
         localStorage.setItem('lanauage', lang.value.value)
         app.config.globalProperties.$i18n.locale = lang.value.value
-        app.config.globalProperties.$i18n.fallbackLocale = lang.value.value
+        // app.config.globalProperties.$i18n.fallbackLocale = lang.value.value
     })
 })
 function Reset() {
