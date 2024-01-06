@@ -14,11 +14,11 @@
                 <div class="me-body">
                     <p>{{ $t('know_who_p1') }}</p>
                     <p>
-                        {{ $t('know_who_p2') }}<del
-                            >{{ $t('know_who_p2_d') }}</del
-                        >
+                        {{ $t('know_who_p2') }}<del>{{ $t('know_who_p2_d') }}</del>
                     </p>
-                    <p>{{ $t('know_who_p3') }}<del>{{ $t('know_who_p3_d') }}</del></p>
+                    <p>
+                        {{ $t('know_who_p3') }}<del>{{ $t('know_who_p3_d') }}</del>
+                    </p>
                     <p>{{ $t('know_who_p4') }}</p>
                     <p>{{ $t('know_who_p5') }}</p>
                 </div>
@@ -29,7 +29,8 @@
                 style="margin: 20px 5px 0px 5%; width: 95%; padding: 20px"
             >
                 <h2>{{ $t('know_name_h2') }}</h2>
-                <div class="me-body"><!-- 谢谢 Moe23333 起的名 -->
+                <div class="me-body">
+                    <!-- 谢谢 Moe23333 起的名 -->
                     <p>{{ $t('know_name_p1') }}</p>
                     <p>{{ $t('know_name_p2') }}</p>
                     <p>{{ $t('know_name_p3') }}</p>
@@ -266,7 +267,9 @@
                     <p>
                         <del>{{ $t('know_other_p2') }}</del>
                     </p>
-                    <p><del>{{ $t('know_other_p3') }}</del></p>
+                    <p>
+                        <del>{{ $t('know_other_p3') }}</del>
+                    </p>
                     <p>{{ $t('know_other_p4') }}</p>
                     <p>{{ $t('know_other_p5') }}</p>
                     <p>{{ $t('know_other_p6') }}</p>
