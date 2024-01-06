@@ -7,10 +7,11 @@
         <div class="setting">
             <p>{{ $t('setting_lanage') }}</p>
             <div class="setting-mdui">
-                <mdui-radio-group ref="lang" id="lang">
-                    <mdui-radio value="zh-CN">{{ $t('setting_lanage_chinese') }}</mdui-radio>
-                    <mdui-radio value="zh-MS">{{ $t('setting_lanage_zhms') }}</mdui-radio>
-                </mdui-radio-group>
+                <mdui-select variant="filled" value="zh-CN" ref="lang">
+                    <mdui-menu-item value="zh-CN">{{ $t('setting_lanage_chinese') }}</mdui-menu-item>
+                    <mdui-menu-item value="zh-MS">{{ $t('setting_lanage_zhms') }}</mdui-menu-item>
+                    <mdui-menu-item value="zh-GL">zh-Google</mdui-menu-item>
+                </mdui-select>
             </div>
         </div>
         <div class="setting">
@@ -32,6 +33,7 @@ const lanauage = localStorage.getItem('lanauage')
 onMounted(() => {
     // 显示设置
     if (localStorage.getItem('lanauage')) {
+        // lang.value.value = lanauage
         lang.value.value = lanauage
         app.config.globalProperties.$i18n.locale = lang.value.value
         app.config.globalProperties.$i18n.fallbackLocale = lang.value.value
@@ -39,8 +41,12 @@ onMounted(() => {
         lang.value.value = 'zh-CN'
     }
 
-    // 当有更新时
+    // 表单更新时
     lang.value.addEventListener('click', () => {
+        if (lang.value.value === '') {
+            lang.value.value = 'zh-CN'
+        }
+        // console.log(langTest.value.value + '被选中了')
         localStorage.setItem('lanauage', lang.value.value)
         app.config.globalProperties.$i18n.locale = lang.value.value
         app.config.globalProperties.$i18n.fallbackLocale = lang.value.value
