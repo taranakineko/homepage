@@ -6,6 +6,7 @@ import router from './router'
 
 import zh from './assets/lan/zh-CN.json'
 import zh_ms from './assets/lan/zh-MS.json'
+import zh_gl from './assets/lan/zh-GL.json'
 
 import './assets/main.css'
 import 'mdui/mdui.css'
@@ -18,7 +19,8 @@ setColorScheme('#AEC9D0')
 // 载入 l10n
 const messages = {
     'zh-CN': zh,
-    'zh-MS': zh_ms
+    'zh-MS': zh_ms,
+    'zh-GL': zh_gl
 }
 
 // 初始化 i18n

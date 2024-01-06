@@ -8,16 +8,20 @@
             <p>{{ $t('setting_lanage') }}</p>
             <div class="setting-mdui">
                 <mdui-select variant="filled" value="zh-CN" ref="lang">
-                    <mdui-menu-item value="zh-CN">{{ $t('setting_lanage_chinese') }}</mdui-menu-item>
+                    <mdui-menu-item value="zh-CN">{{
+                        $t('setting_lanage_chinese')
+                    }}</mdui-menu-item>
                     <mdui-menu-item value="zh-MS">{{ $t('setting_lanage_zhms') }}</mdui-menu-item>
-                    <mdui-menu-item value="zh-GL">zh-Google</mdui-menu-item>
+                    <mdui-menu-item value="zh-GL">{{ $t('setting_lanage_zhgl') }}</mdui-menu-item>
                 </mdui-select>
             </div>
         </div>
         <div class="setting">
             <p>{{ $t('setting_delete') }}</p>
             <div class="setting-mdui">
-                <mdui-button variant="text" icon="delete--outlined" v-on:click="Reset()">{{ $t('setting_delete_button') }}</mdui-button>
+                <mdui-button variant="text" icon="delete--outlined" v-on:click="Reset()">{{
+                    $t('setting_delete_button')
+                }}</mdui-button>
             </div>
         </div>
     </div>
@@ -26,7 +30,7 @@
 <script setup lang="ts">
 import app from '@/main'
 import { ref, onMounted } from 'vue'
-import { snackbar } from 'mdui/functions/snackbar.js';
+import { snackbar } from 'mdui/functions/snackbar.js'
 const lang = ref<any>(null)
 console.log(localStorage.getItem('lanauage'))
 const lanauage = localStorage.getItem('lanauage')
@@ -55,8 +59,8 @@ onMounted(() => {
 function Reset() {
     localStorage.clear()
     snackbar({
-        message: "已经清除啦~",
-        action: "Reload",
+        message: '已经清除啦~',
+        action: 'Reload',
         onActionClick: () => location.reload(),
         autoCloseDelay: 3000,
         closeOnOutsideClick: true

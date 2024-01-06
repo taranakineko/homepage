@@ -12,15 +12,15 @@
             >
                 <h2>{{ $t('know_who_h2') }}</h2>
                 <div class="me-body">
-                    <p>TaranakiNeko 就是 TaranakiNeko 啊，没问题啊！非常的合理不是嘛</p>
+                    <p>{{ $t('know_who_p1') }}</p>
                     <p>
-                        虽说名字里带有 Neko ，最初的人设也只是猫猫，单纯的猫猫<del
-                            >，不是猫娘！</del
+                        {{ $t('know_who_p2') }}<del
+                            >{{ $t('know_who_p2_d') }}</del
                         >
                     </p>
-                    <p>但无论是习惯什么的似乎都不像貓貓<del>，還不可愛（思索）</del></p>
-                    <p>另外，你可以称呼 ta 为 「千畔」</p>
-                    <p>有时候会自认为是「互联网中的观察人」，从某种角度上似乎也的确如此</p>
+                    <p>{{ $t('know_who_p3') }}<del>{{ $t('know_who_p3_d') }}</del></p>
+                    <p>{{ $t('know_who_p4') }}</p>
+                    <p>{{ $t('know_who_p5') }}</p>
                 </div>
             </mdui-card>
             <mdui-card
@@ -29,16 +29,10 @@
                 style="margin: 20px 5px 0px 5%; width: 95%; padding: 20px"
             >
                 <h2>{{ $t('know_name_h2') }}</h2>
-                <div class="me-body">
-                    <p>
-                        TaranakiNeko 这个名字其实是别人<!-- 谢谢 Moe23333 起的名 -->帮忙起的（当时只有
-                        Taranaki）
-                    </p>
-                    <p>随后 Tara 自己擅自主张的加上了 Neko，于是就有了现在这个名字</p>
-                    <p>
-                        至于「千畔」这个名字嘛...
-                        出自于「沉舟侧畔千帆过，病树前头万木春」这首诗词，很熟悉不是吗
-                    </p>
+                <div class="me-body"><!-- 谢谢 Moe23333 起的名 -->
+                    <p>{{ $t('know_name_p1') }}</p>
+                    <p>{{ $t('know_name_p2') }}</p>
+                    <p>{{ $t('know_name_p3') }}</p>
                 </div>
             </mdui-card>
         </div>
@@ -50,10 +44,10 @@
             >
                 <h2>{{ $t('know_domain_h2') }}</h2>
                 <div class="me-body">
-                    <p>之前注册域名的时候用的是 nekoq</p>
-                    <p>neko 很好理解，就是猫猫嘛</p>
-                    <p>而 q 的话就是「千」字的首字母</p>
-                    <p>那么使用 top 域名就很好理解了，q to p ，千到畔，但是是倒着来的（</p>
+                    <p>{{ $t('know_domain_p1') }}</p>
+                    <p>{{ $t('know_domain_p2') }}</p>
+                    <p>{{ $t('know_domain_p3') }}</p>
+                    <p>{{ $t('know_domain_p4') }}</p>
                 </div>
             </mdui-card>
             <mdui-card
@@ -64,9 +58,9 @@
                 <h2>{{ $t('know_tag_h2') }}</h2>
                 <div class="me-body">
                     <mdui-tabs value="tab-1" placement="top" full-width>
-                        <mdui-tab value="tab-1">设备</mdui-tab>
-                        <mdui-tab value="tab-2">使用</mdui-tab>
-                        <mdui-tab value="tab-3">其他</mdui-tab>
+                        <mdui-tab value="tab-1">{{ $t('know_tag_tab1') }}</mdui-tab>
+                        <mdui-tab value="tab-2">{{ $t('know_tag_tab2') }}</mdui-tab>
+                        <mdui-tab value="tab-3">{{ $t('know_tag_tab3') }}</mdui-tab>
 
                         <mdui-tab-panel class="chip" slot="panel" value="tab-1">
                             <mdui-tooltip content="LG V50 韩版">
@@ -268,14 +262,14 @@
             >
                 <h2>{{ $t('know_other_h2') }}</h2>
                 <div class="me-body">
-                    <p>千畔会随机使用拼音或者注音，虽说大部分时候都是使用拼音吧</p>
+                    <p>{{ $t('know_other_p1') }}</p>
                     <p>
-                        <del>umm... 剩下的懒得写了</del>
+                        <del>{{ $t('know_other_p2') }}</del>
                     </p>
-                    <p><del>至于博客那边...会写的会写的不要催啦 😭（）</del></p>
-                    <p>或者切换选项卡至 “链接” ，里面有千畔的 Github 主页，那里也有一些其他信息</p>
-                    <p>再或者...可以通过交流得到一些信息不是？</p>
-                    <p>或许以后还会更新一些内容吧…就看千畔有没有动力去做了</p>
+                    <p><del>{{ $t('know_other_p3') }}</del></p>
+                    <p>{{ $t('know_other_p4') }}</p>
+                    <p>{{ $t('know_other_p5') }}</p>
+                    <p>{{ $t('know_other_p6') }}</p>
                 </div>
             </mdui-card>
         </div>

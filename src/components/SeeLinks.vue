@@ -114,7 +114,10 @@
                     href="https://shef.cc/"
                     target="_blank"
                     end-icon="open_in_new--outlined"
-                    ><mdui-avatar slot="icon" src="https://shef.cc/wp-content/uploads/SheepChef-%E5%90%89%E7%A5%A5%E7%89%A9-%E5%A4%B4%E5%83%8F2-e1683031048446.png.webp"></mdui-avatar>
+                    ><mdui-avatar
+                        slot="icon"
+                        src="https://shef.cc/wp-content/uploads/SheepChef-%E5%90%89%E7%A5%A5%E7%89%A9-%E5%A4%B4%E5%83%8F2-e1683031048446.png.webp"
+                    ></mdui-avatar>
                     SheepChef
                 </mdui-list-item>
                 <mdui-list-item
