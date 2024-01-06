@@ -27,6 +27,16 @@
             </mdui-list>
         </div>
         <div class="setting">
+            <p>深/浅色模式</p>
+            <div class="setting-mdui">
+                <mdui-segmented-button-group selects="single" ref="mode">
+                    <mdui-segmented-button icon="light_mode--outlined" value="light">浅色</mdui-segmented-button>
+                    <mdui-segmented-button icon="autorenew--outlined" value="auto">跟随系统</mdui-segmented-button>
+                    <mdui-segmented-button icon="mode_night--outlined" value="dark">深色</mdui-segmented-button>
+                </mdui-segmented-button-group>
+            </div>
+        </div>
+        <div class="setting">
             <p>{{ $t('setting_delete') }}</p>
             <div class="setting-mdui">
                 <mdui-button variant="text" icon="delete--outlined" v-on:click="Reset()">{{
@@ -40,12 +50,16 @@
 <script setup lang="ts">
 import app from '@/main'
 import { ref, onMounted } from 'vue'
+import { setTheme } from 'mdui/functions/setTheme.js';
 import { snackbar } from 'mdui/functions/snackbar.js'
 const lang = ref<any>(null)
-console.log(localStorage.getItem('lanauage'))
+const mode = ref<any>(null)
+// console.log(localStorage.getItem('lanauage'))
+// console.log(localStorage.getItem('mode'))
 const lanauage = localStorage.getItem('lanauage')
+const WebMode = localStorage.getItem('mode')
 onMounted(() => {
-    // 显示设置
+    // 显示相关设置
     if (localStorage.getItem('lanauage')) {
         // lang.value.value = lanauage
         lang.value.value = lanauage
@@ -54,8 +68,16 @@ onMounted(() => {
     } else {
         lang.value.value = 'zh-CN'
     }
+    if (localStorage.getItem('mode')) {
+        // lang.value.value = lanauage
+        mode.value.value = WebMode
+        setTheme(mode.value.value)
+    } else {
+        mode.value.value = 'auto'
+        setTheme('auto')
+    }
 
-    // 表单更新时
+    // 更新设置
     lang.value.addEventListener('click', () => {
         if (lang.value.value === '') {
             lang.value.value = 'zh-CN'
@@ -64,6 +86,13 @@ onMounted(() => {
         localStorage.setItem('lanauage', lang.value.value)
         app.config.globalProperties.$i18n.locale = lang.value.value
         // app.config.globalProperties.$i18n.fallbackLocale = lang.value.value
+    })
+    mode.value.addEventListener('click', () => {
+        if (mode.value.value === '') {
+            mode.value.value = 'auto'
+        }
+        localStorage.setItem('mode', mode.value.value)
+        setTheme(mode.value.value)
     })
 })
 function Reset() {

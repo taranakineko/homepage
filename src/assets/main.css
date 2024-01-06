@@ -115,6 +115,36 @@ div.mdui-prose h2 {
     line-height: 24pt;
 }
 
+.mdui-theme-light {
+    h1,
+    h2,
+    p,
+    span {
+        color: #252525;
+    }
+    del {
+        color: #b0b0b0;
+    }
+    mdui-card {
+        background-color: rgb(var(--mdui-color-surface-container));
+    }
+}
+
+.mdui-theme-dark {
+    h1,
+    h2,
+    p,
+    span {
+        color: #f8f9fa;
+    }
+    del {
+        color: #5c5f5a;
+    }
+    mdui-card {
+        background-color: rgb(var(--mdui-color-surface-container));
+    }
+}
+
 @media screen and (prefers-color-scheme: dark) {
     h1,
     h2,
