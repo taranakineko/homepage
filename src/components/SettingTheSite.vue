@@ -6,16 +6,18 @@
     <div class="miao">
         <div class="setting">
             <p>{{ $t('setting_lanage') }}</p>
-            <mdui-radio-group ref="lang" id="lang">
-                <mdui-radio value="zh-CN">{{ $t('setting_lanage_chinese') }}</mdui-radio>
-                <mdui-radio value="zh-MS">{{ $t('setting_lanage_zhms') }}</mdui-radio>
-            </mdui-radio-group>
-            <p>
-                <b
-                    >请注意：重置为默认设置将会在后续更新中提供<br />目前，如需重置为默认设置，还请手动清除本站数据后刷新即可生效</b
-                ><br />
-                有一说一哈，感觉千畔写的还不够微软式中文......
-            </p>
+            <div class="setting-mdui">
+                <mdui-radio-group ref="lang" id="lang">
+                    <mdui-radio value="zh-CN">{{ $t('setting_lanage_chinese') }}</mdui-radio>
+                    <mdui-radio value="zh-MS">{{ $t('setting_lanage_zhms') }}</mdui-radio>
+                </mdui-radio-group>
+            </div>
+        </div>
+        <div class="setting">
+            <p>{{ $t('setting_delete') }}</p>
+            <div class="setting-mdui">
+                <mdui-button variant="text" icon="delete--outlined" v-on:click="Reset()">{{ $t('setting_delete_button') }}</mdui-button>
+            </div>
         </div>
     </div>
 </template>
@@ -23,6 +25,7 @@
 <script setup lang="ts">
 import app from '@/main'
 import { ref, onMounted } from 'vue'
+import { snackbar } from 'mdui/functions/snackbar.js';
 const lang = ref<any>(null)
 console.log(localStorage.getItem('lanauage'))
 const lanauage = localStorage.getItem('lanauage')
@@ -43,9 +46,22 @@ onMounted(() => {
         app.config.globalProperties.$i18n.fallbackLocale = lang.value.value
     })
 })
+function Reset() {
+    localStorage.clear()
+    snackbar({
+        message: "已经清除啦~",
+        action: "Reload",
+        onActionClick: () => location.reload(),
+        autoCloseDelay: 3000,
+        closeOnOutsideClick: true
+    })
+}
 </script>
 
 <style lang="sass">
 .miao div.setting
     margin: 30px 5px 0px 5%
+
+.setting-mdui
+    text-align: right
 </style>

@@ -27,5 +27,7 @@
     "setting": "设置 🚧",
     "setting_lanage": "语言建立",
     "setting_lanage_chinese": "中文",
-    "setting_lanage_zhms": "借助 ChatGPT 在 zh-MS 上，结合 zh_qp 进行的重写"
+    "setting_lanage_zhms": "借助 ChatGPT 在 zh-MS 上，结合 zh_qp 进行的重写",
+    "setting_delete": "清理所有建立",
+    "setting_delete_button": "清理"
 }
