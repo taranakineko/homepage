@@ -7,7 +7,7 @@
         <div class="setting">
             <p>{{ $t('setting_lanage') }}</p>
             <div class="setting-mdui">
-                <mdui-select variant="filled" value="zh-CN" ref="lang">
+                <mdui-select end-aligned variant="filled" value="zh-CN" ref="lang">
                     <mdui-menu-item end-aligned value="zh-CN">{{
                         $t('setting_lanage_chinese')
                     }}</mdui-menu-item>
