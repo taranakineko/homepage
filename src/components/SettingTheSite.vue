@@ -99,7 +99,9 @@ const color = ref<any>(null)
 // console.log(localStorage.getItem('lanauage'))
 // console.log(localStorage.getItem('mode'))
 const lanauage = localStorage.getItem('lanauage')
-const WebMode = localStorage.getItem('mode') 
+const WebMode = localStorage.getItem('mode')
+const WebColor = localStorage.getItem('color')
+const HColor = '#AEC9D0'
 onMounted(() => {
     // 显示相关设置
     if (localStorage.getItem('lanauage')) {
@@ -117,6 +119,15 @@ onMounted(() => {
     } else {
         mode.value.value = 'auto'
         setTheme('auto')
+    }
+    if (localStorage.getItem('color')) {
+        // lang.value.value = lanauage
+        color.value.value = WebColor
+        $('.color-card').css('background-color', color.value.value)
+        setColorScheme(color.value.value);
+    } else {
+        color.value.value = HColor
+        setColorScheme(HColor);
     }
 
     // 更新设置
@@ -138,6 +149,7 @@ onMounted(() => {
     })
     color.value.addEventListener('click', () => {
         console.log(color.value.value)
+        localStorage.setItem('color', color.value.value)
         $('.color-card').css('background-color', color.value.value)
         setColorScheme(color.value.value);
     })
