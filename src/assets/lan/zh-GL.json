@@ -64,5 +64,6 @@
   "setting_mode": "饮食中的黑暗或明亮",
   "setting_mode_auto": "追随系统",
   "setting_mode_dark": "黑色的",
-  "setting_mode_light": "光"
+  "setting_mode_light": "光",
+  "setting_delete_zako": "还原数字"
 }

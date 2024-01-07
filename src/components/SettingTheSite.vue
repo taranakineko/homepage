@@ -1,6 +1,6 @@
 <template>
     <mdui-top-app-bar variant="small" scroll-behavior="shrink elevate">
-        <mdui-button-icon icon="menu--outlined"></mdui-button-icon>
+        <mdui-button-icon icon="menu--outlined" ref="zako"></mdui-button-icon>
         <mdui-top-app-bar-title>{{ $t('setting') }}</mdui-top-app-bar-title>
     </mdui-top-app-bar>
     <div class="miao">
@@ -78,6 +78,9 @@
         <div class="setting">
             <p>{{ $t('setting_delete') }}</p>
             <div class="setting-mdui">
+                <mdui-button variant="text" icon="delete--outlined" v-on:click="clearLocalStorage()">{{
+                    $t('setting_delete_zako')
+                }}</mdui-button>
                 <mdui-button variant="text" icon="delete--outlined" v-on:click="Reset()">{{
                     $t('setting_delete_button')
                 }}</mdui-button>
@@ -93,9 +96,11 @@ import { setTheme } from 'mdui/functions/setTheme.js'
 import { snackbar } from 'mdui/functions/snackbar.js'
 import { setColorScheme } from 'mdui/functions/setColorScheme.js';
 import { $ } from 'mdui/jq.js';
+import useZakoCounter from '../function/zako';
 const lang = ref<any>(null)
 const mode = ref<any>(null)
 const color = ref<any>(null)
+const { zako, zakozako, clearLocalStorage } = useZakoCounter();
 // console.log(localStorage.getItem('lanauage'))
 // console.log(localStorage.getItem('mode'))
 const lanauage = localStorage.getItem('lanauage')

@@ -64,5 +64,6 @@
   "setting_mode": "黑暗/光模式",
   "setting_mode_auto": "跟着系统走",
   "setting_mode_dark": "黑暗",
-  "setting_mode_light": "光"
+  "setting_mode_light": "光",
+  "setting_delete_zako": "新的计算"
 }

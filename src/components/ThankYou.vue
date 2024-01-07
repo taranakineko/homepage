@@ -1,6 +1,6 @@
 <template>
     <mdui-top-app-bar variant="small" scroll-behavior="shrink elevate">
-        <mdui-button-icon icon="menu--outlined"></mdui-button-icon>
+        <mdui-button-icon icon="menu--outlined" ref="zako"></mdui-button-icon>
         <mdui-top-app-bar-title>{{ $t('thanks') }}</mdui-top-app-bar-title>
     </mdui-top-app-bar>
     <div class="miao-thanks mdui-prose">
@@ -121,8 +121,10 @@
 import app from '@/main'
 import { ref, onMounted } from 'vue'
 import TXT from '../config/txt.json'
+import useZakoCounter from '../function/zako';
 const OpenTheSnackbar = ref<any>(null)
 const TheSnackbar = ref<any>(null)
+const { zako, zakozako } = useZakoCounter();
 if (localStorage.getItem('lanauage')) {
     app.config.globalProperties.$i18n.locale = localStorage.getItem('lanauage') as string
 }

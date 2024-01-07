@@ -1,6 +1,6 @@
 <template>
     <mdui-top-app-bar variant="small" scroll-behavior="shrink elevate">
-        <mdui-button-icon icon="menu--outlined"></mdui-button-icon>
+        <mdui-button-icon icon="menu--outlined" ref="zako"></mdui-button-icon>
         <mdui-top-app-bar-title>{{ $t('know') }}</mdui-top-app-bar-title>
     </mdui-top-app-bar>
     <div class="miao-thanks mdui-prose">
@@ -281,7 +281,9 @@
 
 <script setup lang="ts">
 import app from '@/main'
+import useZakoCounter from '../function/zako';
 import { alert } from 'mdui/functions/alert.js'
+const { zako, zakozako } = useZakoCounter();
 // 应用翻译
 if (localStorage.getItem('lanauage')) {
     app.config.globalProperties.$i18n.locale = localStorage.getItem('lanauage') as string
