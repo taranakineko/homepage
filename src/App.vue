@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useRouter, RouterView } from 'vue-router'
 import { ref, onMounted } from 'vue'
-import { setColorScheme } from 'mdui';
+import { setColorScheme } from 'mdui'
 const NaviRail = ref<any>(null)
 const NaviBar = ref<any>(null)
 const TheDialog = ref<any>(null)
@@ -64,7 +64,6 @@ function OpenSetting() {
 if (localStorage.getItem('color')) {
     setColorScheme(localStorage.getItem('color') as string)
 }
-
 </script>
 
 <template>

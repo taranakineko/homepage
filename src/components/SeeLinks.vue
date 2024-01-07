@@ -146,8 +146,8 @@
 
 <script setup lang="ts">
 import app from '@/main'
-import useZakoCounter from '../function/zako';
-const { zako, zakozako } = useZakoCounter();
+import useZakoCounter from '../function/zako'
+const { zako, zakozako } = useZakoCounter()
 if (localStorage.getItem('lanauage')) {
     app.config.globalProperties.$i18n.locale = localStorage.getItem('lanauage') as string
 }

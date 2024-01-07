@@ -281,9 +281,9 @@
 
 <script setup lang="ts">
 import app from '@/main'
-import useZakoCounter from '../function/zako';
+import useZakoCounter from '../function/zako'
 import { alert } from 'mdui/functions/alert.js'
-const { zako, zakozako } = useZakoCounter();
+const { zako, zakozako } = useZakoCounter()
 // 应用翻译
 if (localStorage.getItem('lanauage')) {
     app.config.globalProperties.$i18n.locale = localStorage.getItem('lanauage') as string

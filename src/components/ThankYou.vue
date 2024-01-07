@@ -121,10 +121,10 @@
 import app from '@/main'
 import { ref, onMounted } from 'vue'
 import TXT from '../config/txt.json'
-import useZakoCounter from '../function/zako';
+import useZakoCounter from '../function/zako'
 const OpenTheSnackbar = ref<any>(null)
 const TheSnackbar = ref<any>(null)
-const { zako, zakozako } = useZakoCounter();
+const { zako, zakozako } = useZakoCounter()
 if (localStorage.getItem('lanauage')) {
     app.config.globalProperties.$i18n.locale = localStorage.getItem('lanauage') as string
 }

@@ -32,15 +32,15 @@
             <p>{{ $t('setting_mode') }}</p>
             <div class="setting-mdui">
                 <mdui-segmented-button-group selects="single" ref="mode">
-                    <mdui-segmented-button icon="light_mode--outlined" value="light"
-                        >{{ $t('setting_mode_light') }}</mdui-segmented-button
-                    >
-                    <mdui-segmented-button icon="autorenew--outlined" value="auto"
-                        >{{ $t('setting_mode_auto') }}</mdui-segmented-button
-                    >
-                    <mdui-segmented-button icon="mode_night--outlined" value="dark"
-                        >{{ $t('setting_mode_dark') }}</mdui-segmented-button
-                    >
+                    <mdui-segmented-button icon="light_mode--outlined" value="light">{{
+                        $t('setting_mode_light')
+                    }}</mdui-segmented-button>
+                    <mdui-segmented-button icon="autorenew--outlined" value="auto">{{
+                        $t('setting_mode_auto')
+                    }}</mdui-segmented-button>
+                    <mdui-segmented-button icon="mode_night--outlined" value="dark">{{
+                        $t('setting_mode_dark')
+                    }}</mdui-segmented-button>
                 </mdui-segmented-button-group>
             </div>
         </div>
@@ -67,10 +67,18 @@
                         ></mdui-card>
                     </mdui-card>
                     <mdui-menu ref="color" value="#AEC9D0" selects="single">
-                        <mdui-menu-item value="#00cc6a" style="background-color: #00cc6a;">{{ $t('setting_color_spring') }}</mdui-menu-item>
-                        <mdui-menu-item value="#0078d4" style="background-color: #0078d4;">{{ $t('setting_color_summer') }}</mdui-menu-item>
-                        <mdui-menu-item value="#ff8c00" style="background-color: #ff8c00;">{{ $t('setting_color_autumm') }}</mdui-menu-item>
-                        <mdui-menu-item value="#AEC9D0" style="background-color: #AEC9D0;">{{ $t('setting_color_winter') }}</mdui-menu-item>
+                        <mdui-menu-item value="#00cc6a" style="background-color: #00cc6a">{{
+                            $t('setting_color_spring')
+                        }}</mdui-menu-item>
+                        <mdui-menu-item value="#0078d4" style="background-color: #0078d4">{{
+                            $t('setting_color_summer')
+                        }}</mdui-menu-item>
+                        <mdui-menu-item value="#ff8c00" style="background-color: #ff8c00">{{
+                            $t('setting_color_autumm')
+                        }}</mdui-menu-item>
+                        <mdui-menu-item value="#AEC9D0" style="background-color: #aec9d0">{{
+                            $t('setting_color_winter')
+                        }}</mdui-menu-item>
                     </mdui-menu>
                 </mdui-dropdown>
             </div>
@@ -78,9 +86,12 @@
         <div class="setting">
             <p>{{ $t('setting_delete') }}</p>
             <div class="setting-mdui">
-                <mdui-button variant="text" icon="delete--outlined" v-on:click="clearLocalStorage()">{{
-                    $t('setting_delete_zako')
-                }}</mdui-button>
+                <mdui-button
+                    variant="text"
+                    icon="delete--outlined"
+                    v-on:click="clearLocalStorage()"
+                    >{{ $t('setting_delete_zako') }}</mdui-button
+                >
                 <mdui-button variant="text" icon="delete--outlined" v-on:click="Reset()">{{
                     $t('setting_delete_button')
                 }}</mdui-button>
@@ -94,13 +105,13 @@ import app from '@/main'
 import { ref, onMounted } from 'vue'
 import { setTheme } from 'mdui/functions/setTheme.js'
 import { snackbar } from 'mdui/functions/snackbar.js'
-import { setColorScheme } from 'mdui/functions/setColorScheme.js';
-import { $ } from 'mdui/jq.js';
-import useZakoCounter from '../function/zako';
+import { setColorScheme } from 'mdui/functions/setColorScheme.js'
+import { $ } from 'mdui/jq.js'
+import useZakoCounter from '../function/zako'
 const lang = ref<any>(null)
 const mode = ref<any>(null)
 const color = ref<any>(null)
-const { zako, zakozako, clearLocalStorage } = useZakoCounter();
+const { zako, zakozako, clearLocalStorage } = useZakoCounter()
 // console.log(localStorage.getItem('lanauage'))
 // console.log(localStorage.getItem('mode'))
 const lanauage = localStorage.getItem('lanauage')
@@ -129,10 +140,10 @@ onMounted(() => {
         // lang.value.value = lanauage
         color.value.value = WebColor
         $('.color-card').css('background-color', color.value.value)
-        setColorScheme(color.value.value);
+        setColorScheme(color.value.value)
     } else {
         color.value.value = HColor
-        setColorScheme(HColor);
+        setColorScheme(HColor)
     }
 
     // 更新设置
@@ -156,7 +167,7 @@ onMounted(() => {
         console.log(color.value.value)
         localStorage.setItem('color', color.value.value)
         $('.color-card').css('background-color', color.value.value)
-        setColorScheme(color.value.value);
+        setColorScheme(color.value.value)
     })
 })
 function Reset() {
