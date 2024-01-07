@@ -2,6 +2,7 @@
 import { useRouter, RouterView } from 'vue-router'
 import { ref, onMounted } from 'vue'
 import { setColorScheme } from 'mdui'
+import { setTheme } from 'mdui'
 const NaviRail = ref<any>(null)
 const NaviBar = ref<any>(null)
 const TheDialog = ref<any>(null)
@@ -63,6 +64,10 @@ function OpenSetting() {
 
 if (localStorage.getItem('color')) {
     setColorScheme(localStorage.getItem('color') as string)
+}
+
+if (localStorage.getItem('mode')) {
+    setTheme(localStorage.getItem('mode') as string)
 }
 </script>
 
