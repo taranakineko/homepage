@@ -8,7 +8,7 @@
             <p>{{ $t('setting_lanage') }}</p>
             <div class="setting-mdui">
                 <mdui-select end-aligned variant="filled" value="zh-CN" ref="lang">
-                    <mdui-menu-item end-aligned value="zh-CN">{{
+                    <mdui-menu-item value="zh-CN">{{
                         $t('setting_lanage_chinese')
                     }}</mdui-menu-item>
                     <mdui-menu-item value="zh-MS">{{ $t('setting_lanage_zhms') }}</mdui-menu-item>
@@ -29,23 +29,23 @@
             </mdui-list>
         </div>
         <div class="setting">
-            <p>深/浅色模式</p>
+            <p>{{ $t('setting_mode') }}</p>
             <div class="setting-mdui">
                 <mdui-segmented-button-group selects="single" ref="mode">
                     <mdui-segmented-button icon="light_mode--outlined" value="light"
-                        >浅色</mdui-segmented-button
+                        >{{ $t('setting_mode_light') }}</mdui-segmented-button
                     >
                     <mdui-segmented-button icon="autorenew--outlined" value="auto"
-                        >跟随系统</mdui-segmented-button
+                        >{{ $t('setting_mode_auto') }}</mdui-segmented-button
                     >
                     <mdui-segmented-button icon="mode_night--outlined" value="dark"
-                        >深色</mdui-segmented-button
+                        >{{ $t('setting_mode_dark') }}</mdui-segmented-button
                     >
                 </mdui-segmented-button-group>
             </div>
         </div>
         <div class="setting">
-            <p>主题颜色（尚未完工）</p>
+            <p>{{ $t('setting_color') }}</p>
             <div class="setting-mdui">
                 <mdui-dropdown>
                     <mdui-card
@@ -67,10 +67,10 @@
                         ></mdui-card>
                     </mdui-card>
                     <mdui-menu ref="color" value="#AEC9D0" selects="single">
-                        <mdui-menu-item value="#00cc6a" style="background-color: #00cc6a;">春</mdui-menu-item>
-                        <mdui-menu-item value="#0078d4" style="background-color: #0078d4;">夏</mdui-menu-item>
-                        <mdui-menu-item value="#ff8c00" style="background-color: #ff8c00;">秋</mdui-menu-item>
-                        <mdui-menu-item value="#AEC9D0" style="background-color: #AEC9D0;">冬</mdui-menu-item>
+                        <mdui-menu-item value="#00cc6a" style="background-color: #00cc6a;">{{ $t('setting_color_spring') }}</mdui-menu-item>
+                        <mdui-menu-item value="#0078d4" style="background-color: #0078d4;">{{ $t('setting_color_summer') }}</mdui-menu-item>
+                        <mdui-menu-item value="#ff8c00" style="background-color: #ff8c00;">{{ $t('setting_color_autumm') }}</mdui-menu-item>
+                        <mdui-menu-item value="#AEC9D0" style="background-color: #AEC9D0;">{{ $t('setting_color_winter') }}</mdui-menu-item>
                     </mdui-menu>
                 </mdui-dropdown>
             </div>

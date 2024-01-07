@@ -54,6 +54,15 @@
     "setting_lanage_zhgl": "Google 生草翻译",
     "setting_lanage_warning": "一些警告",
     "setting_lanage_warning_p": "目前翻译还存在一些问题，以后会慢慢修改的，目前还请以默认设置（中文）为准",
+    "setting_mode": "深/浅色模式",
+    "setting_mode_light": "浅色",
+    "setting_mode_auto": "跟随系统",
+    "setting_mode_dark": "深色",
+    "setting_color": "主题颜色",
+    "setting_color_spring": "春",
+    "setting_color_summer": "夏",
+    "setting_color_autumm": "秋",
+    "setting_color_winter": "冬",
     "setting_delete": "清除所有设置",
     "setting_delete_button": "清除"
 }
