@@ -67,7 +67,7 @@ if (localStorage.getItem('color')) {
 }
 
 if (localStorage.getItem('mode')) {
-    setTheme(localStorage.getItem('mode') as string)
+    setTheme(localStorage.getItem('mode') as 'light' | 'dark' | 'auto')
 }
 </script>
 
