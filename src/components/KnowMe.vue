@@ -7,7 +7,7 @@
         ></mdui-button-icon>
         <mdui-top-app-bar-title>{{ $t('know') }}</mdui-top-app-bar-title>
     </mdui-top-app-bar>
-    <div class="miao-thanks mdui-prose">
+    <div class="miao-thanks">
         <div class="thanks-body">
             <mdui-card
                 variant="elevated"

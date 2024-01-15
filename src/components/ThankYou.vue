@@ -7,7 +7,7 @@
         ></mdui-button-icon>
         <mdui-top-app-bar-title>{{ $t('thanks') }}</mdui-top-app-bar-title>
     </mdui-top-app-bar>
-    <div class="miao-thanks mdui-prose">
+    <div class="miao-thanks">
         <div class="thanks-body">
             <mdui-card
                 variant="elevated"
@@ -46,10 +46,10 @@
             >
                 <h2>{{ $t('thanks_othing_h2') }}</h2>
                 <div class="me-body">
-                    <p>等...！新的内容目前还在施工！</p>
+                    <p>等...！新的内容目前还在施工，现有内容也在缓慢替换</p>
                     <p>但是你可以等千畔慢慢的写...</p>
                     <p>绝对不会咕咕咕的！（确信）</p>
-                    <p>同时也要感谢陪伴在千畔身边的你</p>
+                    <p>最后也要感谢陪伴在千畔身边的你</p>
                     <p>祝你好运！😘</p>
                 </div>
             </mdui-card>

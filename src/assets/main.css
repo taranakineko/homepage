@@ -110,9 +110,18 @@ svg {
 .me-body {
     padding-left: 10px;
 }
-div.mdui-prose h2 {
+h2 {
     font-size: 16pt;
     line-height: 24pt;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 14pt;
+    line-height: 20pt;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-weight: 400;
 }
 
 .mdui-theme-light {
