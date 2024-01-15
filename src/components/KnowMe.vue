@@ -284,14 +284,11 @@
 </template>
 
 <script setup lang="ts">
-import app from '@/main'
 import useZakoCounter from '../function/zako'
+import { UseLan } from '@/function/read';
 import { alert } from 'mdui/functions/alert.js'
 const { zako, zakozako } = useZakoCounter()
-// 应用翻译
-if (localStorage.getItem('lanauage')) {
-    app.config.globalProperties.$i18n.locale = localStorage.getItem('lanauage') as string
-}
+UseLan()
 // 召唤 Dialog
 function SeeSeeYourB50() {
     // 看看你的

@@ -72,20 +72,18 @@
 </template>
 
 <script setup lang="ts">
-import app from '@/main'
 import { ref, onMounted } from 'vue'
 import TXT from '../config/txt.json'
+import { UseLan } from '@/function/read';
 const OpenTheSnackbar = ref<any>(null)
 const TheSnackbar = ref<any>(null)
-if (localStorage.getItem('lanauage')) {
-    app.config.globalProperties.$i18n.locale = localStorage.getItem('lanauage') as string
-}
 onMounted(() => {
     // console.log(OpenTheSnackbar.value);
     // console.log(TheSnackbar.value);
     // 2023.11.18 09:57:05 —— 2023.11.19 02:03:00
     // 他喵的终于搞定这玩意了
     // Refactored by Elihuso
+    UseLan()
     var txt = TXT as String[]
     OpenTheSnackbar.value.addEventListener('click', () => {
         TheSnackbar.value.open = true

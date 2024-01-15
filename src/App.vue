@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { useRouter, RouterView } from 'vue-router'
 import { ref, onMounted } from 'vue'
-import { setColorScheme } from 'mdui'
-import { setTheme } from 'mdui'
+import { UseSetting } from '@/function/usesettinng';
 const NaviRail = ref<any>(null)
 const NaviBar = ref<any>(null)
 const TheDialog = ref<any>(null)
@@ -12,6 +11,7 @@ const router = useRouter()
 onMounted(() => {
     OpenDialog.value.addEventListener('click', () => (TheDialog.value.open = true))
     CloseDialog.value.addEventListener('click', () => (TheDialog.value.open = false))
+    UseSetting()
 })
 router.beforeEach((to, from, next) => {
     switch (to.path) {
@@ -60,14 +60,6 @@ function OpenThanks() {
 }
 function OpenSetting() {
     router.push('/setting')
-}
-
-if (localStorage.getItem('color')) {
-    setColorScheme(localStorage.getItem('color') as string)
-}
-
-if (localStorage.getItem('mode')) {
-    setTheme(localStorage.getItem('mode') as 'light' | 'dark' | 'auto')
 }
 </script>
 

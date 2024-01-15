@@ -122,17 +122,15 @@
 </template>
 
 <script setup lang="ts">
-import app from '@/main'
 import { ref, onMounted } from 'vue'
 import TXT from '../config/txt.json'
 import useZakoCounter from '../function/zako'
+import { UseLan } from '@/function/read';
 const OpenTheSnackbar = ref<any>(null)
 const TheSnackbar = ref<any>(null)
 const { zako, zakozako } = useZakoCounter()
-if (localStorage.getItem('lanauage')) {
-    app.config.globalProperties.$i18n.locale = localStorage.getItem('lanauage') as string
-}
 onMounted(() => {
+    UseLan()
     var txt = TXT as String[]
     OpenTheSnackbar.value.addEventListener('click', () => {
         TheSnackbar.value.open = true
