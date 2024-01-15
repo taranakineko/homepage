@@ -164,59 +164,48 @@
         </mdui-card>
         <mdui-card variant="elevated" class="link-right">
             <h2 style="margin-bottom: 10px">{{ $t('links_friendslinks_h2') }}</h2>
-            <mdui-list>
-                <mdui-list-item
-                    href="https://moe23333.vercel.app/"
-                    target="_blank"
-                    end-icon="open_in_new--outlined"
+            <div class="links-chip">
+                <a href="https://winsloweric.com/">
+                    <div class="card">
+                        <mdui-avatar
+                            src="https://wsrv.nl/?url=https://winsloweric.com/assets/logo256t.4b80bfe0.png&w=200&h=200&output=webp"
+                        ></mdui-avatar>
+                        <p>Winslow</p>
+                    </div></a
                 >
-                    <mdui-avatar
-                        slot="icon"
-                        src="https://moe23333.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar_trans.1f5053b1.png&w=1920&q=75"
-                    ></mdui-avatar>
-                    Moe23333
-                </mdui-list-item>
-                <mdui-list-item
-                    href="https://winsloweric.com/"
-                    target="_blank"
-                    end-icon="open_in_new--outlined"
+                <a href="https://shef.cc/">
+                    <div class="card">
+                        <mdui-avatar
+                            src="https://shef.cc/wp-content/uploads/SheepChef-%E5%90%89%E7%A5%A5%E7%89%A9-%E5%A4%B4%E5%83%8F2-e1683031048446.png.webp"
+                        ></mdui-avatar>
+                        <p>SheepChef</p>
+                    </div></a
+                ><a href="https://moe23333.vercel.app/">
+                    <div class="card">
+                        <mdui-avatar
+                            src="https://moe23333.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar_trans.1f5053b1.png&w=1920&q=75"
+                        ></mdui-avatar>
+                        <p>Moe23333</p>
+                    </div></a
+                ><a href="https://sunyz.net/">
+                    <div class="card">
+                        <mdui-avatar src="https://cdn.sunyz.net/avatar@128x128.webp"></mdui-avatar>
+                        <p>Sunyz</p>
+                    </div></a
+                ><a href="https://i.lemonkoi.one/">
+                    <div class="card">
+                        <mdui-avatar
+                            src="https://cravatar.cn/avatar/6fd22617894ee4de431dc28927bcd1bb?s=200"
+                        ></mdui-avatar>
+                        <p>MoeMagicMango</p>
+                    </div></a
+                ><a href="https://blog.nekoq.top/links">
+                    <div class="card">
+                        <mdui-avatar icon="add_link--outlined"></mdui-avatar>
+                        <p>Motto motto...</p> <!-- https://www.youtube.com/watch?v=7uiKC1P7__U -->
+                    </div></a
                 >
-                    <mdui-avatar
-                        slot="icon"
-                        src="https://wsrv.nl/?url=https://winsloweric.com/assets/logo256t.4b80bfe0.png&w=200&h=200&output=webp"
-                    ></mdui-avatar>
-                    Pivot of Winslow
-                </mdui-list-item>
-                <mdui-list-item
-                    href="https://shef.cc/"
-                    target="_blank"
-                    end-icon="open_in_new--outlined"
-                    ><mdui-avatar
-                        slot="icon"
-                        src="https://shef.cc/wp-content/uploads/SheepChef-%E5%90%89%E7%A5%A5%E7%89%A9-%E5%A4%B4%E5%83%8F2-e1683031048446.png.webp"
-                    ></mdui-avatar>
-                    SheepChef
-                </mdui-list-item>
-                <mdui-list-item
-                    href="https://sunyz.net/"
-                    target="_blank"
-                    end-icon="open_in_new--outlined"
-                    ><mdui-avatar
-                        slot="icon"
-                        src="https://cdn.sunyz.net/avatar@128x128.webp"
-                    ></mdui-avatar>
-                    Sunyz
-                </mdui-list-item>
-                <mdui-list-item
-                    href="https://blog.nekoq.top/links"
-                    target="_blank"
-                    description="will open new website"
-                    end-icon="open_in_new--outlined"
-                >
-                    Motto motto...
-                    <!-- https://www.youtube.com/watch?v=7uiKC1P7__U -->
-                </mdui-list-item>
-            </mdui-list>
+            </div>
         </mdui-card>
     </div>
 </template>
@@ -237,41 +226,59 @@ function KnowMail() {
 }
 </script>
 
-<style lang="scss">
-.link-left {
-    transition: 0.5s;
-    &:hover {
-        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
-    }
-    &::before {
-        box-shadow: none;
-    }
-    &::after {
-        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
-    }
-}
+<style lang="sass">
+.link-left
+    transition: 0.5s
+    &:hover
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25)
+    &::before
+        box-shadow: none
+    &::after
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25)
 
-.link-right {
-    transition: 0.5s;
-    &:hover {
-        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
-    }
-    &::before {
-        box-shadow: none;
-    }
-    &::after {
-        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
-    }
-}
+.link-right
+    transition: 0.5s
+    &:hover
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25)
+    &::before
+        box-shadow: none
+    &::after
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25)
 
-.links-chip {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
+mdui-chip
+    margin: 5px
 
-mdui-chip {
-    margin: 5px;
-}
+.links-chip
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+
+    a:hover
+        text-decoration: none
+
+    .card
+        width: 135px
+        height: 135px
+        margin: 5px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        overflow: hidden
+        position: relative
+        cursor: pointer
+        transition: background 0.3s ease // 添加背景颜色过渡效果
+        border-radius: var(--mdui-shape-corner-medium)
+
+        &:hover
+            background: rgba(0, 0, 0, 0.05) // 鼠标悬停时的背景颜色
+
+
+        p
+            text-align: center
+            overflow: hidden
+            white-space: nowrap
+            text-overflow: ellipsis
+            max-width: 100%
 </style>
