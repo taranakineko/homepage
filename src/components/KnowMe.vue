@@ -285,7 +285,7 @@
 
 <script setup lang="ts">
 import useZakoCounter from '../function/zako'
-import { UseLan } from '@/function/read';
+import { UseLan } from '@/function/read'
 import { alert } from 'mdui/functions/alert.js'
 const { zako, zakozako } = useZakoCounter()
 UseLan()

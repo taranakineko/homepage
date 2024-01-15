@@ -150,7 +150,7 @@
 
 <script setup lang="ts">
 import useZakoCounter from '../function/zako'
-import { UseLan } from '@/function/read';
+import { UseLan } from '@/function/read'
 const { zako, zakozako } = useZakoCounter()
 UseLan()
 </script>

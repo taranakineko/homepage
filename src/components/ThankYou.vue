@@ -125,7 +125,7 @@
 import { ref, onMounted } from 'vue'
 import TXT from '../config/txt.json'
 import useZakoCounter from '../function/zako'
-import { UseLan } from '@/function/read';
+import { UseLan } from '@/function/read'
 const OpenTheSnackbar = ref<any>(null)
 const TheSnackbar = ref<any>(null)
 const { zako, zakozako } = useZakoCounter()

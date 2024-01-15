@@ -74,7 +74,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import TXT from '../config/txt.json'
-import { UseLan } from '@/function/read';
+import { UseLan } from '@/function/read'
 const OpenTheSnackbar = ref<any>(null)
 const TheSnackbar = ref<any>(null)
 onMounted(() => {
