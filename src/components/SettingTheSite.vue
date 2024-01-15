@@ -56,7 +56,11 @@
                         slot="trigger"
                         variant="outlined"
                         clickable
-                        style="width: 100px; height: 50px;background-color:rgb(var(--mdui-color-surface))"
+                        style="
+                            width: 100px;
+                            height: 50px;
+                            background-color: rgb(var(--mdui-color-surface));
+                        "
                     >
                         <mdui-card
                             class="color-card"
