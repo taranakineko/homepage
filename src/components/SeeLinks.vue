@@ -202,7 +202,8 @@
                 ><a href="https://blog.nekoq.top/links">
                     <div class="card">
                         <mdui-avatar icon="add_link--outlined"></mdui-avatar>
-                        <p>Motto motto...</p> <!-- https://www.youtube.com/watch?v=7uiKC1P7__U -->
+                        <p>Motto motto...</p>
+                        <!-- https://www.youtube.com/watch?v=7uiKC1P7__U -->
                     </div></a
                 >
             </div>

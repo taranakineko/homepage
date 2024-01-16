@@ -69,7 +69,7 @@
 
 <script setup lang="ts">
 import { UseLan } from '@/function/read'
-import randomTheTXT from '@/function/snackbar';
+import randomTheTXT from '@/function/snackbar'
 const { OpenTheSnackbar } = randomTheTXT()
 UseLan()
 </script>

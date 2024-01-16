@@ -118,7 +118,7 @@
 <script setup lang="ts">
 import useZakoCounter from '../function/zako'
 import { UseLan } from '@/function/read'
-import randomTheTXT from '@/function/snackbar';
+import randomTheTXT from '@/function/snackbar'
 const { OpenTheSnackbar } = randomTheTXT()
 const { zako, zakozako } = useZakoCounter()
 UseLan()

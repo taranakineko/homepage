@@ -3,7 +3,6 @@ import TXT from '../config/txt.json'
 import { snackbar } from 'mdui/functions/snackbar.js'
 
 export default function randomTheTXT() {
-
     const OpenTheSnackbar = ref<any>(null)
 
     onMounted(() => {
