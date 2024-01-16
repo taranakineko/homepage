@@ -94,7 +94,11 @@
                                 /></svg></mdui-icon
                         >Line</mdui-chip
                     >
-                    <p><a href="/TaranakiNeko_0xF94A19FF_public.asc" download>My PGP: B087 30BC F94A 19FF</a></p>
+                    <p>
+                        <a href="/TaranakiNeko_0xF94A19FF_public.asc" download
+                            >My PGP: B087 30BC F94A 19FF</a
+                        >
+                    </p>
                 </div>
                 <h3>On Github</h3>
                 <div class="links-chip">
