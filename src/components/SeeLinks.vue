@@ -144,9 +144,9 @@
                         ><mdui-icon slot="icon" name="bookmark--outlined"></mdui-icon
                         >Bookmarks</mdui-chip
                     >
-                    <mdui-chip loading disabled
+                    <mdui-chip href="https://neko.nekoq.top" target="_blank"
                         ><mdui-icon slot="icon" name="attach_money--outlined"></mdui-icon
-                        >我很可爱请给我钱</mdui-chip
+                        >我很可爱请给我钱（不是）</mdui-chip
                     >
                 </div>
                 <h3>Blog</h3>
