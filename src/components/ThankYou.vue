@@ -113,29 +113,13 @@
             data-umami-event="ThankYou Snackbar"
         ></mdui-fab>
     </div>
-    <mdui-snackbar
-        close-on-outside-click
-        class="snackbar"
-        ref="TheSnackbar"
-        id="say"
-    ></mdui-snackbar>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
-import TXT from '../config/txt.json'
 import useZakoCounter from '../function/zako'
 import { UseLan } from '@/function/read'
-const OpenTheSnackbar = ref<any>(null)
-const TheSnackbar = ref<any>(null)
+import randomTheTXT from '@/function/snackbar';
+const { OpenTheSnackbar } = randomTheTXT()
 const { zako, zakozako } = useZakoCounter()
-onMounted(() => {
-    UseLan()
-    var txt = TXT as String[]
-    OpenTheSnackbar.value.addEventListener('click', () => {
-        TheSnackbar.value.open = true
-        const rnd = Math.floor(Math.random() * txt.length)
-        TheSnackbar.value.innerHTML = txt[rnd]
-    })
-})
+UseLan()
 </script>
