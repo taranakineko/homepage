@@ -17,37 +17,49 @@
                 "
                 ><p>本页仅供测试，不代表主页未来规划，敬请留意</p></mdui-card
             >
-            <img src="/images/Screenshot_20240105-143739.png" />
-            <img src="https://blog.nekoq.top/static/blog/2023/cover.webp" />
-            <img src="https://blog.nekoq.top/static/blog/taiko-ch/cover.webp" />
-            <img src="https://blog.nekoq.top/static/blog/2023/shenzhen.webp" />
-            <img src="https://blog.nekoq.top/static/blog/2023/foshanzhan.webp" />
-            <img src="https://blog.nekoq.top/static/blog/2023/maimaidx-2022.webp" />
-            <img src="https://nekoq.eu.org/static/images/F4S2ZexbQAAJP5I.jpg" />
-            <img src="https://blog.nekoq.top/static/blog/oneplus-8t/cover.webp" />
-            <img src="https://blog.nekoq.top/static/blog/line1/chexiang.webp" />
-            <img src="https://blog.nekoq.top/static/blog/2023/wuhan.webp" />
-            <img src="https://blog.nekoq.top/static/blog/2023/dongguan.webp" />
-            <img src="https://blog.nekoq.top/static/blog/2023/my-home.webp" />
-            <img src="https://blog.nekoq.top/static/images/twittercard.png" />
-            <img src="https://blog.nekoq.top/static/blog/2023/gotoGZN.webp" />
-            <img src="https://blog.nekoq.top/static/blog/2023/xiamen.webp" />
-            <img src="https://blog.nekoq.top/static/blog/2023/reganmian.webp" />
-            <img src="https://blog.nekoq.top/static/blog/2023/maimaidx-2023.webp" />
-            <img src="https://blog.nekoq.top/static/blog/2023/JustBeFriend.webp" />
+            <img src="/images/Screenshot_20240105-143739.png" alt="Share a song: After Rain" />
+            <img src="https://blog.nekoq.top/static/blog/2023/cover.webp" alt="广州天环，地下通道，BRT 付费区域" />
+            <img src="https://blog.nekoq.top/static/blog/taiko-ch/cover.webp" alt="太鼓之达人" />
+            <img src="https://blog.nekoq.top/static/blog/2023/shenzhen.webp" alt="深圳地铁" />
+            <img src="https://blog.nekoq.top/static/blog/2023/foshanzhan.webp" alt="佛山火车站一角" />
+            <img src="https://blog.nekoq.top/static/blog/2023/maimaidx-2022.webp" alt="要开始了哟~" />
+            <img src="https://nekoq.eu.org/static/images/F4S2ZexbQAAJP5I.jpg" alt="VSCode 背景" />
+            <img src="https://blog.nekoq.top/static/blog/oneplus-8t/cover.webp" alt="一张桌子" />
+            <img src="https://blog.nekoq.top/static/blog/line1/chexiang.webp" alt="广州地铁一号线" />
+            <img src="https://blog.nekoq.top/static/blog/2023/wuhan.webp" alt="武汉" />
+            <img src="https://blog.nekoq.top/static/blog/2023/dongguan.webp" alt="东莞" />
+            <img src="https://blog.nekoq.top/static/blog/2023/my-home.webp"  alt="抽象的房子"/>
+            <img src="https://blog.nekoq.top/static/images/twittercard.png"  alt="Twitter Card"/>
+            <img src="https://blog.nekoq.top/static/blog/2023/gotoGZN.webp" alt="佛山地铁二号线站台一角" />
+            <img src="https://blog.nekoq.top/static/blog/2023/xiamen.webp" alt="厦门" />
+            <img src="https://blog.nekoq.top/static/blog/2023/reganmian.webp" alt="热干面" />
+            <img src="https://blog.nekoq.top/static/blog/2023/maimaidx-2023.webp" alt="舞萌 DX 2023 运行首日网络崩溃" />
+            <img src="https://blog.nekoq.top/static/blog/2023/JustBeFriend.webp" alt="." />
+            <mdui-card
+                style="
+                    width: 100%;
+                    height: 100%;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                "
+                ><p>All your steps aor in a maze <br> All I do is follow through and pray <br>...<br> To find the answer to this quest <br> I'll journey with you till the end<br>...<br>Oramus iter per astra <br> Lux tua nos dirigot</p></mdui-card
+            >
         </div>
     </div>
 </template>
 
 <script>
 import ScrollReveal from 'scrollreveal'
-import { observeResize } from 'mdui/functions/observeResize.js';
 import { UseLan } from '@/function/read'
 import { $ } from 'mdui/jq.js';
 import { dialog } from 'mdui/functions/dialog.js';
 
 export default {
     mounted() {
+
         const sr = ScrollReveal()
 
         const config = {
@@ -65,9 +77,10 @@ export default {
 
         $('img').on('click', function() {
             const clickedSrc = $(this).attr('src');
+            const seeAlt = $(this).attr('alt');
             dialog({
                 headline: 'Image Viewer',
-                body: `<img src="${clickedSrc}" class="show" />`,
+                body: `<div class="dialog-img"><img src="${clickedSrc}" class="show" /><p>${seeAlt}</p></div>`,
                 closeOnEsc: true,
                 closeOnOverlayClick: true
             })
@@ -92,10 +105,20 @@ img
     margin-bottom: 20px
     border-radius: var(--mdui-shape-corner-medium)
 
-.show
+.dialog-img
     width: 100%
     height: 100%
-    margin-bottom: 0
-    object-fit: cover
-    border-radius: var(--mdui-shape-corner-medium)
+
+    .show
+        width: 100%
+        height: 100%
+        margin-bottom: 0
+        object-fit: cover
+        border-radius: var(--mdui-shape-corner-medium)
+    
+p
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
 </style>
