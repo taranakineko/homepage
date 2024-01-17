@@ -3,12 +3,12 @@
         <mdui-button-icon icon="menu--outlined"></mdui-button-icon>
         <mdui-top-app-bar-title>测试页，使用 ChatGPT 3.5 辅助搭建</mdui-top-app-bar-title>
     </mdui-top-app-bar>
-    <div class="miao-thanks">
-        <div class="thanks-body">
+    <div class="miao-pic">
+        <div class="pic-body">
             <mdui-card
                 style="
                     width: 100%;
-                    height: 200px;
+                    height: 100%;
                     margin-bottom: 20px;
                     text-align: center;
                     display: flex;
@@ -24,16 +24,12 @@
             <img src="https://blog.nekoq.top/static/blog/2023/foshanzhan.webp" />
             <img src="https://blog.nekoq.top/static/blog/2023/maimaidx-2022.webp" />
             <img src="https://nekoq.eu.org/static/images/F4S2ZexbQAAJP5I.jpg" />
-        </div>
-        <div class="thanks-body">
             <img src="https://blog.nekoq.top/static/blog/oneplus-8t/cover.webp" />
             <img src="https://blog.nekoq.top/static/blog/line1/chexiang.webp" />
             <img src="https://blog.nekoq.top/static/blog/2023/wuhan.webp" />
             <img src="https://blog.nekoq.top/static/blog/2023/dongguan.webp" />
             <img src="https://blog.nekoq.top/static/blog/2023/my-home.webp" />
             <img src="https://blog.nekoq.top/static/images/twittercard.png" />
-        </div>
-        <div class="thanks-body">
             <img src="https://blog.nekoq.top/static/blog/2023/gotoGZN.webp" />
             <img src="https://blog.nekoq.top/static/blog/2023/xiamen.webp" />
             <img src="https://blog.nekoq.top/static/blog/2023/reganmian.webp" />
@@ -45,6 +41,10 @@
 
 <script>
 import ScrollReveal from 'scrollreveal'
+import { observeResize } from 'mdui/functions/observeResize.js';
+import { UseLan } from '@/function/read'
+import { $ } from 'mdui/jq.js';
+import { dialog } from 'mdui/functions/dialog.js';
 
 export default {
     mounted() {
@@ -57,31 +57,45 @@ export default {
         }
 
         // 向下滚动时的动画效果
-        const imgElements = document.querySelectorAll('.thanks-body img')
+        const imgElements = document.querySelectorAll('.pic-body img')
         imgElements.forEach((img) => {
             sr.reveal(img, { ...config, origin: 'bottom', delay: 200 })
         })
 
-        // 向上滚动时的动画效果
-        const reverseImgElements = document.querySelectorAll('.thanks-body img')
-        reverseImgElements.forEach((img) => {
-            sr.reveal(img, { ...config, origin: 'top', delay: 200, afterReveal: reset })
-        })
 
-        function reset(el) {
-            // 重置动画，以便在向上滚动时再次触发
-            sr.reveal(el, { ...config, origin: 'top', delay: 200, reset: true })
-        }
+        $('img').on('click', function() {
+            const clickedSrc = $(this).attr('src');
+            dialog({
+                headline: 'Image Viewer',
+                body: `<img src="${clickedSrc}" class="show" />`,
+                closeOnEsc: true,
+                closeOnOverlayClick: true
+            })
+        } )
+
+        UseLan()
     }
 }
 </script>
 
 <style lang="sass">
-.thanks-body
+.pic-body
     margin: 20px
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))  // 设置列数和最小/最大宽度
+    gap: 20px  // 设置列之间的间距
 
 img
     width: 100%
+    height: 100%
+    object-fit: cover
     margin-bottom: 20px
+    border-radius: var(--mdui-shape-corner-medium)
+
+.show
+    width: 100%
+    height: 100%
+    margin-bottom: 0
+    object-fit: cover
     border-radius: var(--mdui-shape-corner-medium)
 </style>
