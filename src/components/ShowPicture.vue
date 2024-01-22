@@ -98,6 +98,12 @@ export default {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))  // 设置列数和最小/最大宽度
     gap: 20px  // 设置列之间的间距
 
+    p
+        text-align: center
+        display: flex
+        justify-content: center
+        align-items: center
+
 img
     width: 100%
     height: 100%
@@ -115,10 +121,4 @@ img
         margin-bottom: 0
         object-fit: cover
         border-radius: var(--mdui-shape-corner-medium)
-    
-p
-    text-align: center
-    display: flex
-    justify-content: center
-    align-items: center
 </style>

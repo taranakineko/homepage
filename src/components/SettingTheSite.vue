@@ -36,14 +36,14 @@
             <p>{{ $t('setting_mode') }}</p>
             <div class="setting-mdui">
                 <mdui-segmented-button-group selects="single" ref="mode">
-                    <mdui-segmented-button icon="light_mode--outlined" value="light">{{
-                        $t('setting_mode_light')
+                    <mdui-segmented-button icon="mode_night--outlined" value="dark">{{
+                        $t('setting_mode_dark')
                     }}</mdui-segmented-button>
                     <mdui-segmented-button icon="autorenew--outlined" value="auto">{{
                         $t('setting_mode_auto')
                     }}</mdui-segmented-button>
-                    <mdui-segmented-button icon="mode_night--outlined" value="dark">{{
-                        $t('setting_mode_dark')
+                    <mdui-segmented-button icon="light_mode--outlined" value="light">{{
+                        $t('setting_mode_light')
                     }}</mdui-segmented-button>
                 </mdui-segmented-button-group>
             </div>
