@@ -11,7 +11,7 @@
         <div class="setting">
             <p>{{ $t('setting_lanage') }}</p>
             <div class="setting-mdui">
-                <mdui-select end-aligned variant="filled" value="zh-CN" ref="lang">
+                <mdui-select end-aligned variant="filled" value="zh-CN" ref="lang" disabled>
                     <mdui-menu-item value="zh-CN">{{
                         $t('setting_lanage_chinese')
                     }}</mdui-menu-item>
@@ -74,17 +74,17 @@
                             "
                         ></mdui-card>
                     </mdui-card>
-                    <mdui-menu ref="color" value="#AEC9D0" selects="single">
-                        <mdui-menu-item value="#00cc6a" style="background-color: #00cc6a">{{
+                    <mdui-menu ref="color" value="#AEC9D0" selects="single" disabled>
+                        <mdui-menu-item value="#00cc6a" style="background-color: #00cc6a" disabled>{{
                             $t('setting_color_spring')
                         }}</mdui-menu-item>
-                        <mdui-menu-item value="#0078d4" style="background-color: #0078d4">{{
+                        <mdui-menu-item value="#0078d4" style="background-color: #0078d4" disabled>{{
                             $t('setting_color_summer')
                         }}</mdui-menu-item>
-                        <mdui-menu-item value="#ff8c00" style="background-color: #ff8c00">{{
+                        <mdui-menu-item value="#ff8c00" style="background-color: #ff8c00" disabled>{{
                             $t('setting_color_autumm')
                         }}</mdui-menu-item>
-                        <mdui-menu-item value="#AEC9D0" style="background-color: #aec9d0">{{
+                        <mdui-menu-item value="#AEC9D0" style="background-color: #aec9d0" disabled>{{
                             $t('setting_color_winter')
                         }}</mdui-menu-item>
                     </mdui-menu>
