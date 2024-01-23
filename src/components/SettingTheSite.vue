@@ -51,43 +51,14 @@
         <div class="setting">
             <p>{{ $t('setting_color') }}</p>
             <div class="setting-mdui">
-                <mdui-dropdown>
-                    <mdui-card
-                        slot="trigger"
-                        variant="outlined"
-                        clickable
-                        style="
-                            width: 100px;
-                            height: 50px;
-                            background-color: rgb(var(--mdui-color-surface));
-                        "
-                    >
-                        <mdui-card
-                            class="color-card"
-                            variant="outlined"
-                            style="
-                                width: 80px;
-                                height: 30px;
-                                margin-top: 10px;
-                                margin-right: 10px;
-                                background-color: #aec9d0;
-                            "
-                        ></mdui-card>
+                <mdui-dropdown placement="left-start">
+                    <mdui-button-icon slot="trigger" icon="color_lens--outlined"></mdui-button-icon>
+                    <mdui-card class="color-card">
+                        <p>预设颜色</p>
+                        <div class="color-colors">
+                            <div v-for="(hexColor, index) in colorOptions" :key="index" :style="{ backgroundColor: hexColor }" @click="changeColor(hexColor)"></div>
+                        </div>
                     </mdui-card>
-                    <mdui-menu ref="color" value="#AEC9D0" selects="single" disabled>
-                        <mdui-menu-item value="#00cc6a" style="background-color: #00cc6a" disabled>{{
-                            $t('setting_color_spring')
-                        }}</mdui-menu-item>
-                        <mdui-menu-item value="#0078d4" style="background-color: #0078d4" disabled>{{
-                            $t('setting_color_summer')
-                        }}</mdui-menu-item>
-                        <mdui-menu-item value="#ff8c00" style="background-color: #ff8c00" disabled>{{
-                            $t('setting_color_autumm')
-                        }}</mdui-menu-item>
-                        <mdui-menu-item value="#AEC9D0" style="background-color: #aec9d0" disabled>{{
-                            $t('setting_color_winter')
-                        }}</mdui-menu-item>
-                    </mdui-menu>
                 </mdui-dropdown>
             </div>
         </div>
@@ -114,12 +85,15 @@ import { ref, onMounted } from 'vue'
 import { setTheme } from 'mdui/functions/setTheme.js'
 import { snackbar } from 'mdui/functions/snackbar.js'
 import { setColorScheme } from 'mdui/functions/setColorScheme.js'
-import { $ } from 'mdui/jq.js'
+// import { $ } from 'mdui/jq.js'
 import useZakoCounter from '../function/zako'
 const lang = ref<any>(null)
 const mode = ref<any>(null)
-const color = ref<any>(null)
+// const color = ref<any>(null)
+const colorCard = ref<any>(null)
 const { zako, zakozako, clearLocalStorage } = useZakoCounter()
+
+const colorOptions = ['#ffb4aa', '#00cc6a', '#0078d4', '#ff8c00', '#aec9d0']
 // console.log(localStorage.getItem('lanauage'))
 // console.log(localStorage.getItem('mode'))
 const lanauage = localStorage.getItem('lanauage')
@@ -144,15 +118,11 @@ onMounted(() => {
         mode.value.value = 'auto'
         setTheme('auto')
     }
-    if (localStorage.getItem('color')) {
-        // lang.value.value = lanauage
-        color.value.value = WebColor
-        $('.color-card').css('background-color', color.value.value)
-        setColorScheme(color.value.value)
-    } else {
-        color.value.value = HColor
-        setColorScheme(HColor)
-    }
+     if (localStorage.getItem('color')) {
+         setColorScheme(WebColor as string)
+     } else {
+         setColorScheme(HColor)
+     }
 
     // 更新设置
     lang.value.addEventListener('click', () => {
@@ -171,13 +141,16 @@ onMounted(() => {
         localStorage.setItem('mode', mode.value.value)
         setTheme(mode.value.value)
     })
-    color.value.addEventListener('click', () => {
-        console.log(color.value.value)
-        localStorage.setItem('color', color.value.value)
-        $('.color-card').css('background-color', color.value.value)
-        setColorScheme(color.value.value)
-    })
 })
+
+const changeColor = (hexColor: string) => {
+    // redo by ChatGPT 3.5
+    //  2024.01.23 22:38
+    console.log(hexColor)
+    setColorScheme(hexColor)
+    localStorage.setItem('color', hexColor)
+}
+
 function Reset() {
     localStorage.clear()
     snackbar({
@@ -196,4 +169,20 @@ function Reset() {
 
 .setting-mdui
     text-align: right
+
+.color-card
+    padding: 1rem
+
+    .color-colors
+        display: flex
+        padding: .5rem 0rem
+
+        div
+            cursor: pointer
+            box-sizing: border-box
+            width: 1.875rem
+            height: 1.875rem
+            border-radius: var(--mdui-shape-corner-extra-small)
+            border: .0625rem solid rgb(var(--mdui-color-outline))
+            margin-left: .5rem
 </style>
