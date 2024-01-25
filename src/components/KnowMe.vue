@@ -295,9 +295,7 @@ function SeeSeeYourB50() {
     dialog({
         headline: '我知道你想看什么......',
         body: '<p>你能找到千畔再说嘛！</p><p>或者再找找其他地方...？或许千畔已经塞了一些东西进去了~</p>',
-        actions: [
-            { text: 'Next' }
-        ],
+        actions: [{ text: 'Next' }],
         closeOnEsc: true,
         closeOnOverlayClick: true
     })
@@ -307,9 +305,7 @@ function MaiMen() {
     dialog({
         headline: '为什么是「麦门信徒」？',
         body: '<p>外出吃饭首先想到的就是麦当劳</p><p>在哪会面也是说「在麦当劳见」</p>',
-        actions: [
-            { text: 'sodayo' }
-        ],
+        actions: [{ text: 'sodayo' }],
         closeOnEsc: true,
         closeOnOverlayClick: true
     })
@@ -319,9 +315,7 @@ function LagTrain() {
     dialog({
         headline: '为什么是「追公交」？',
         body: '<p>千畔每个月出门，总有一次是在追公交的</p>',
-        actions: [
-            { text: '勇敢的去追吧~' }
-        ],
+        actions: [{ text: '勇敢的去追吧~' }],
         closeOnEsc: true,
         closeOnOverlayClick: true
     })

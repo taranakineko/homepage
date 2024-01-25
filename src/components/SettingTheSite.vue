@@ -56,7 +56,12 @@
                     <mdui-card class="color-card">
                         <p>预设颜色</p>
                         <div class="color-colors">
-                            <div v-for="(hexColor, index) in colorOptions" :key="index" :style="{ backgroundColor: hexColor }" @click="changeColor(hexColor)"></div>
+                            <div
+                                v-for="(hexColor, index) in colorOptions"
+                                :key="index"
+                                :style="{ backgroundColor: hexColor }"
+                                @click="changeColor(hexColor)"
+                            ></div>
                         </div>
                     </mdui-card>
                 </mdui-dropdown>
@@ -75,8 +80,10 @@
                     $t('setting_delete_button')
                 }}</mdui-button>
             </div>
-            <div class="setting-mdui">
-                <mdui-button variant="text" icon="delete--outlined" v-on:click="CleanAll()">一键清除！</mdui-button>
+            <div class="setting-mdui" style="margin-top: 10px">
+                <mdui-button variant="text" icon="delete--outlined" v-on:click="CleanAll()"
+                    >一键清除！</mdui-button
+                >
             </div>
         </div>
     </div>
@@ -85,7 +92,7 @@
 <script setup lang="ts">
 import app from '@/main'
 import { ref, onMounted } from 'vue'
-import { alert } from 'mdui/functions/alert.js';
+import { alert } from 'mdui/functions/alert.js'
 import { setTheme } from 'mdui/functions/setTheme.js'
 import { snackbar } from 'mdui/functions/snackbar.js'
 import { setColorScheme } from 'mdui/functions/setColorScheme.js'
@@ -100,7 +107,6 @@ const { zako, zakozako, clearLocalStorage } = useZakoCounter()
 const colorOptions = ['#ffb4aa', '#00cc6a', '#0078d4', '#ff8c00', '#aec9d0']
 
 onMounted(() => {
-    
     // 显示相关设置
     if (localStorage.getItem('lanauage')) {
         lang.value.value = lanauage
@@ -116,11 +122,11 @@ onMounted(() => {
         setTheme('auto')
         $('#mode').prop('value', 'auto')
     }
-     if (localStorage.getItem('color')) {
-         setColorScheme(WebColor as string)
-     } else {
-         setColorScheme(HColor)
-     }
+    if (localStorage.getItem('color')) {
+        setColorScheme(WebColor as string)
+    } else {
+        setColorScheme(HColor)
+    }
 
     // 更新设置
     lang.value.addEventListener('click', () => {
@@ -162,10 +168,10 @@ function Reset() {
 
 function CleanAll() {
     alert({
-        headline: "警告！",
-        description: "你真的要清除吗？（真的很久很久的）",
-        confirmText: "Yes",
-        onConfirm: function() {
+        headline: '警 告',
+        description: '你真的要清除吗？（真的很久很久的）',
+        confirmText: 'Yes',
+        onConfirm: function () {
             $('body').empty()
         },
         closeOnEsc: false,
