@@ -75,6 +75,9 @@
                     $t('setting_delete_button')
                 }}</mdui-button>
             </div>
+            <div class="setting-mdui">
+                <mdui-button variant="text" icon="delete--outlined" v-on:click="CleanAll()">一键清除！</mdui-button>
+            </div>
         </div>
     </div>
 </template>
@@ -82,6 +85,7 @@
 <script setup lang="ts">
 import app from '@/main'
 import { ref, onMounted } from 'vue'
+import { alert } from 'mdui/functions/alert.js';
 import { setTheme } from 'mdui/functions/setTheme.js'
 import { snackbar } from 'mdui/functions/snackbar.js'
 import { setColorScheme } from 'mdui/functions/setColorScheme.js'
@@ -153,6 +157,20 @@ function Reset() {
         onActionClick: () => location.reload(),
         autoCloseDelay: 3000,
         closeOnOutsideClick: true
+    })
+}
+
+function CleanAll() {
+    alert({
+        headline: "警告！",
+        description: "你真的要清除吗？（真的很久很久的）",
+        confirmText: "Yes",
+        onConfirm: function() {
+            $('body').empty()
+        },
+        closeOnEsc: false,
+        closeOnOverlayClick: false,
+        icon: 'error_outline--outlined'
     })
 }
 </script>
