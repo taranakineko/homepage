@@ -286,36 +286,42 @@
 <script setup lang="ts">
 import useZakoCounter from '../function/zako'
 import { UseLan } from '@/function/read'
-import { alert } from 'mdui/functions/alert.js'
+import { dialog } from 'mdui/functions/dialog.js'
 const { zako, zakozako } = useZakoCounter()
 UseLan()
 // 召唤 Dialog
 function SeeSeeYourB50() {
     // 看看你的
-    alert({
+    dialog({
         headline: '我知道你想看什么......',
-        description: '你能找到千畔再说嘛！',
-        confirmText: 'Next',
+        body: '<p>你能找到千畔再说嘛！</p><p>或者再找找其他地方...？或许千畔已经塞了一些东西进去了~</p>',
+        actions: [
+            { text: 'Next' }
+        ],
         closeOnEsc: true,
         closeOnOverlayClick: true
     })
 }
 function MaiMen() {
     // Amen 的变体
-    alert({
+    dialog({
         headline: '为什么是「麦门信徒」？',
-        description: '外出吃饭首先想到的就是麦当劳，在哪会面也是说「在麦当劳见」',
-        confirmText: '明白了',
+        body: '<p>外出吃饭首先想到的就是麦当劳</p><p>在哪会面也是说「在麦当劳见」</p>',
+        actions: [
+            { text: 'sodayo' }
+        ],
         closeOnEsc: true,
         closeOnOverlayClick: true
     })
 }
 function LagTrain() {
     // 稻叶昙的歌曲
-    alert({
+    dialog({
         headline: '为什么是「追公交」？',
-        description: '千畔每个月出门，至少有一次是会追着公交的',
-        confirmText: '明白了',
+        body: '<p>千畔每个月出门，总有一次是在追公交的</p>',
+        actions: [
+            { text: '勇敢的去追吧~' }
+        ],
         closeOnEsc: true,
         closeOnOverlayClick: true
     })
@@ -329,4 +335,17 @@ function LagTrain() {
 mdui-chip svg
     width: 100%
     height: 100%
+
+blockquote
+    padding: 15px
+    background: #eee
+    border-radius: var(--mdui-shape-corner-extra-small)
+    border: 0.0625rem solid rgb(var(--mdui-color-outline))
+    font-style: italic
+
+    p
+        text-indent:2em
+
+    footer
+        text-align: right
 </style>
