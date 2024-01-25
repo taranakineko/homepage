@@ -339,7 +339,6 @@ mdui-chip svg
 blockquote
     margin-top: 0px
     padding: 15px
-    background: #eee
     border-radius: var(--mdui-shape-corner-extra-small)
     border: 0.0625rem solid rgb(var(--mdui-color-outline))
     font-style: italic
