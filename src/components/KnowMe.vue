@@ -337,6 +337,7 @@ mdui-chip svg
     height: 100%
 
 blockquote
+    margin-top: 0px
     padding: 15px
     background: #eee
     border-radius: var(--mdui-shape-corner-extra-small)
