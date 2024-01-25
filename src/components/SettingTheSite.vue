@@ -35,7 +35,7 @@
         <div class="setting">
             <p>{{ $t('setting_mode') }}</p>
             <div class="setting-mdui">
-                <mdui-segmented-button-group selects="single" ref="mode">
+                <mdui-segmented-button-group selects="single" id="mode">
                     <mdui-segmented-button icon="mode_night--outlined" value="dark">{{
                         $t('setting_mode_dark')
                     }}</mdui-segmented-button>
@@ -85,25 +85,20 @@ import { ref, onMounted } from 'vue'
 import { setTheme } from 'mdui/functions/setTheme.js'
 import { snackbar } from 'mdui/functions/snackbar.js'
 import { setColorScheme } from 'mdui/functions/setColorScheme.js'
-// import { $ } from 'mdui/jq.js'
+import { $ } from 'mdui/jq.js'
 import useZakoCounter from '../function/zako'
 const lang = ref<any>(null)
-const mode = ref<any>(null)
-// const color = ref<any>(null)
-const colorCard = ref<any>(null)
-const { zako, zakozako, clearLocalStorage } = useZakoCounter()
-
-const colorOptions = ['#ffb4aa', '#00cc6a', '#0078d4', '#ff8c00', '#aec9d0']
-// console.log(localStorage.getItem('lanauage'))
-// console.log(localStorage.getItem('mode'))
 const lanauage = localStorage.getItem('lanauage')
 const WebMode = localStorage.getItem('mode')
 const WebColor = localStorage.getItem('color')
 const HColor = '#AEC9D0'
+const { zako, zakozako, clearLocalStorage } = useZakoCounter()
+const colorOptions = ['#ffb4aa', '#00cc6a', '#0078d4', '#ff8c00', '#aec9d0']
+
 onMounted(() => {
+    
     // 显示相关设置
     if (localStorage.getItem('lanauage')) {
-        // lang.value.value = lanauage
         lang.value.value = lanauage
         app.config.globalProperties.$i18n.locale = lang.value.value
         // app.config.globalProperties.$i18n.fallbackLocale = lang.value.value
@@ -111,12 +106,11 @@ onMounted(() => {
         lang.value.value = 'zh-CN'
     }
     if (localStorage.getItem('mode')) {
-        // lang.value.value = lanauage
-        mode.value.value = WebMode
-        setTheme(mode.value.value)
+        setTheme(WebMode as 'light' | 'auto' | 'dark')
+        $('#mode').prop('value', WebMode)
     } else {
-        mode.value.value = 'auto'
         setTheme('auto')
+        $('#mode').prop('value', 'auto')
     }
      if (localStorage.getItem('color')) {
          setColorScheme(WebColor as string)
@@ -129,17 +123,17 @@ onMounted(() => {
         if (lang.value.value === '') {
             lang.value.value = 'zh-CN'
         }
-        // console.log(langTest.value.value + '被选中了')
         localStorage.setItem('lanauage', lang.value.value)
         app.config.globalProperties.$i18n.locale = lang.value.value
         // app.config.globalProperties.$i18n.fallbackLocale = lang.value.value
     })
-    mode.value.addEventListener('click', () => {
-        if (mode.value.value === '') {
-            mode.value.value = 'auto'
+
+    $('#mode').on('click', function (e) {
+        if ($('#mode').prop('value') === '') {
+            $('#mode').prop('value', 'auto')
         }
-        localStorage.setItem('mode', mode.value.value)
-        setTheme(mode.value.value)
+        localStorage.setItem('mode', $('#mode').prop('value') as 'light' | 'dark' | 'auto')
+        setTheme($('#mode').prop('value') as 'light' | 'dark' | 'auto')
     })
 })
 
