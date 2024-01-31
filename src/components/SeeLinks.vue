@@ -169,53 +169,55 @@
             </div>
         </mdui-card>
         <div class="link-right">
-        <mdui-card variant="elevated" style="margin: 0 5px 0 5%; width: 95%; padding: 20px">
-            <h2 style="margin-bottom: 10px">这是友链！🫂</h2>
-            <div class="links-chip">
-                <a href="https://winsloweric.com/">
-                    <div class="card">
-                        <mdui-avatar
-                            src="https://wsrv.nl/?url=https://winsloweric.com/assets/logo256t.4b80bfe0.png&w=200&h=200&output=webp"
-                        ></mdui-avatar>
-                        <p>Winslow</p>
-                    </div></a
-                >
-                <a href="https://shef.cc/">
-                    <div class="card">
-                        <mdui-avatar
-                            src="https://shef.cc/wp-content/uploads/SheepChef-%E5%90%89%E7%A5%A5%E7%89%A9-%E5%A4%B4%E5%83%8F2-e1683031048446.png.webp"
-                        ></mdui-avatar>
-                        <p>SheepChef</p>
-                    </div></a
-                ><a href="https://moe23333.vercel.app/">
-                    <div class="card">
-                        <mdui-avatar
-                            src="https://moe23333.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar_trans.1f5053b1.png&w=1920&q=75"
-                        ></mdui-avatar>
-                        <p>Moe23333</p>
-                    </div></a
-                ><a href="https://sunyz.net/">
-                    <div class="card">
-                        <mdui-avatar src="https://wsrv.nl/?url=https://gravatar.com/avatar/f00abd61daa5520cd384fe0d1136d3b40df021ac87089061fe99b4a3f74dc9a2&output=webp"></mdui-avatar>
-                        <p>Sunyz</p>
-                    </div></a
-                ><a href="https://i.lemonkoi.one/">
-                    <div class="card">
-                        <mdui-avatar
-                            src="https://gravatar.loli.net/avatar/6fd22617894ee4de431dc28927bcd1bb?s=200"
-                        ></mdui-avatar>
-                        <p>MoeMagicMango</p>
-                    </div></a
-                ><a href="https://blog.nekoq.top/links">
-                    <div class="card">
-                        <mdui-avatar icon="add_link--outlined"></mdui-avatar>
-                        <p>Motto motto...</p>
-                        <!-- https://www.youtube.com/watch?v=7uiKC1P7__U -->
-                    </div></a
-                >
-            </div>
-        </mdui-card>
-        <mdui-card
+            <mdui-card variant="elevated" style="margin: 0 5px 0 5%; width: 95%; padding: 20px">
+                <h2 style="margin-bottom: 10px">这是友链！🫂</h2>
+                <div class="links-chip">
+                    <a href="https://winsloweric.com/">
+                        <div class="card">
+                            <mdui-avatar
+                                src="https://wsrv.nl/?url=https://winsloweric.com/assets/logo256t.4b80bfe0.png&w=200&h=200&output=webp"
+                            ></mdui-avatar>
+                            <p>Winslow</p>
+                        </div></a
+                    >
+                    <a href="https://shef.cc/">
+                        <div class="card">
+                            <mdui-avatar
+                                src="https://shef.cc/wp-content/uploads/SheepChef-%E5%90%89%E7%A5%A5%E7%89%A9-%E5%A4%B4%E5%83%8F2-e1683031048446.png.webp"
+                            ></mdui-avatar>
+                            <p>SheepChef</p>
+                        </div></a
+                    ><a href="https://moe23333.vercel.app/">
+                        <div class="card">
+                            <mdui-avatar
+                                src="https://moe23333.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar_trans.1f5053b1.png&w=1920&q=75"
+                            ></mdui-avatar>
+                            <p>Moe23333</p>
+                        </div></a
+                    ><a href="https://sunyz.net/">
+                        <div class="card">
+                            <mdui-avatar
+                                src="https://wsrv.nl/?url=https://gravatar.com/avatar/f00abd61daa5520cd384fe0d1136d3b40df021ac87089061fe99b4a3f74dc9a2&output=webp"
+                            ></mdui-avatar>
+                            <p>Sunyz</p>
+                        </div></a
+                    ><a href="https://i.lemonkoi.one/">
+                        <div class="card">
+                            <mdui-avatar
+                                src="https://gravatar.loli.net/avatar/6fd22617894ee4de431dc28927bcd1bb?s=200"
+                            ></mdui-avatar>
+                            <p>MoeMagicMango</p>
+                        </div></a
+                    ><a href="https://blog.nekoq.top/links">
+                        <div class="card">
+                            <mdui-avatar icon="add_link--outlined"></mdui-avatar>
+                            <p>Motto motto...</p>
+                            <!-- https://www.youtube.com/watch?v=7uiKC1P7__U -->
+                        </div></a
+                    >
+                </div>
+            </mdui-card>
+            <mdui-card
                 variant="elevated"
                 class="hover"
                 style="margin: 20px 5px 0px 5%; width: 95%; padding: 20px"
@@ -242,7 +244,8 @@
                         </mdui-list-item>
                     </mdui-list>
                 </div>
-            </mdui-card></div>
+            </mdui-card>
+        </div>
     </div>
 </template>
 

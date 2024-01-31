@@ -12,9 +12,15 @@
             <p>深/浅色模式</p>
             <div class="setting-mdui">
                 <mdui-segmented-button-group selects="single" id="mode">
-                    <mdui-segmented-button icon="mode_night--outlined" value="dark">深色</mdui-segmented-button>
-                    <mdui-segmented-button icon="autorenew--outlined" value="auto">自动</mdui-segmented-button>
-                    <mdui-segmented-button icon="light_mode--outlined" value="light">浅色</mdui-segmented-button>
+                    <mdui-segmented-button icon="mode_night--outlined" value="dark"
+                        >深色</mdui-segmented-button
+                    >
+                    <mdui-segmented-button icon="autorenew--outlined" value="auto"
+                        >自动</mdui-segmented-button
+                    >
+                    <mdui-segmented-button icon="light_mode--outlined" value="light"
+                        >浅色</mdui-segmented-button
+                    >
                 </mdui-segmented-button-group>
             </div>
         </div>
@@ -40,15 +46,12 @@
         <div class="setting">
             <p>清除所有设置</p>
             <div class="setting-mdui">
-                <mdui-button
-                    variant="text"
-                    icon="delete--outlined"
-                    v-on:click="clearLocalStorage()"
+                <mdui-button variant="text" icon="delete--outlined" v-on:click="clearLocalStorage()"
                     >重置计数</mdui-button
                 >
-                <mdui-button variant="text" icon="delete--outlined" v-on:click="Reset()">清除</mdui-button>
-            </div>
-            <div class="setting-mdui" style="margin-top: 10px">
+                <mdui-button variant="text" icon="delete--outlined" v-on:click="Reset()"
+                    >清除</mdui-button
+                >
                 <mdui-button variant="text" icon="delete--outlined" v-on:click="CleanAll()"
                     >一键清除！</mdui-button
                 >
@@ -119,7 +122,21 @@ function CleanAll() {
         description: '你真的要清除吗？（真的很久很久的）',
         confirmText: 'Yes',
         onConfirm: function () {
-            $('body').empty()
+            setTimeout(() => {
+                $('mdui-top-app-bar').empty()
+            }, 1000)
+
+            setTimeout(() => {
+                $('.desktop').empty()
+            }, 2000)
+
+            setTimeout(() => {
+                $('.mobile').empty()
+            }, 3000)
+
+            setTimeout(() => {
+                $('.miao').empty()
+            }, 4000)
         },
         closeOnEsc: false,
         closeOnOverlayClick: false,

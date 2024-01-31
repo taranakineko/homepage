@@ -11,7 +11,6 @@ import 'mdui'
 import { setColorScheme } from 'mdui/functions/setColorScheme.js'
 setColorScheme('#AEC9D0')
 
-
 const app = createApp(App)
 
 app.use(router)

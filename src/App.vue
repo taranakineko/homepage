@@ -78,10 +78,7 @@ function OpenSetting() {
                 v-on:click="OpenMe()"
                 >关于</mdui-navigation-rail-item
             >
-            <mdui-navigation-rail-item
-                icon="link--outlined"
-                value="links"
-                v-on:click="OpenLinks()"
+            <mdui-navigation-rail-item icon="link--outlined" value="links" v-on:click="OpenLinks()"
                 >链接</mdui-navigation-rail-item
             >
             <mdui-navigation-rail-item
@@ -131,10 +128,7 @@ function OpenSetting() {
                 v-on:click="OpenMe()"
                 >关于</mdui-navigation-bar-item
             >
-            <mdui-navigation-bar-item
-                icon="link--outlined"
-                value="links"
-                v-on:click="OpenLinks()"
+            <mdui-navigation-bar-item icon="link--outlined" value="links" v-on:click="OpenLinks()"
                 >链接</mdui-navigation-bar-item
             >
             <mdui-navigation-bar-item

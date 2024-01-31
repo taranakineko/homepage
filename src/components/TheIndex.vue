@@ -33,7 +33,7 @@
             "
         >
             <span>
-                🚧 Somethings are not finished yet, please wait for me to finish...! 
+                🚧 Somethings are not finished yet, please wait for me to finish...!
                 <br />
                 有些事情还未结束哦...
             </span>

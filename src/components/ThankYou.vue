@@ -7,7 +7,7 @@
         ></mdui-button-icon>
         <mdui-top-app-bar-title>Thanks You</mdui-top-app-bar-title>
     </mdui-top-app-bar>
-    <div class="miao-thanks" style="align-items: flex-end;">
+    <div class="miao-thanks" style="align-items: flex-end">
         <div class="thanks-body">
             <mdui-card
                 variant="elevated"
@@ -15,7 +15,7 @@
                 style="margin: 20px 5px 0px 5%; width: 95%; padding: 20px"
             >
                 <div class="me-body">
-                    <p style="font-size: xx-large;">恭喜你，走遍了该区域哟！</p>
+                    <p style="font-size: xx-large">恭喜你，走遍了该区域哟！</p>
                 </div>
             </mdui-card>
         </div>
