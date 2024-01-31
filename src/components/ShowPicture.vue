@@ -81,7 +81,6 @@
 
 <script>
 import ScrollReveal from 'scrollreveal'
-import { UseLan } from '@/function/read'
 import { $ } from 'mdui/jq.js'
 import { dialog } from 'mdui/functions/dialog.js'
 
@@ -111,8 +110,6 @@ export default {
                 closeOnOverlayClick: true
             })
         })
-
-        UseLan()
     }
 }
 </script>

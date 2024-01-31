@@ -5,51 +5,21 @@
             ref="zako"
             data-umami-event="zako~"
         ></mdui-button-icon>
-        <mdui-top-app-bar-title>{{ $t('setting') }}</mdui-top-app-bar-title>
+        <mdui-top-app-bar-title>Setting</mdui-top-app-bar-title>
     </mdui-top-app-bar>
     <div class="miao">
         <div class="setting">
-            <p>{{ $t('setting_lanage') }}</p>
-            <div class="setting-mdui">
-                <mdui-select end-aligned variant="filled" value="zh-CN" ref="lang" disabled>
-                    <mdui-menu-item value="zh-CN">{{
-                        $t('setting_lanage_chinese')
-                    }}</mdui-menu-item>
-                    <mdui-menu-item value="zh-MS">{{ $t('setting_lanage_zhms') }}</mdui-menu-item>
-                    <mdui-menu-item value="zh-GL">{{ $t('setting_lanage_zhgl') }}</mdui-menu-item>
-                </mdui-select>
-            </div>
-            <mdui-list>
-                <mdui-collapse>
-                    <mdui-collapse-item>
-                        <mdui-list-item slot="header" icon="warning--outlined">{{
-                            $t('setting_lanage_warning')
-                        }}</mdui-list-item>
-                        <div style="margin-left: 2.5rem">
-                            <mdui-list-item>{{ $t('setting_lanage_warning_p') }}</mdui-list-item>
-                        </div>
-                    </mdui-collapse-item>
-                </mdui-collapse>
-            </mdui-list>
-        </div>
-        <div class="setting">
-            <p>{{ $t('setting_mode') }}</p>
+            <p>深/浅色模式</p>
             <div class="setting-mdui">
                 <mdui-segmented-button-group selects="single" id="mode">
-                    <mdui-segmented-button icon="mode_night--outlined" value="dark">{{
-                        $t('setting_mode_dark')
-                    }}</mdui-segmented-button>
-                    <mdui-segmented-button icon="autorenew--outlined" value="auto">{{
-                        $t('setting_mode_auto')
-                    }}</mdui-segmented-button>
-                    <mdui-segmented-button icon="light_mode--outlined" value="light">{{
-                        $t('setting_mode_light')
-                    }}</mdui-segmented-button>
+                    <mdui-segmented-button icon="mode_night--outlined" value="dark">深色</mdui-segmented-button>
+                    <mdui-segmented-button icon="autorenew--outlined" value="auto">自动</mdui-segmented-button>
+                    <mdui-segmented-button icon="light_mode--outlined" value="light">浅色</mdui-segmented-button>
                 </mdui-segmented-button-group>
             </div>
         </div>
         <div class="setting">
-            <p>{{ $t('setting_color') }}</p>
+            <p>主题颜色</p>
             <div class="setting-mdui">
                 <mdui-dropdown placement="left-start">
                     <mdui-button-icon slot="trigger" icon="color_lens--outlined"></mdui-button-icon>
@@ -68,17 +38,15 @@
             </div>
         </div>
         <div class="setting">
-            <p>{{ $t('setting_delete') }}</p>
+            <p>清除所有设置</p>
             <div class="setting-mdui">
                 <mdui-button
                     variant="text"
                     icon="delete--outlined"
                     v-on:click="clearLocalStorage()"
-                    >{{ $t('setting_delete_zako') }}</mdui-button
+                    >重置计数</mdui-button
                 >
-                <mdui-button variant="text" icon="delete--outlined" v-on:click="Reset()">{{
-                    $t('setting_delete_button')
-                }}</mdui-button>
+                <mdui-button variant="text" icon="delete--outlined" v-on:click="Reset()">清除</mdui-button>
             </div>
             <div class="setting-mdui" style="margin-top: 10px">
                 <mdui-button variant="text" icon="delete--outlined" v-on:click="CleanAll()"
@@ -90,16 +58,13 @@
 </template>
 
 <script setup lang="ts">
-import app from '@/main'
-import { ref, onMounted } from 'vue'
+import { onMounted } from 'vue'
 import { alert } from 'mdui/functions/alert.js'
 import { setTheme } from 'mdui/functions/setTheme.js'
 import { snackbar } from 'mdui/functions/snackbar.js'
 import { setColorScheme } from 'mdui/functions/setColorScheme.js'
 import { $ } from 'mdui/jq.js'
 import useZakoCounter from '../function/zako'
-const lang = ref<any>(null)
-const lanauage = localStorage.getItem('lanauage')
 const WebMode = localStorage.getItem('mode')
 const WebColor = localStorage.getItem('color')
 const HColor = '#AEC9D0'
@@ -107,14 +72,6 @@ const { zako, zakozako, clearLocalStorage } = useZakoCounter()
 const colorOptions = ['#ffb4aa', '#00cc6a', '#0078d4', '#ff8c00', '#aec9d0']
 
 onMounted(() => {
-    // 显示相关设置
-    if (localStorage.getItem('lanauage')) {
-        lang.value.value = lanauage
-        app.config.globalProperties.$i18n.locale = lang.value.value
-        // app.config.globalProperties.$i18n.fallbackLocale = lang.value.value
-    } else {
-        lang.value.value = 'zh-CN'
-    }
     if (localStorage.getItem('mode')) {
         setTheme(WebMode as 'light' | 'auto' | 'dark')
         $('#mode').prop('value', WebMode)
@@ -127,16 +84,6 @@ onMounted(() => {
     } else {
         setColorScheme(HColor)
     }
-
-    // 更新设置
-    lang.value.addEventListener('click', () => {
-        if (lang.value.value === '') {
-            lang.value.value = 'zh-CN'
-        }
-        localStorage.setItem('lanauage', lang.value.value)
-        app.config.globalProperties.$i18n.locale = lang.value.value
-        // app.config.globalProperties.$i18n.fallbackLocale = lang.value.value
-    })
 
     $('#mode').on('click', function (e) {
         if ($('#mode').prop('value') === '') {

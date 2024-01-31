@@ -18,7 +18,7 @@
                 height: 100%;
             "
         >
-            <span>{{ $t('index_cat') }}</span>
+            <span>A 🐱cat lying on the ⌨️keyboard.</span>
         </mdui-card>
         <mdui-card
             variant="elevated"
@@ -33,9 +33,9 @@
             "
         >
             <span>
-                {{ $t('index_something') }}
+                🚧 Somethings are not finished yet, please wait for me to finish...! 
                 <br />
-                {{ $t('index_something_CN') }}
+                有些事情还未结束哦...
             </span>
         </mdui-card>
         <mdui-card
@@ -68,10 +68,8 @@
 </template>
 
 <script setup lang="ts">
-import { UseLan } from '@/function/read'
 import randomTheTXT from '@/function/snackbar'
 const { OpenTheSnackbar } = randomTheTXT()
-UseLan()
 </script>
 
 <style lang="scss">

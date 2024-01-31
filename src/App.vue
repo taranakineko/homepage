@@ -70,31 +70,31 @@ function OpenSetting() {
                 icon="restart_alt--outlined"
                 value="start"
                 v-on:click="OpenStart()"
-                >{{ $t('app_start') }}</mdui-navigation-rail-item
+                >开始</mdui-navigation-rail-item
             >
             <mdui-navigation-rail-item
                 icon="device_unknown--outlined"
                 value="me"
                 v-on:click="OpenMe()"
-                >{{ $t('app_me') }}</mdui-navigation-rail-item
+                >关于</mdui-navigation-rail-item
             >
             <mdui-navigation-rail-item
                 icon="link--outlined"
                 value="links"
                 v-on:click="OpenLinks()"
-                >{{ $t('app_links') }}</mdui-navigation-rail-item
+                >链接</mdui-navigation-rail-item
             >
             <mdui-navigation-rail-item
                 icon="face_retouching_natural--outlined"
                 value="thanks"
                 v-on:click="OpenThanks()"
-                >{{ $t('app_thanks') }}</mdui-navigation-rail-item
+                >感谢</mdui-navigation-rail-item
             >
             <mdui-navigation-rail-item
                 icon="settings--outlined"
                 value="setting"
                 v-on:click="OpenSetting()"
-                >{{ $t('app_setting') }}</mdui-navigation-rail-item
+                >设置</mdui-navigation-rail-item
             >
             <mdui-button-icon
                 ref="OpenDialog"
@@ -123,31 +123,31 @@ function OpenSetting() {
                 icon="restart_alt--outlined"
                 value="start"
                 v-on:click="OpenStart()"
-                >{{ $t('app_start') }}</mdui-navigation-bar-item
+                >开始</mdui-navigation-bar-item
             >
             <mdui-navigation-bar-item
                 icon="device_unknown--outlined"
                 value="me"
                 v-on:click="OpenMe()"
-                >{{ $t('app_me') }}</mdui-navigation-bar-item
+                >关于</mdui-navigation-bar-item
             >
             <mdui-navigation-bar-item
                 icon="link--outlined"
                 value="links"
                 v-on:click="OpenLinks()"
-                >{{ $t('app_links') }}</mdui-navigation-bar-item
+                >链接</mdui-navigation-bar-item
             >
             <mdui-navigation-bar-item
                 icon="face_retouching_natural--outlined"
                 value="thanks"
                 v-on:click="OpenThanks"
-                >{{ $t('app_thanks') }}</mdui-navigation-bar-item
+                >感谢</mdui-navigation-bar-item
             >
             <mdui-navigation-bar-item
                 icon="settings--outlined"
                 value="setting"
                 v-on:click="OpenSetting()"
-                >{{ $t('app_setting') }}</mdui-navigation-bar-item
+                >设置</mdui-navigation-bar-item
             >
         </mdui-navigation-bar>
     </div>

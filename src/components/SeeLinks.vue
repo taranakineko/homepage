@@ -6,11 +6,11 @@
             ref="zako"
             data-umami-event="zako~"
         ></mdui-button-icon>
-        <mdui-top-app-bar-title>{{ $t('links') }}</mdui-top-app-bar-title>
+        <mdui-top-app-bar-title>See Links</mdui-top-app-bar-title>
     </mdui-top-app-bar>
     <div class="miao-links">
         <mdui-card variant="elevated" class="link-left">
-            <h2 style="margin-bottom: 10px">{{ $t('links_mylinks_h2') }}</h2>
+            <h2 style="margin-bottom: 10px">这是关于 千畔 的链接！🔗</h2>
             <div class="me-body">
                 <h3>社交平台</h3>
                 <div class="links-chip">
@@ -169,7 +169,7 @@
             </div>
         </mdui-card>
         <mdui-card variant="elevated" class="link-right">
-            <h2 style="margin-bottom: 10px">{{ $t('links_friendslinks_h2') }}</h2>
+            <h2 style="margin-bottom: 10px">这是友链！🫂</h2>
             <div class="links-chip">
                 <a href="https://winsloweric.com/">
                     <div class="card">
@@ -219,11 +219,9 @@
 
 <script setup lang="ts">
 import useZakoCounter from '../function/zako'
-import { UseLan } from '@/function/read'
 import { snackbar } from 'mdui/functions/snackbar.js'
 const { zako, zakozako } = useZakoCounter()
 const mail = 'hi@nekoq.top'
-UseLan()
 function KnowMail() {
     snackbar({
         message: mail,

@@ -5,7 +5,7 @@
             ref="zako"
             data-umami-event="zako~"
         ></mdui-button-icon>
-        <mdui-top-app-bar-title>{{ $t('thanks') }}</mdui-top-app-bar-title>
+        <mdui-top-app-bar-title>Thanks You</mdui-top-app-bar-title>
     </mdui-top-app-bar>
     <div class="miao-thanks">
         <div class="thanks-body">
@@ -14,22 +14,22 @@
                 class="hover"
                 style="margin: 20px 5px 0px 5%; width: 95%; padding: 20px"
             >
-                <h2>{{ $t('thanks_analytics_h2') }}</h2>
+                <h2>想看看网站统计？</h2>
                 <div class="me-body">
-                    <p>{{ $t('thanks_analytics_p') }}</p>
+                    <p>这边请~😉</p>
                     <mdui-list>
                         <mdui-list-item
                             href="https://umami.nekoq.eu.org/share/4lQOLAOmfO6CW9z6/主页"
                             target="_blank"
                             end-icon="open_in_new--outlined"
-                            :description="$t('thanks_analytics_homepage_desc')"
+                            description="有什么呢"
                         >
                             主页
                         </mdui-list-item>
                         <mdui-list-item
                             href="https://umami.nekoq.eu.org/share/gjaybUZ87J6pDCaJ/Blog"
                             target="_blank"
-                            :description="$t('thanks_analytics_blog_desc')"
+                            description="这里不能看！"
                             end-icon="open_in_new--outlined"
                         >
                             博客
@@ -44,7 +44,7 @@
                 class="hover"
                 style="margin: 20px 5px 0px 5%; width: 95%; padding: 20px"
             >
-                <h2>{{ $t('thanks_othing_h2') }}</h2>
+                <h2>其他内容？</h2>
                 <div class="me-body">
                     <p>等...！新的内容目前还在施工，现有内容也在缓慢替换</p>
                     <p>但是你可以等千畔慢慢的写...</p>
@@ -117,9 +117,7 @@
 
 <script setup lang="ts">
 import useZakoCounter from '../function/zako'
-import { UseLan } from '@/function/read'
 import randomTheTXT from '@/function/snackbar'
 const { OpenTheSnackbar } = randomTheTXT()
 const { zako, zakozako } = useZakoCounter()
-UseLan()
 </script>
