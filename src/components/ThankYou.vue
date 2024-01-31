@@ -7,34 +7,15 @@
         ></mdui-button-icon>
         <mdui-top-app-bar-title>Thanks You</mdui-top-app-bar-title>
     </mdui-top-app-bar>
-    <div class="miao-thanks">
+    <div class="miao-thanks" style="align-items: flex-end;">
         <div class="thanks-body">
             <mdui-card
                 variant="elevated"
                 class="hover"
                 style="margin: 20px 5px 0px 5%; width: 95%; padding: 20px"
             >
-                <h2>想看看网站统计？</h2>
                 <div class="me-body">
-                    <p>这边请~😉</p>
-                    <mdui-list>
-                        <mdui-list-item
-                            href="https://umami.nekoq.eu.org/share/4lQOLAOmfO6CW9z6/主页"
-                            target="_blank"
-                            end-icon="open_in_new--outlined"
-                            description="有什么呢"
-                        >
-                            主页
-                        </mdui-list-item>
-                        <mdui-list-item
-                            href="https://umami.nekoq.eu.org/share/gjaybUZ87J6pDCaJ/Blog"
-                            target="_blank"
-                            description="这里不能看！"
-                            end-icon="open_in_new--outlined"
-                        >
-                            博客
-                        </mdui-list-item>
-                    </mdui-list>
+                    <p style="font-size: xx-large;">恭喜你，走遍了该区域哟！</p>
                 </div>
             </mdui-card>
         </div>

@@ -168,7 +168,8 @@
                 </div>
             </div>
         </mdui-card>
-        <mdui-card variant="elevated" class="link-right">
+        <div class="link-right">
+        <mdui-card variant="elevated" style="margin: 0 5px 0 5%; width: 95%; padding: 20px">
             <h2 style="margin-bottom: 10px">这是友链！🫂</h2>
             <div class="links-chip">
                 <a href="https://winsloweric.com/">
@@ -195,13 +196,13 @@
                     </div></a
                 ><a href="https://sunyz.net/">
                     <div class="card">
-                        <mdui-avatar src="https://cdn.sunyz.net/avatar@128x128.webp"></mdui-avatar>
+                        <mdui-avatar src="https://wsrv.nl/?url=https://gravatar.com/avatar/f00abd61daa5520cd384fe0d1136d3b40df021ac87089061fe99b4a3f74dc9a2&output=webp"></mdui-avatar>
                         <p>Sunyz</p>
                     </div></a
                 ><a href="https://i.lemonkoi.one/">
                     <div class="card">
                         <mdui-avatar
-                            src="https://cravatar.cn/avatar/6fd22617894ee4de431dc28927bcd1bb?s=200"
+                            src="https://gravatar.loli.net/avatar/6fd22617894ee4de431dc28927bcd1bb?s=200"
                         ></mdui-avatar>
                         <p>MoeMagicMango</p>
                     </div></a
@@ -214,6 +215,34 @@
                 >
             </div>
         </mdui-card>
+        <mdui-card
+                variant="elevated"
+                class="hover"
+                style="margin: 20px 5px 0px 5%; width: 95%; padding: 20px"
+            >
+                <h2>想看看网站统计？</h2>
+                <div class="me-body">
+                    <p>这边请~😉</p>
+                    <mdui-list>
+                        <mdui-list-item
+                            href="https://umami.nekoq.eu.org/share/4lQOLAOmfO6CW9z6/主页"
+                            target="_blank"
+                            end-icon="open_in_new--outlined"
+                            description="有什么呢"
+                        >
+                            主页
+                        </mdui-list-item>
+                        <mdui-list-item
+                            href="https://umami.nekoq.eu.org/share/gjaybUZ87J6pDCaJ/Blog"
+                            target="_blank"
+                            description="这里不能看！"
+                            end-icon="open_in_new--outlined"
+                        >
+                            博客
+                        </mdui-list-item>
+                    </mdui-list>
+                </div>
+            </mdui-card></div>
     </div>
 </template>
 
@@ -232,16 +261,7 @@ function KnowMail() {
 </script>
 
 <style lang="sass">
-.link-left
-    transition: 0.5s
-    &:hover
-        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25)
-    &::before
-        box-shadow: none
-    &::after
-        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25)
-
-.link-right
+mdui-card
     transition: 0.5s
     &:hover
         box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25)
