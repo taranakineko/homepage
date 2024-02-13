@@ -286,19 +286,46 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
 import useZakoCounter from '../function/zako'
 import { dialog } from 'mdui/functions/dialog.js'
+import { $ } from 'mdui/jq.js'
 const { zako, zakozako } = useZakoCounter()
+const reply = ref()
+async function GetRating() {
+        const resp = await fetch('https://api.nekoq.top/kano',{method:'get'})
+        if (resp.ok) {
+            const data = await resp.json()
+            DXRating = data.rating
+            reply.value = "DX Rating: " + DXRating
+        } else {
+            console.log('error')
+        }
+    }
+    let DXRating:string;
+
 // 召唤 Dialog
-function SeeSeeYourB50() {
+async function SeeSeeYourB50() {
     // 看看你的
-    dialog({
+    if (localStorage.getItem('seeB50') == 'true') {
+        await GetRating()
+        dialog({
+        headline: '我知道你想看什么......',
+        body: reply.value,
+        actions: [{ text: 'Next' }],
+        closeOnEsc: true,
+        closeOnOverlayClick: true
+    })
+    } else {
+        dialog({
         headline: '我知道你想看什么......',
         body: '<p>你能找到千畔再说嘛！</p><p>或者再找找其他地方...？或许千畔已经塞了一些东西进去了~</p>',
         actions: [{ text: 'Next' }],
         closeOnEsc: true,
         closeOnOverlayClick: true
     })
+    localStorage.setItem('seeB50', 'true')
+    }
 }
 function MaiMen() {
     // Amen 的变体
