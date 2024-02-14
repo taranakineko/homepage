@@ -293,7 +293,7 @@ import { $ } from 'mdui/jq.js'
 const { zako, zakozako } = useZakoCounter()
 const reply = ref()
 async function GetRating() {
-    const resp = await fetch('http://127.0.0.1/kano', { method: 'get' })
+    const resp = await fetch('https://api.nekoq.top/kano', { method: 'get' })
     if (resp.ok) {
         const data = await resp.json()
         DXRating = data.rating
