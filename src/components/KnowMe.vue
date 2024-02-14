@@ -300,7 +300,16 @@ async function GetRating() {
         SRat = data.standard_total
         DRat = data.dx_total
         UpdateTime = data.update_time
-        reply.value = '<p>DX Rating: ' + DXRating + '（' + SRat + ' + ' + DRat + '）</p><p>更新时间：' + UpdateTime + '</p>'
+        reply.value =
+            '<p>DX Rating: ' +
+            DXRating +
+            '（' +
+            SRat +
+            ' + ' +
+            DRat +
+            '）</p><p>更新时间：' +
+            UpdateTime +
+            '</p>'
     } else {
         console.log('error')
     }
