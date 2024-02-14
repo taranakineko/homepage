@@ -286,25 +286,29 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from 'vue'
 import useZakoCounter from '../function/zako'
 import { dialog } from 'mdui/functions/dialog.js'
 import { $ } from 'mdui/jq.js'
 const { zako, zakozako } = useZakoCounter()
 const reply = ref()
 async function GetRating() {
-        const resp = await fetch('https://api.nekoq.top/kano',{method:'get'})
-        if (resp.ok) {
-            const data = await resp.json()
-            DXRating = data.rating
-            UpdateTime = data.update_time
-            reply.value = "DX Rating: " + DXRating + "\n 更新时间：" + UpdateTime
-        } else {
-            console.log('error')
-        }
+    const resp = await fetch('http://127.0.0.1/kano', { method: 'get' })
+    if (resp.ok) {
+        const data = await resp.json()
+        DXRating = data.rating
+        SRat = data.standard_total
+        DRat = data.dx_total
+        UpdateTime = data.update_time
+        reply.value = '<p>DX Rating: ' + DXRating + '（' + SRat + ' + ' + DRat + '）</p><p>更新时间：' + UpdateTime + '</p>'
+    } else {
+        console.log('error')
     }
-    let DXRating:string
-    let UpdateTime:string
+}
+let DXRating: string
+let UpdateTime: string
+let SRat: string
+let DRat: string
 
 // 召唤 Dialog
 async function SeeSeeYourB50() {
@@ -312,21 +316,21 @@ async function SeeSeeYourB50() {
     if (localStorage.getItem('seeB50') == 'true') {
         await GetRating()
         dialog({
-        headline: '我知道你想看什么......',
-        body: reply.value,
-        actions: [{ text: 'Next' }],
-        closeOnEsc: true,
-        closeOnOverlayClick: true
-    })
+            headline: '我知道你想看什么......',
+            body: reply.value,
+            actions: [{ text: 'Next' }],
+            closeOnEsc: true,
+            closeOnOverlayClick: true
+        })
     } else {
         dialog({
-        headline: '我知道你想看什么......',
-        body: '<p>你能找到千畔再说嘛！</p><p>或者再找找其他地方...？或许千畔已经塞了一些东西进去了~</p>',
-        actions: [{ text: 'Next' }],
-        closeOnEsc: true,
-        closeOnOverlayClick: true
-    })
-    localStorage.setItem('seeB50', 'true')
+            headline: '我知道你想看什么......',
+            body: '<p>你能找到千畔再说嘛！</p><p>或者再找找其他地方...？或许千畔已经塞了一些东西进去了~</p>',
+            actions: [{ text: 'Next' }],
+            closeOnEsc: true,
+            closeOnOverlayClick: true
+        })
+        localStorage.setItem('seeB50', 'true')
     }
 }
 function MaiMen() {
