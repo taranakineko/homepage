@@ -297,12 +297,14 @@ async function GetRating() {
         if (resp.ok) {
             const data = await resp.json()
             DXRating = data.rating
-            reply.value = "DX Rating: " + DXRating
+            UpdateTime = data.update_time
+            reply.value = "DX Rating: " + DXRating + "\n 更新时间：" + UpdateTime
         } else {
             console.log('error')
         }
     }
-    let DXRating:string;
+    let DXRating:string
+    let UpdateTime:string
 
 // 召唤 Dialog
 async function SeeSeeYourB50() {
