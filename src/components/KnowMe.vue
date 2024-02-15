@@ -323,7 +323,13 @@ let DRat: string
 async function SeeSeeYourB50() {
     // 看看你的
     if (localStorage.getItem('seeB50') == 'true') {
+        dialog({
+            body: '<div style="display: flex;justify-content: center;align-items: center;"><mdui-circular-progress style="scale: 80%"></mdui-circular-progress></div>',
+            closeOnEsc: true,
+            closeOnOverlayClick: true
+        })
         await GetRating()
+        $('mdui-dialog').prop('open', false)
         dialog({
             headline: '我知道你想看什么......',
             body: reply.value,
