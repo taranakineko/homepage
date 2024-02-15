@@ -204,7 +204,7 @@ h3 {
     }
 }
 
-@media screen and (min-width: 890px) {
+@media screen and (orientation: landscape) {
     .link-left {
         width: 40%;
         padding: 20px;
@@ -234,7 +234,7 @@ h3 {
     }
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (orientation: portrait) {
     .miao-links {
         padding-right: 0px;
         padding-left: 0px;
@@ -252,9 +252,8 @@ h3 {
         margin: 20px 5px 0px 5%;
     }
     .link-right {
-        width: 90%;
-        padding: 20px;
-        margin: 20px 5px 0px 5%;
+        width: 95%;
+        margin-top: 20px;
     }
     .miao-thanks {
         padding-right: 0px;
