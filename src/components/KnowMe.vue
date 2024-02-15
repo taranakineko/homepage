@@ -292,6 +292,7 @@ import { dialog } from 'mdui/functions/dialog.js'
 import { $ } from 'mdui/jq.js'
 const { zako, zakozako } = useZakoCounter()
 const reply = ref()
+const seeb50 = ref<number>(0)
 async function GetRating() {
     const resp = await fetch('https://api.nekoq.top/kano', { method: 'get' })
     if (resp.ok) {
@@ -322,7 +323,7 @@ let DRat: string
 // 召唤 Dialog
 async function SeeSeeYourB50() {
     // 看看你的
-    if (localStorage.getItem('seeB50') == 'true') {
+    if ( seeb50.value != 0 ) {
         dialog({
             body: '<div style="display: flex;justify-content: center;align-items: center;"><mdui-circular-progress style="scale: 80%"></mdui-circular-progress></div>',
             closeOnEsc: true,
@@ -345,7 +346,7 @@ async function SeeSeeYourB50() {
             closeOnEsc: true,
             closeOnOverlayClick: true
         })
-        localStorage.setItem('seeB50', 'true')
+        seeb50.value++
     }
 }
 function MaiMen() {
