@@ -15,7 +15,7 @@
                 style="margin: 20px 5px 0px 5%; width: 95%; padding: 20px"
             >
                 <div class="me-body">
-                    <p style="font-size: xx-large;line-height: 40pt;">恭喜你，走遍了该区域哟！</p>
+                    <p style="font-size: xx-large; line-height: 40pt">恭喜你，走遍了该区域哟！</p>
                 </div>
             </mdui-card>
         </div>
