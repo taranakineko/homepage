@@ -5,13 +5,13 @@
             ref="zako"
             data-umami-event="zako~"
         ></mdui-button-icon>
-        <mdui-top-app-bar-title>Read the card to see this page</mdui-top-app-bar-title>
+        <mdui-top-app-bar-title>读取卡片以探索更多内容</mdui-top-app-bar-title>
     </mdui-top-app-bar>
     <div class="miao">
         <mdui-card
-            class="hover"
+            class="pane"
             variant="elevated"
-            style="margin: 20px 5px 0px 5%; width: 95%; padding: 20px"
+            style="margin: 20px 5px 0px 5%; padding: 20px; height: auto;"
         >
             <div v-if="s === 'test'">
                 <p>这是用来测试根据 url 查询符显示页面的测试句</p>
@@ -40,3 +40,9 @@ const route = useRoute();
 
 const s = computed(() => route.query.s);
 </script>
+
+<style lang="sass">
+mdui-top-app-bar-title
+    .label
+        overflow-x: auto
+</style>
