@@ -5,7 +5,7 @@
             ref="zako"
             data-umami-event="zako~"
         ></mdui-button-icon>
-        <mdui-top-app-bar-title>读取卡片以探索更多内容</mdui-top-app-bar-title>
+        <mdui-top-app-bar-title>读取卡片,探索更多</mdui-top-app-bar-title>
     </mdui-top-app-bar>
     <div class="miao">
         <mdui-card
@@ -15,6 +15,9 @@
         >
             <div v-if="s === 'test'">
                 <p>这是用来测试根据 url 查询符显示页面的测试句</p>
+            </div>
+            <div v-if="s === 'b35396c'">
+                <p>☆(･ω･ﾉﾉﾞ☆(･ω･ﾉﾉﾞ☆</p>
             </div>
             <div v-else>
                 <p>并没有匹配的内容哦，请检查卡片写入的 url 是否正确</p>
@@ -40,9 +43,3 @@ const route = useRoute();
 
 const s = computed(() => route.query.s);
 </script>
-
-<style lang="sass">
-mdui-top-app-bar-title
-    .label
-        overflow-x: auto
-</style>
