@@ -15,7 +15,7 @@ const shouldShowPictures = computed(() => route.path === '/pictures');
     <Pictures v-if="shouldShowPictures"/>
     <div v-else class="miao" style="max-width: 100vw">
         <mdui-tabs value="index">
-        <mdui-tab value="index">Tab 1</mdui-tab>
+        <mdui-tab value="index">Home</mdui-tab>
         <mdui-tab value="know">Tab 2</mdui-tab>
         <mdui-tab value="link">Tab 3</mdui-tab>
         <mdui-tab value="thank">Tab 3</mdui-tab>
