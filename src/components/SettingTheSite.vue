@@ -1,17 +1,9 @@
 <template>
-    <mdui-top-app-bar variant="small" scroll-behavior="shrink elevate">
-        <mdui-button-icon
-            icon="menu--outlined"
-            ref="zako"
-            data-umami-event="zako~"
-        ></mdui-button-icon>
-        <mdui-top-app-bar-title>Setting</mdui-top-app-bar-title>
-    </mdui-top-app-bar>
-    <div class="miao">
+    <div class="miao" style="max-width: unset; min-width: unset;">
         <div class="setting">
             <p>深/浅色模式</p>
             <div class="setting-mdui">
-                <mdui-segmented-button-group selects="single" id="mode">
+                <mdui-segmented-button-group selects="single" id="mode" @click="changeMode()">
                     <mdui-segmented-button icon="mode_night--outlined" value="dark"
                         >深色</mdui-segmented-button
                     >
@@ -61,26 +53,36 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { watch, defineProps } from 'vue'
 import { alert } from 'mdui/functions/alert.js'
 import { setTheme } from 'mdui/functions/setTheme.js'
 import { snackbar } from 'mdui/functions/snackbar.js'
 import { setColorScheme } from 'mdui/functions/setColorScheme.js'
 import { $ } from 'mdui/jq.js'
-import useZakoCounter from '../function/zako'
 const WebMode = localStorage.getItem('mode')
 const WebColor = localStorage.getItem('color')
 const HColor = '#AEC9D0'
-const { zako, zakozako, clearLocalStorage } = useZakoCounter()
 const colorOptions = ['#ffb4aa', '#00cc6a', '#0078d4', '#ff8c00', '#aec9d0']
 
-onMounted(() => {
+// redo by ChatGPT 3.5
+// 2024.04.02
+const props = defineProps({
+  settingsUpdated: Boolean,
+});
+watch(() => props.settingsUpdated, (newVal) => {
+  if (newVal) {
     if (localStorage.getItem('mode')) {
-        setTheme(WebMode as 'light' | 'auto' | 'dark')
         $('#mode').prop('value', WebMode)
     } else {
-        setTheme('auto')
         $('#mode').prop('value', 'auto')
+    }
+  }
+});
+
+if (localStorage.getItem('mode')) {
+        setTheme(WebMode as 'light' | 'auto' | 'dark')
+    } else {
+        setTheme('auto')
     }
     if (localStorage.getItem('color')) {
         setColorScheme(WebColor as string)
@@ -88,14 +90,12 @@ onMounted(() => {
         setColorScheme(HColor)
     }
 
-    $('#mode').on('click', function (e) {
-        if ($('#mode').prop('value') === '') {
-            $('#mode').prop('value', 'auto')
-        }
-        localStorage.setItem('mode', $('#mode').prop('value') as 'light' | 'dark' | 'auto')
-        setTheme($('#mode').prop('value') as 'light' | 'dark' | 'auto')
-    })
-})
+
+const changeMode = () => {
+    console.log($('#mode').prop('value') as 'light' | 'dark' | 'auto')
+    setTheme($('#mode').prop('value') as 'light' | 'dark' | 'auto')
+    localStorage.setItem('mode', $('#mode').prop('value') as 'light' | 'dark' | 'auto')
+}
 
 const changeColor = (hexColor: string) => {
     // redo by ChatGPT 3.5
