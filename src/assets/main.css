@@ -100,9 +100,13 @@ svg {
     }
 }
 .fab-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     right: 10px;
     position: fixed;
-    bottom: 90px;
+    bottom: 10px;
+    gap: 10px;
 }
 .dialog-footer {
     text-align: center;
