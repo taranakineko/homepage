@@ -57,19 +57,9 @@
             </p>
         </mdui-card>
     </div>
-    <div class="fab-footer">
-        <mdui-fab
-            class="openSnackbar"
-            ref="OpenTheSnackbar"
-            icon="auto_awesome--outlined"
-            data-umami-event="TheIndex Snackbar"
-        ></mdui-fab>
-    </div>
 </template>
 
 <script setup lang="ts">
-import randomTheTXT from '@/function/snackbar'
-const { OpenTheSnackbar } = randomTheTXT()
 </script>
 
 <style lang="scss">
