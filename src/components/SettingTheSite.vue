@@ -59,6 +59,7 @@ import { setTheme } from 'mdui/functions/setTheme.js'
 import { snackbar } from 'mdui/functions/snackbar.js'
 import { setColorScheme } from 'mdui/functions/setColorScheme.js'
 import { $ } from 'mdui/jq.js'
+import clearLocalStorage from '../function/zako'
 const WebMode = localStorage.getItem('mode')
 const WebColor = localStorage.getItem('color')
 const HColor = '#AEC9D0'
