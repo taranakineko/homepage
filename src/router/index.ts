@@ -28,7 +28,7 @@ const router = createRouter({
             component: Card
         },
         {
-            path: '/:pathMatch(.*)*',
+            path: '/404.html',
             name: '404',
             component: FourOhFour
         }
