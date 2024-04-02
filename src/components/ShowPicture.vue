@@ -123,6 +123,8 @@ export default {
     grid-template-rows: masonry
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))  // 设置列数和最小/最大宽度
     gap: 20px  // 设置列之间的间距
+    left: 0
+    position: absolute
 
     p, a
         text-align: center
