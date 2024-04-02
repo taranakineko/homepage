@@ -1,12 +1,4 @@
 <template>
-    <mdui-top-app-bar variant="small" scroll-behavior="shrink elevate">
-        <mdui-button-icon
-            icon="menu--outlined"
-            ref="zako"
-            data-umami-event="zako~"
-        ></mdui-button-icon>
-        <mdui-top-app-bar-title>Thanks You</mdui-top-app-bar-title>
-    </mdui-top-app-bar>
     <div class="miao-thanks" style="align-items: flex-end">
         <div class="thanks-body">
             <mdui-card
@@ -97,8 +89,6 @@
 </template>
 
 <script setup lang="ts">
-import useZakoCounter from '../function/zako'
 import randomTheTXT from '@/function/snackbar'
 const { OpenTheSnackbar } = randomTheTXT()
-const { zako, zakozako } = useZakoCounter()
 </script>

@@ -1,6 +1,6 @@
 <template>
     <mdui-top-app-bar variant="small" scroll-behavior="shrink elevate">
-        <mdui-button-icon icon="menu--outlined"></mdui-button-icon>
+        <mdui-button-icon icon="menu--outlined" ref="zako"></mdui-button-icon>
         <mdui-top-app-bar-title>测试页，使用 ChatGPT 3.5 辅助搭建</mdui-top-app-bar-title>
     </mdui-top-app-bar>
     <div class="miao-pic">
@@ -80,9 +80,11 @@
 </template>
 
 <script>
+import useZakoCounter from '../function/zako'
 import ScrollReveal from 'scrollreveal'
 import { $ } from 'mdui/jq.js'
 import { dialog } from 'mdui/functions/dialog.js'
+const { zako, zakozako } = useZakoCounter()
 
 export default {
     mounted() {

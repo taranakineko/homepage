@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import App from '../App.vue'
 import Home from '../components/TheIndex.vue'
 import Me from '../components/KnowMe.vue'
 import Links from '../components/SeeLinks.vue'
@@ -12,44 +13,14 @@ const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {
-            path: '/',
-            name: 'home',
-            component: Home
-        },
-        {
-            path: '/me',
-            name: 'me',
-            component: Me
-        },
-        {
-            path: '/links',
-            name: 'links',
-            component: Links
-        },
-        {
-            path: '/thanks',
-            name: 'thanks',
-            component: Thanks
-        },
-        {
-            path: '/setting',
-            name: 'setting',
-            component: Setting
-        },
-        {
-            path: '/picture',
+            path: '/pictures',
             name: 'picture',
             component: Picture
         },
         {
-            path: '/c',
-            name: 'card',
-            component: Card
-        },
-        {
             path: '/:pathMatch(.*)*',
             name: '404',
-            component: FourOhFour
+            component: App
         }
     ]
 })

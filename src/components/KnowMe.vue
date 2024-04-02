@@ -1,12 +1,4 @@
 <template>
-    <mdui-top-app-bar variant="small" scroll-behavior="shrink elevate">
-        <mdui-button-icon
-            icon="menu--outlined"
-            ref="zako"
-            data-umami-event="zako~"
-        ></mdui-button-icon>
-        <mdui-top-app-bar-title>Know Me</mdui-top-app-bar-title>
-    </mdui-top-app-bar>
     <div class="miao-thanks">
         <div class="thanks-body">
             <mdui-card
@@ -288,10 +280,8 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import useZakoCounter from '../function/zako'
 import { dialog } from 'mdui/functions/dialog.js'
 import { $ } from 'mdui/jq.js'
-const { zako, zakozako } = useZakoCounter()
 const reply = ref()
 const seeb50 = ref<number>(0)
 async function GetRating() {

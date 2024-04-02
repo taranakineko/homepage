@@ -1,13 +1,5 @@
 <!-- eslint-disable vue/no-deprecated-slot-attribute -->
 <template>
-    <mdui-top-app-bar variant="small" scroll-behavior="shrink elevate">
-        <mdui-button-icon
-            icon="menu--outlined"
-            ref="zako"
-            data-umami-event="zako~"
-        ></mdui-button-icon>
-        <mdui-top-app-bar-title>See Links</mdui-top-app-bar-title>
-    </mdui-top-app-bar>
     <div class="miao-links">
         <mdui-card variant="elevated" class="link-left">
             <h2 style="margin-bottom: 10px">这是关于 千畔 的链接！🔗</h2>
@@ -255,9 +247,7 @@
 </template>
 
 <script setup lang="ts">
-import useZakoCounter from '../function/zako'
 import { snackbar } from 'mdui/functions/snackbar.js'
-const { zako, zakozako } = useZakoCounter()
 const mail = 'hi@nekoq.top'
 function KnowMail() {
     snackbar({
