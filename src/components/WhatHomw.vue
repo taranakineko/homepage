@@ -10,13 +10,13 @@
             <mdui-tab-panel slot="panel" value="know"><KnowMe /></mdui-tab-panel>
             <mdui-tab-panel slot="panel" value="link"><SeeLinks /></mdui-tab-panel>
             <mdui-tab-panel slot="panel" value="thank"><ThankYou /></mdui-tab-panel>
-    </mdui-tabs>
+        </mdui-tabs>
     </div>
 </template>
 
 <script setup lang="ts">
-import TheIndex from './TheIndex.vue';
-import KnowMe from './KnowMe.vue';
-import SeeLinks from './SeeLinks.vue';
-import ThankYou from './ThankYou.vue';
+import TheIndex from './TheIndex.vue'
+import KnowMe from './KnowMe.vue'
+import SeeLinks from './SeeLinks.vue'
+import ThankYou from './ThankYou.vue'
 </script>

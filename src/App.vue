@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref, onMounted, onUnmounted } from 'vue'
-import { useRoute, RouterView } from 'vue-router';
+import { useRoute, RouterView } from 'vue-router'
 import { UseSetting } from '@/function/read'
 import randomTheTXT from '@/function/snackbar'
 const { OpenTheSnackbar, backToTop, showBackToTop } = randomTheTXT()
@@ -17,12 +17,12 @@ const { OpenTheSnackbar, backToTop, showBackToTop } = randomTheTXT()
         ></mdui-fab>
         <mdui-tooltip content="点这返回顶部┏ (゜ω゜)=👉" placement="left-end">
             <mdui-fab
-            v-show="showBackToTop"
-            class="openSnackbar"
-            @click="backToTop"
-            icon="airline_stops--outlined"
-            data-umami-event="BackTop"
-        ></mdui-fab>
+                v-show="showBackToTop"
+                class="openSnackbar"
+                @click="backToTop"
+                icon="airline_stops--outlined"
+                data-umami-event="BackTop"
+            ></mdui-fab>
         </mdui-tooltip>
     </div>
 </template>

@@ -314,7 +314,7 @@ let DRat: string
 // 召唤 Dialog
 async function SeeSeeYourB50() {
     // 看看你的
-    if ( seeb50.value != 0 ) {
+    if (seeb50.value != 0) {
         dialog({
             body: '<div style="display: flex;justify-content: center;align-items: center;"><mdui-circular-progress style="scale: 80%"></mdui-circular-progress></div>',
             closeOnEsc: true,

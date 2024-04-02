@@ -11,7 +11,7 @@
         <mdui-card
             class="pane"
             variant="elevated"
-            style="margin: 20px 5px 0px 5%; padding: 20px; height: auto;"
+            style="margin: 20px 5px 0px 5%; padding: 20px; height: auto"
         >
             <div v-if="s === 'test'">
                 <p>这是用来测试根据 url 查询符显示页面的测试句</p>
@@ -36,10 +36,10 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useRoute } from 'vue-router';
+import { useRoute } from 'vue-router'
 import useZakoCounter from '../function/zako'
 const { zako, zakozako, clearLocalStorage } = useZakoCounter()
-const route = useRoute();
+const route = useRoute()
 
-const s = computed(() => route.query.s);
+const s = computed(() => route.query.s)
 </script>
