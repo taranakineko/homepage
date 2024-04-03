@@ -25,7 +25,7 @@ import ThankYou from './ThankYou.vue'
 import Picture from './ShowPicture.vue'
 // redo with ChatGPT 3.5
 // 2024.04.03
-const pictureRef = ref(null);
+const pictureRef = ref();
 function initPic() {
     pictureRef.value.chuNew();
 }
