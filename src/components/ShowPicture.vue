@@ -27,17 +27,88 @@
                     width: 100%;
                     height: 100%;
                     margin-bottom: 20px;
+                    padding: 20px;
                     text-align: center;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                 "
+                href="https://music.163.com/song?id=2099560517"
                 ><p>
                     All your steps aor in a maze <br />
                     All I do is follow through and pray <br />...<br />
                     To find the answer to this quest <br />
                     I'll journey with you till the end<br />...<br />Oramus iter per astra <br />
                     Lux tua nos dirigot
+                </p></mdui-card
+            >
+            <img v-for="picture in picturesOneandOne" :src="picture.src" :alt="picture.alt" loading="lazy" :key="picture.id" />
+            <mdui-card
+                style="
+                    width: 100%;
+                    height: 100%;
+                    margin-bottom: 20px;
+                    padding: 20px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                "
+                href="https://www.youtube.com/watch?v=a8DtaQwDawI"
+                ><p>
+                    爱我的话 给我回答 <br />
+                    我的爱丫爱丫没时差 <br />
+                    等待 是我为你付出的代价 喔 <br />
+                    爱我的话 要回答 <br />
+                    我只等你等你一句话 <br />
+                    走太远 你走太远 <br />
+                    你的回答 听不见 <br />
+                </p></mdui-card
+            >
+            <img v-for="picture in pictureTwo" :src="picture.src" :alt="picture.alt" loading="lazy" :key="picture.id" />
+            <mdui-card
+                style="
+                    width: 100%;
+                    height: 100%;
+                    margin-bottom: 20px;
+                    padding: 20px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                "
+                href="https://www.youtube.com/watch?v=6GFOAik-x-8"
+                ><p>
+                    ah, c'est une belle époque juste avant l'automne <br />
+                    pourtant, j’ai oublié comment elle se nomme <br />
+                    peut-être qu'imaginer c'est savoir <br />
+                    faites de beaux rêves, mes chers, bonne nuit<br />
+                    faites de beaux rêves <br />
+                    Mes chers, bonne nuit
+                </p></mdui-card
+            >
+            <img v-for="picture in pictureThree" :src="picture.src" :alt="picture.alt" loading="lazy" :key="picture.id" />
+            <mdui-card
+                style="
+                    width: 100%;
+                    height: 100%;
+                    margin-bottom: 20px;
+                    padding: 20px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                "
+                href="https://www.youtube.com/watch?v=qtJ6U4c0_fQ"
+                ><p>
+                    燻んでしまったの灰色に <br />
+                    こんな才能なんて借り物 <br />
+                    まだ人生終わっていないから <br />
+                    諦めんなって誰かの声 <br />
+                    見失ってしまったのアイロニー <br />
+                    気付けなくて今も抗ってる <br />
+                    この感情奪って去ってよ <br />
+                    ドロドロになってしまう前に <br/>
                 </p></mdui-card
             >
         </div>
@@ -65,13 +136,37 @@ const picturesOne = [
   { id: 9, src: "https://blog.nekoq.top/static/blog/line1/chexiang.webp", alt: "广州地铁一号线" },
   { id: 10, src: "https://blog.nekoq.top/static/blog/2023/wuhan.webp", alt: "武汉" },
   { id: 11, src: "https://blog.nekoq.top/static/blog/2023/dongguan.webp", alt: "东莞" },
-  { id: 12, src: "https://blog.nekoq.top/static/blog/2023/my-home.webp", alt: "抽象的房子" },
+  { id: 12, src: "https://blog.nekoq.top/static/blog/2023/my-home.webp", alt: "抽象的房子" }
+]
+const picturesOneandOne = [
   { id: 13, src: "https://blog.nekoq.top/static/images/twittercard.png", alt: "Twitter Card" },
   { id: 14, src: "https://blog.nekoq.top/static/blog/2023/gotoGZN.webp", alt: "佛山地铁二号线站台一角" },
   { id: 15, src: "https://blog.nekoq.top/static/blog/2023/xiamen.webp", alt: "厦门" },
   { id: 16, src: "https://blog.nekoq.top/static/blog/2023/reganmian.webp", alt: "热干面" },
   { id: 17, src: "https://blog.nekoq.top/static/blog/2023/maimaidx-2023.webp", alt: "舞萌 DX 2023 运行首日网络崩溃" },
   { id: 18, src: "https://blog.nekoq.top/static/blog/2023/JustBeFriend.webp", alt: "." }
+]
+const pictureTwo = [
+    { id: 1, src: "/images/photo_2023-09-30_23-48-51.jpg", alt: "晚高峰的广州南站" },
+    { id: 2, src: "/images/photo_2023-07-19_12-12-05.jpg", alt: "肇庆" },
+    { id: 3, src: "/images/photo_2023-07-15_17-22-30.jpg", alt: "佛山地铁某站站台休息室一角" },
+    { id: 4, src: "/images/photo_2023-06-24_16-13-11.jpg", alt: "CRRC | GZMetro" },
+    { id: 5, src: "/images/photo_2023-05-20_14-07-46.jpg", alt: "store by .jpg" },
+    { id: 6, src: "/images/photo_2024-02-29_00-07-00.jpg", alt: "重庆 by SkyNext" },
+    { id: 7, src: "/images/photo_2024-02-16_10-20-22.jpg", alt: "GZ Metro Line 5 西村站站台" },
+    { id: 8, src: "/images/photo_2024-02-09_00-49-19.jpg", alt: "游客止步" },
+    { id: 9, src: "/images/photo_2024-02-06_04-04-37.jpg", alt: "GZ Metro 某站运营终止" },
+    { id: 10, src: "/images/photo_2024-02-05_04-30-32.jpg", alt: "cat" }
+]
+const pictureThree = [
+    { id: 11, src: "/images/photo_2024-01-07_00-31-31.jpg", alt: "重庆轨道交通 by SkyNext" },
+    { id: 12, src: "/images/photo_2023-12-31_13-29-01.jpg", alt: "宜家" },
+    { id: 13, src: "/images/photo_2023-12-03_16-39-07.jpg", alt: "重庆轨道交通 by SkyNext"},
+    { id: 14, src: "/images/photo_2024-02-29_00-07-00.jpg", alt: "pjsk!" },
+    { id: 15, src: "/images/photo_2024-03-21_18-51-58.jpg", alt: "GZ Metro Line 5 区庄站站台" },
+    { id: 16, src: "/images/photo_2024-02-25_16-18-07.jpg", alt: "模拟恐怖（）" },
+    { id: 17, src: "/images/photo_2024-02-17_01-48-07.jpg", alt: "某商场一角" },
+    { id: 18, src: "/images/photo_2024-02-16_10-03-02.jpg", alt: "8 号出口（bushi" }
 ]
 // redo with ChatGPT 3.5
 // 2024.04.03
@@ -146,6 +241,9 @@ img
     object-fit: cover
     margin-bottom: 20px
     border-radius: var(--mdui-shape-corner-medium)
+
+img:hover
+    cursor: pointer
 
 .dialog-img
     width: 100%
