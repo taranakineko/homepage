@@ -1,5 +1,5 @@
 <template>
-    <mdui-top-app-bar variant="small" scroll-behavior="shrink elevate">
+    <mdui-top-app-bar variant="small" scroll-behavior="shrink elevate" v-if="route.path === '/pictures'">
         <mdui-button-icon icon="menu--outlined" ref="zako"></mdui-button-icon>
         <mdui-top-app-bar-title>测试页，使用 ChatGPT 3.5 辅助搭建</mdui-top-app-bar-title>
     </mdui-top-app-bar>
@@ -79,16 +79,19 @@
     </div>
 </template>
 
-<script>
+<script setup lang="ts">
+import { computed, onMounted, defineExpose, watchEffect } from 'vue'
+import { useRoute } from 'vue-router'
 import useZakoCounter from '../function/zako'
 import ScrollReveal from 'scrollreveal'
 import { $ } from 'mdui/jq.js'
 import { dialog } from 'mdui/functions/dialog.js'
 const { zako, zakozako } = useZakoCounter()
-
-export default {
-    mounted() {
-        const sr = ScrollReveal()
+const route = useRoute()
+// redo with ChatGPT 3.5
+// 2024.04.03
+function chuNew() {
+    const sr = ScrollReveal()
 
         const config = {
             distance: '20px',
@@ -112,8 +115,16 @@ export default {
                 closeOnOverlayClick: true
             })
         })
-    }
 }
+onMounted(() => {
+    watchEffect(() => {
+        if (route.path === '/pictures') {
+            chuNew()
+        }
+    })
+})
+
+defineExpose({ chuNew })
 </script>
 
 <style lang="sass">
