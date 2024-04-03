@@ -80,7 +80,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, defineExpose, watchEffect } from 'vue'
+import { computed, onMounted, defineExpose, watchEffect, onBeforeUnmount } from 'vue'
 import { useRoute } from 'vue-router'
 import useZakoCounter from '../function/zako'
 import ScrollReveal from 'scrollreveal'
@@ -116,12 +116,22 @@ function chuNew() {
             })
         })
 }
+function mcd() {
+    $('img').off('click');
+}
+// 初始化逻辑？（
 onMounted(() => {
+    // 自动更新？（
     watchEffect(() => {
         if (route.path === '/pictures') {
             chuNew()
         }
     })
+})
+
+// 卸载前清理工作
+onBeforeUnmount(() => {
+    mcd()
 })
 
 defineExpose({ chuNew })

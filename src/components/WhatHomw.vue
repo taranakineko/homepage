@@ -4,8 +4,8 @@
             <mdui-tab value="index" icon="restart_alt--outlined">Home</mdui-tab>
             <mdui-tab value="know" icon="face_retouching_natural--outlined">Know</mdui-tab>
             <mdui-tab value="link" icon="links--outlined">Links</mdui-tab>
-            <mdui-tab value="thank" icon="info--outlined">Others</mdui-tab>
             <mdui-tab value="picture" icon="image--outlined" @click="initPic">Picture</mdui-tab>
+            <mdui-tab value="thank" icon="info--outlined">Others</mdui-tab>
 
             <mdui-tab-panel slot="panel" value="index"><TheIndex /></mdui-tab-panel>
             <mdui-tab-panel slot="panel" value="know"><KnowMe /></mdui-tab-panel>
