@@ -21,42 +21,7 @@
                     >点此查看支持的浏览器列表</a
                 >
             </mdui-card>
-            <img src="/images/Screenshot_20240105-143739.png" alt="Share a song: After Rain" />
-            <img
-                src="https://blog.nekoq.top/static/blog/2023/cover.webp"
-                alt="广州天环，地下通道，BRT 付费区域"
-            />
-            <img src="https://blog.nekoq.top/static/blog/taiko-ch/cover.webp" alt="太鼓之达人" />
-            <img src="https://blog.nekoq.top/static/blog/2023/shenzhen.webp" alt="深圳地铁" />
-            <img
-                src="https://blog.nekoq.top/static/blog/2023/foshanzhan.webp"
-                alt="佛山火车站一角"
-            />
-            <img
-                src="https://blog.nekoq.top/static/blog/2023/maimaidx-2022.webp"
-                alt="要开始了哟~"
-            />
-            <img src="https://nekoq.eu.org/static/images/F4S2ZexbQAAJP5I.jpg" alt="VSCode 背景" />
-            <img src="https://blog.nekoq.top/static/blog/oneplus-8t/cover.webp" alt="一张桌子" />
-            <img
-                src="https://blog.nekoq.top/static/blog/line1/chexiang.webp"
-                alt="广州地铁一号线"
-            />
-            <img src="https://blog.nekoq.top/static/blog/2023/wuhan.webp" alt="武汉" />
-            <img src="https://blog.nekoq.top/static/blog/2023/dongguan.webp" alt="东莞" />
-            <img src="https://blog.nekoq.top/static/blog/2023/my-home.webp" alt="抽象的房子" />
-            <img src="https://blog.nekoq.top/static/images/twittercard.png" alt="Twitter Card" />
-            <img
-                src="https://blog.nekoq.top/static/blog/2023/gotoGZN.webp"
-                alt="佛山地铁二号线站台一角"
-            />
-            <img src="https://blog.nekoq.top/static/blog/2023/xiamen.webp" alt="厦门" />
-            <img src="https://blog.nekoq.top/static/blog/2023/reganmian.webp" alt="热干面" />
-            <img
-                src="https://blog.nekoq.top/static/blog/2023/maimaidx-2023.webp"
-                alt="舞萌 DX 2023 运行首日网络崩溃"
-            />
-            <img src="https://blog.nekoq.top/static/blog/2023/JustBeFriend.webp" alt="." />
+            <img v-for="picture in picturesOne" :src="picture.src" :alt="picture.alt" loading="lazy" :key="picture.id" />
             <mdui-card
                 style="
                     width: 100%;
@@ -80,7 +45,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, defineExpose, watchEffect, onBeforeUnmount } from 'vue'
+import { ref, onMounted, defineExpose, watchEffect, onBeforeUnmount } from 'vue'
 import { useRoute } from 'vue-router'
 import useZakoCounter from '../function/zako'
 import ScrollReveal from 'scrollreveal'
@@ -88,6 +53,26 @@ import { $ } from 'mdui/jq.js'
 import { dialog } from 'mdui/functions/dialog.js'
 const { zako, zakozako } = useZakoCounter()
 const route = useRoute()
+const picturesOne = [
+  { id: 1, src: "/images/Screenshot_20240105-143739.png", alt: "Share a song: After Rain" },
+  { id: 2, src: "https://blog.nekoq.top/static/blog/2023/cover.webp", alt: "广州天环，地下通道，BRT 付费区域" },
+  { id: 3, src: "https://blog.nekoq.top/static/blog/taiko-ch/cover.webp", alt: "太鼓之达人" },
+  { id: 4, src: "https://blog.nekoq.top/static/blog/2023/shenzhen.webp", alt: "深圳地铁" },
+  { id: 5, src: "https://blog.nekoq.top/static/blog/2023/foshanzhan.webp", alt: "佛山火车站一角" },
+  { id: 6, src: "https://blog.nekoq.top/static/blog/2023/maimaidx-2022.webp", alt: "要开始了哟~" },
+  { id: 7, src: "https://nekoq.eu.org/static/images/F4S2ZexbQAAJP5I.jpg", alt: "VSCode 背景" },
+  { id: 8, src: "https://blog.nekoq.top/static/blog/oneplus-8t/cover.webp", alt: "一张桌子" },
+  { id: 9, src: "https://blog.nekoq.top/static/blog/line1/chexiang.webp", alt: "广州地铁一号线" },
+  { id: 10, src: "https://blog.nekoq.top/static/blog/2023/wuhan.webp", alt: "武汉" },
+  { id: 11, src: "https://blog.nekoq.top/static/blog/2023/dongguan.webp", alt: "东莞" },
+  { id: 12, src: "https://blog.nekoq.top/static/blog/2023/my-home.webp", alt: "抽象的房子" },
+  { id: 13, src: "https://blog.nekoq.top/static/images/twittercard.png", alt: "Twitter Card" },
+  { id: 14, src: "https://blog.nekoq.top/static/blog/2023/gotoGZN.webp", alt: "佛山地铁二号线站台一角" },
+  { id: 15, src: "https://blog.nekoq.top/static/blog/2023/xiamen.webp", alt: "厦门" },
+  { id: 16, src: "https://blog.nekoq.top/static/blog/2023/reganmian.webp", alt: "热干面" },
+  { id: 17, src: "https://blog.nekoq.top/static/blog/2023/maimaidx-2023.webp", alt: "舞萌 DX 2023 运行首日网络崩溃" },
+  { id: 18, src: "https://blog.nekoq.top/static/blog/2023/JustBeFriend.webp", alt: "." }
+]
 // redo with ChatGPT 3.5
 // 2024.04.03
 function chuNew() {
