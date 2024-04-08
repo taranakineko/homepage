@@ -173,6 +173,7 @@
                         <div class="card">
                             <mdui-avatar
                                 src="https://wsrv.nl/?url=https://winsloweric.com/assets/logo256t.4b80bfe0.png&w=200&h=200&output=webp"
+                                loading="lazy"
                             ></mdui-avatar>
                             <p>Winslow</p>
                         </div></a
