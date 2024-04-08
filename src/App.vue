@@ -28,7 +28,7 @@
         </mdui-tooltip>
     </div>
     <mdui-dialog ref="dialog" close-on-overlay-click close-on-esc icon="settings--outlined" headline="设置">
-        <SettingTheSite :settingsUpdated="settingsUpdated" />
+        <SettingTheSite ref="settingRef" />
     </mdui-dialog>
 </template>
 
@@ -39,9 +39,9 @@ import SettingTheSite from './components/SettingTheSite.vue'
 import randomTheTXT from '@/function/snackbar'
 const { OpenTheSnackbar, backToTop, showBackToTop } = randomTheTXT()
 const dialog = ref()
-const settingsUpdated = ref(false);
+const settingRef = ref();
 function ShowSettings() {
-    settingsUpdated.value = !settingsUpdated.value;
+    settingRef.value.readWebMode();
     dialog.value.open = true
 }
 </script>

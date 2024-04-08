@@ -67,18 +67,13 @@ const colorOptions = ['#ffb4aa', '#00cc6a', '#0078d4', '#ff8c00', '#aec9d0']
 
 // redo by ChatGPT 3.5
 // 2024.04.02
-const props = defineProps({
-  settingsUpdated: Boolean,
-});
-watch(() => props.settingsUpdated, (newVal) => {
-  if (newVal) {
+function readWebMode() {
     if (localStorage.getItem('mode')) {
         $('#mode').prop('value', WebMode)
     } else {
         $('#mode').prop('value', 'auto')
     }
-  }
-});
+}
 
 if (localStorage.getItem('mode')) {
         setTheme(WebMode as 'light' | 'auto' | 'dark')
@@ -144,6 +139,7 @@ function CleanAll() {
         icon: 'error_outline--outlined'
     })
 }
+defineExpose({ readWebMode })
 </script>
 
 <style lang="sass">
