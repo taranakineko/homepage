@@ -40,7 +40,7 @@
         </mdui-card>
         <mdui-card
             variant="elevated"
-            class="pane mobile footer"
+            class="pane footer"
             style="
                 margin: 20px 5px 0px 5%;
                 text-align: center;
