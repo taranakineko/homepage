@@ -9,7 +9,7 @@ import 'mdui/mdui.css'
 import 'mdui'
 
 import { setColorScheme } from 'mdui/functions/setColorScheme.js'
-setColorScheme('#AEC9D0')
+setColorScheme('#0078d4')
 
 const app = createApp(App)
 
