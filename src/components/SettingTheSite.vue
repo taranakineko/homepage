@@ -1,5 +1,5 @@
 <template>
-    <div class="miao" style="max-width: unset; min-width: unset;">
+    <div class="miao" style="max-width: unset; min-width: unset">
         <div class="setting">
             <p>深/浅色模式</p>
             <div class="setting-mdui">
@@ -80,22 +80,21 @@ function readWebMode() {
         $('#mode').prop('value', 'auto')
     }
 
-    if (localStorage.getItem('tara') == "true") {
+    if (localStorage.getItem('tara') == 'true') {
         $('#debugMode').prop('checked', true)
     }
 }
 
 if (localStorage.getItem('mode')) {
-        setTheme(WebMode as 'light' | 'auto' | 'dark')
-    } else {
-        setTheme('auto')
-    }
-    if (localStorage.getItem('color')) {
-        setColorScheme(WebColor as string)
-    } else {
-        setColorScheme(HColor)
-    }
-
+    setTheme(WebMode as 'light' | 'auto' | 'dark')
+} else {
+    setTheme('auto')
+}
+if (localStorage.getItem('color')) {
+    setColorScheme(WebColor as string)
+} else {
+    setColorScheme(HColor)
+}
 
 const changeMode = () => {
     console.log($('#mode').prop('value') as 'light' | 'dark' | 'auto')
@@ -113,10 +112,10 @@ const changeColor = (hexColor: string) => {
 
 function debugMode() {
     console.log($('#debugMode').prop('checked'))
-    if ($('#debugMode').prop('checked') == false ) {
-        localStorage.setItem("tara", "true")
+    if ($('#debugMode').prop('checked') == false) {
+        localStorage.setItem('tara', 'true')
     } else {
-        localStorage.setItem("tara", "is not tara")
+        localStorage.setItem('tara', 'is not tara')
     }
 }
 

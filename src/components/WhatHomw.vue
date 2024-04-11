@@ -11,13 +11,15 @@
             <mdui-tab-panel slot="panel" value="know"><KnowMe /></mdui-tab-panel>
             <mdui-tab-panel slot="panel" value="link"><SeeLinks /></mdui-tab-panel>
             <mdui-tab-panel slot="panel" value="thank"><ThankYou /></mdui-tab-panel>
-            <mdui-tab-panel slot="panel" value="picture"><Picture ref="pictureRef"/></mdui-tab-panel>
+            <mdui-tab-panel slot="panel" value="picture"
+                ><Picture ref="pictureRef"
+            /></mdui-tab-panel>
         </mdui-tabs>
     </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from 'vue'
 import TheIndex from './TheIndex.vue'
 import KnowMe from './KnowMe.vue'
 import SeeLinks from './SeeLinks.vue'
@@ -25,8 +27,8 @@ import ThankYou from './ThankYou.vue'
 import Picture from './ShowPicture.vue'
 // redo with ChatGPT 3.5
 // 2024.04.03
-const pictureRef = ref();
+const pictureRef = ref()
 function initPic() {
-    pictureRef.value.chuNew();
+    pictureRef.value.chuNew()
 }
 </script>
