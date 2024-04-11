@@ -151,7 +151,7 @@ import { dialog } from 'mdui/functions/dialog.js'
 const { zako, zakozako } = useZakoCounter()
 const route = useRoute()
 const picturesOne = [
-    { id: 1, src: '/images/Screenshot_20240105-143739.png', alt: 'Share a song: After Rain' },
+    { id: 1, src: '/images/Screenshot_20240105-143739.webp', alt: 'Share a song: After Rain' },
     {
         id: 2,
         src: 'https://blog.nekoq.top/static/blog/2023/cover.webp',
@@ -169,7 +169,7 @@ const picturesOne = [
         src: 'https://blog.nekoq.top/static/blog/2023/maimaidx-2022.webp',
         alt: '要开始了哟~'
     },
-    { id: 7, src: 'https://nekoq.eu.org/static/images/F4S2ZexbQAAJP5I.jpg', alt: 'VSCode 背景' },
+    { id: 7, src: 'https://nekoq.eu.org/static/images/F4S2ZexbQAAJP5I.png', alt: 'VSCode 背景' },
     { id: 8, src: 'https://blog.nekoq.top/static/blog/oneplus-8t/cover.webp', alt: '一张桌子' },
     { id: 9, src: 'https://blog.nekoq.top/static/blog/line1/chexiang.webp', alt: '广州地铁一号线' },
     { id: 10, src: 'https://blog.nekoq.top/static/blog/2023/wuhan.webp', alt: '武汉' },
@@ -193,26 +193,26 @@ const picturesOneandOne = [
     { id: 18, src: 'https://blog.nekoq.top/static/blog/2023/JustBeFriend.webp', alt: '.' }
 ]
 const pictureTwo = [
-    { id: 1, src: '/images/photo_2023-09-30_23-48-51.jpg', alt: '晚高峰的广州南站' },
-    { id: 2, src: '/images/photo_2023-07-19_12-12-05.jpg', alt: '肇庆' },
-    { id: 3, src: '/images/photo_2023-07-15_17-22-30.jpg', alt: '佛山地铁某站站台休息室一角' },
-    { id: 4, src: '/images/photo_2023-06-24_16-13-11.jpg', alt: 'CRRC | GZMetro' },
-    { id: 5, src: '/images/photo_2023-05-20_14-07-46.jpg', alt: 'store by .jpg' },
-    { id: 6, src: '/images/photo_2024-02-29_00-07-00.jpg', alt: '重庆 by SkyNext' },
-    { id: 7, src: '/images/photo_2024-02-16_10-20-22.jpg', alt: 'GZ Metro Line 5 西村站站台' },
-    { id: 8, src: '/images/photo_2024-02-09_00-49-19.jpg', alt: '游客止步' },
-    { id: 9, src: '/images/photo_2024-02-06_04-04-37.jpg', alt: 'GZ Metro 某站运营终止' },
-    { id: 10, src: '/images/photo_2024-02-05_04-30-32.jpg', alt: 'cat' }
+    { id: 1, src: '/images/photo_2023-09-30_23-48-51.webp', alt: '晚高峰的广州南站' },
+    { id: 2, src: '/images/photo_2023-07-19_12-12-05.webp', alt: '肇庆' },
+    { id: 3, src: '/images/photo_2023-07-15_17-22-30.webp', alt: '佛山地铁某站站台休息室一角' },
+    { id: 4, src: '/images/photo_2023-06-24_16-13-11.webp', alt: 'CRRC | GZMetro' },
+    { id: 5, src: '/images/photo_2023-05-20_14-07-46.webp', alt: 'store by .webp' },
+    { id: 6, src: '/images/photo_2024-02-29_00-07-00.webp', alt: '重庆 by SkyNext' },
+    { id: 7, src: '/images/photo_2024-02-16_10-20-22.webp', alt: 'GZ Metro Line 5 西村站站台' },
+    { id: 8, src: '/images/photo_2024-02-09_00-49-19.webp', alt: '游客止步' },
+    { id: 9, src: '/images/photo_2024-02-06_04-04-37.webp', alt: 'GZ Metro 某站运营终止' },
+    { id: 10, src: '/images/photo_2024-02-05_04-30-32.webp', alt: 'cat' }
 ]
 const pictureThree = [
-    { id: 11, src: '/images/photo_2024-01-07_00-31-31.jpg', alt: '重庆轨道交通 by SkyNext' },
-    { id: 12, src: '/images/photo_2023-12-31_13-29-01.jpg', alt: '宜家' },
-    { id: 13, src: '/images/photo_2023-12-03_16-39-07.jpg', alt: '重庆轨道交通 by SkyNext' },
-    { id: 14, src: '/images/photo_2024-02-29_01-04-49.jpg', alt: 'pjsk!' },
-    { id: 15, src: '/images/photo_2024-03-21_18-51-58.jpg', alt: 'GZ Metro Line 5 区庄站站台' },
-    { id: 16, src: '/images/photo_2024-02-25_16-18-07.jpg', alt: '模拟恐怖（）' },
-    { id: 17, src: '/images/photo_2024-02-17_01-48-07.jpg', alt: '某商场一角' },
-    { id: 18, src: '/images/photo_2024-02-16_10-03-02.jpg', alt: '8 号出口（bushi' }
+    { id: 11, src: '/images/photo_2024-01-07_00-31-31.webp', alt: '重庆轨道交通 by SkyNext' },
+    { id: 12, src: '/images/photo_2023-12-31_13-29-01.webp', alt: '宜家' },
+    { id: 13, src: '/images/photo_2023-12-03_16-39-07.webp', alt: '重庆轨道交通 by SkyNext' },
+    { id: 14, src: '/images/photo_2024-02-29_01-04-49.webp', alt: 'pjsk!' },
+    { id: 15, src: '/images/photo_2024-03-21_18-51-58.webp', alt: 'GZ Metro Line 5 区庄站站台' },
+    { id: 16, src: '/images/photo_2024-02-25_16-18-07.webp', alt: '模拟恐怖（）' },
+    { id: 17, src: '/images/photo_2024-02-17_01-48-07.webp', alt: '某商场一角' },
+    { id: 18, src: '/images/photo_2024-02-16_10-03-02.webp', alt: '8 号出口（bushi' }
 ]
 // redo with ChatGPT 3.5
 // 2024.04.03
