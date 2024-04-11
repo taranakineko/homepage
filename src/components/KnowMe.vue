@@ -284,8 +284,18 @@ import { dialog } from 'mdui/functions/dialog.js'
 import { $ } from 'mdui/jq.js'
 const reply = ref()
 const seeb50 = ref<number>(0)
+
 async function GetRating() {
-    const resp = await fetch('https://api.nekoq.top/kano', { method: 'get' })
+    const who = "https://api.nekoq.top"
+    let url;
+
+    if (localStorage.getItem('tara') == "true") {
+        url = who + "/kano"
+    } else {
+        url = who + "/kano?see=tara"
+    }
+
+    const resp = await fetch(url, { method: 'get' })
     if (resp.ok) {
         const data = await resp.json()
         DXRating = data.rating

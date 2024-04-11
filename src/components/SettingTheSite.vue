@@ -36,6 +36,12 @@
             </div>
         </div>
         <div class="setting">
+            <p>调试模式</p>
+            <div class="setting-mdui">
+                <mdui-switch id="debugMode" @click="debugMode"></mdui-switch>
+            </div>
+        </div>
+        <div class="setting">
             <p>清除所有设置</p>
             <div class="setting-mdui">
                 <mdui-button variant="text" icon="delete--outlined" v-on:click="clearLocalStorage()"
@@ -73,6 +79,10 @@ function readWebMode() {
     } else {
         $('#mode').prop('value', 'auto')
     }
+
+    if (localStorage.getItem('tara') == "true") {
+        $('#debugMode').prop('checked', true)
+    }
 }
 
 if (localStorage.getItem('mode')) {
@@ -99,6 +109,15 @@ const changeColor = (hexColor: string) => {
     console.log(hexColor)
     setColorScheme(hexColor)
     localStorage.setItem('color', hexColor)
+}
+
+function debugMode() {
+    console.log($('#debugMode').prop('checked'))
+    if ($('#debugMode').prop('checked') == false ) {
+        localStorage.setItem("tara", "true")
+    } else {
+        localStorage.setItem("tara", "is not tara")
+    }
 }
 
 function Reset() {
