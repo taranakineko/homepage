@@ -42,13 +42,13 @@
             </div>
         </div>
         <div class="setting">
-            <p>清除所有设置</p>
+            <p>清除设置</p>
             <div class="setting-mdui">
                 <mdui-button variant="text" icon="delete--outlined" v-on:click="clearLocalStorage()"
                     >重置计数</mdui-button
                 >
                 <mdui-button variant="text" icon="delete--outlined" v-on:click="Reset()"
-                    >清除</mdui-button
+                    >清除所有设置</mdui-button
                 >
                 <mdui-button variant="text" icon="delete--outlined" v-on:click="CleanAll()"
                     >一键清除！</mdui-button
