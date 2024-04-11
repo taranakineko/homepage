@@ -66,46 +66,73 @@
                             <mdui-tooltip content="Pixel 5">
                                 <mdui-chip>
                                     Phone
-                                    <mdui-icon slot="icon" src="https://simpleicons.org/icons/google.svg"></mdui-icon> </mdui-chip></mdui-tooltip
+                                    <mdui-icon
+                                        slot="icon"
+                                        src="https://simpleicons.org/icons/google.svg"
+                                    ></mdui-icon> </mdui-chip></mdui-tooltip
                             >&nbsp;
                             <mdui-tooltip content="based Android 14">
                                 <mdui-chip>
                                     Pixel
-                                    <mdui-icon slot="icon" src="https://simpleicons.org/icons/android.svg"></mdui-icon> </mdui-chip></mdui-tooltip
+                                    <mdui-icon
+                                        slot="icon"
+                                        src="https://simpleicons.org/icons/android.svg"
+                                    ></mdui-icon> </mdui-chip></mdui-tooltip
                             >&nbsp;
                             <mdui-tooltip content="Samsung Galaxy Watch 4">
                                 <mdui-chip>
                                     Smart Watch
-                                    <mdui-icon slot="icon" src="https://simpleicons.org/icons/samsung.svg"></mdui-icon> </mdui-chip></mdui-tooltip
+                                    <mdui-icon
+                                        slot="icon"
+                                        src="https://simpleicons.org/icons/samsung.svg"
+                                    ></mdui-icon> </mdui-chip></mdui-tooltip
                             >&nbsp;
                             <mdui-tooltip content="RedmiBook Pro 14S">
                                 <mdui-chip>
                                     PC
-                                    <mdui-icon slot="icon" src="https://simpleicons.org/icons/xiaomi.svg"></mdui-icon> </mdui-chip></mdui-tooltip
+                                    <mdui-icon
+                                        slot="icon"
+                                        src="https://simpleicons.org/icons/xiaomi.svg"
+                                    ></mdui-icon> </mdui-chip></mdui-tooltip
                             >&nbsp;
                             <mdui-tooltip content="Windows Insider Beta Channel">
                                 <mdui-chip>
                                     Windows 11 Pro
-                                    <mdui-icon slot="icon" src="https://simpleicons.org/icons/windows.svg"></mdui-icon> </mdui-chip
+                                    <mdui-icon
+                                        slot="icon"
+                                        src="https://simpleicons.org/icons/windows.svg"
+                                    ></mdui-icon> </mdui-chip
                             ></mdui-tooltip>
                         </mdui-tab-panel>
                         <mdui-tab-panel class="chip" slot="panel" value="tab-2">
                             <mdui-tooltip content="Firefox Nightly"
                                 ><mdui-chip>
                                     Browser
-                                    <mdui-icon slot="icon" src="https://simpleicons.org/icons/firefox.svg"></mdui-icon> </mdui-chip></mdui-tooltip
+                                    <mdui-icon
+                                        slot="icon"
+                                        src="https://simpleicons.org/icons/firefox.svg"
+                                    ></mdui-icon> </mdui-chip></mdui-tooltip
                             >&nbsp;
                             <mdui-chip>
                                 Code Edit
-                                <mdui-icon slot="icon" src="https://simpleicons.org/icons/visualstudiocode.svg"></mdui-icon> </mdui-chip
+                                <mdui-icon
+                                    slot="icon"
+                                    src="https://simpleicons.org/icons/visualstudiocode.svg"
+                                ></mdui-icon> </mdui-chip
                             >&nbsp;
                             <mdui-chip>
                                 Blog Framework
-                                <mdui-icon slot="icon" src="https://simpleicons.org/icons/hexo.svg"></mdui-icon> </mdui-chip
+                                <mdui-icon
+                                    slot="icon"
+                                    src="https://simpleicons.org/icons/hexo.svg"
+                                ></mdui-icon> </mdui-chip
                             >&nbsp;
                             <mdui-chip>
                                 Analysis
-                                <mdui-icon slot="icon" src="https://simpleicons.org/icons/umami.svg"></mdui-icon> </mdui-chip
+                                <mdui-icon
+                                    slot="icon"
+                                    src="https://simpleicons.org/icons/umami.svg"
+                                ></mdui-icon> </mdui-chip
                             >&nbsp;
                         </mdui-tab-panel>
                         <mdui-tab-panel class="chip" slot="panel" value="tab-3">
@@ -123,7 +150,10 @@
                             >&nbsp;
                             <mdui-chip v-on:click="MaiMen()">
                                 麦门信徒
-                                <mdui-icon slot="icon" src="https://simpleicons.org/icons/mcdonalds.svg"></mdui-icon> </mdui-chip
+                                <mdui-icon
+                                    slot="icon"
+                                    src="https://simpleicons.org/icons/mcdonalds.svg"
+                                ></mdui-icon> </mdui-chip
                             >&nbsp;
                             <mdui-chip v-on:click="LagTrain()">
                                 追公交.jpg

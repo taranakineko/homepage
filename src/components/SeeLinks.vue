@@ -7,25 +7,40 @@
                 <h3>社交平台</h3>
                 <div class="links-chip">
                     <mdui-chip href="https://alive.bar/@TaranakiNeko" target="_blank"
-                        ><mdui-icon slot="icon" src="https://simpleicons.org/icons/mastodon.svg"></mdui-icon
+                        ><mdui-icon
+                            slot="icon"
+                            src="https://simpleicons.org/icons/mastodon.svg"
+                        ></mdui-icon
                         >Mastodon</mdui-chip
                     >
                     <mdui-chip href="https://twitter.com/taranakineko" target="_blank"
-                        ><mdui-icon slot="icon" src="https://simpleicons.org/icons/twitter.svg"></mdui-icon
+                        ><mdui-icon
+                            slot="icon"
+                            src="https://simpleicons.org/icons/twitter.svg"
+                        ></mdui-icon
                         >Twitter</mdui-chip
                     >
                     <mdui-chip href="https://t.me/taranaki_neko" target="_blank"
-                        ><mdui-icon slot="icon" src="https://simpleicons.org/icons/telegram.svg"></mdui-icon
+                        ><mdui-icon
+                            slot="icon"
+                            src="https://simpleicons.org/icons/telegram.svg"
+                        ></mdui-icon
                         >Telegram</mdui-chip
                     >
                     <mdui-chip href="https://instagram.com/taranakineko" target="_blank"
-                        ><mdui-icon slot="icon" src="https://simpleicons.org/icons/instagram.svg"></mdui-icon
+                        ><mdui-icon
+                            slot="icon"
+                            src="https://simpleicons.org/icons/instagram.svg"
+                        ></mdui-icon
                         >Instagram</mdui-chip
                     >
                     <mdui-chip
                         href="https://bsky.app/profile/taranakineko.bsky.social"
                         target="_blank"
-                        ><mdui-icon slot="icon" src="https://simpleicons.org/icons/bluesky.svg"></mdui-icon
+                        ><mdui-icon
+                            slot="icon"
+                            src="https://simpleicons.org/icons/bluesky.svg"
+                        ></mdui-icon
                         >BlueSky</mdui-chip
                     >
                 </div>
@@ -35,15 +50,24 @@
                         ><mdui-icon slot="icon" name="mail--outlined"></mdui-icon>Email</mdui-chip
                     >
                     <mdui-chip href="https://matrix.to/#/@never7ko:matrix.org" target="_blank"
-                        ><mdui-icon slot="icon" src="https://simpleicons.org/icons/matrix.svg"></mdui-icon
+                        ><mdui-icon
+                            slot="icon"
+                            src="https://simpleicons.org/icons/matrix.svg"
+                        ></mdui-icon
                         >Matrix</mdui-chip
                     >
                     <mdui-chip href="https://t.me/taraneko_bot" target="_blank"
-                        ><mdui-icon slot="icon" src="https://simpleicons.org/icons/telegram.svg"></mdui-icon
+                        ><mdui-icon
+                            slot="icon"
+                            src="https://simpleicons.org/icons/telegram.svg"
+                        ></mdui-icon
                         >Telegram Bot</mdui-chip
                     >
                     <mdui-chip href="https://line.me/ti/p/5I4CjyDmEa" target="_blank"
-                        ><mdui-icon slot="icon" src="https://simpleicons.org/icons/line.svg"></mdui-icon
+                        ><mdui-icon
+                            slot="icon"
+                            src="https://simpleicons.org/icons/line.svg"
+                        ></mdui-icon
                         >Line</mdui-chip
                     >
                     <p>
@@ -60,7 +84,10 @@
                 <h3>On Github</h3>
                 <div class="links-chip">
                     <mdui-chip href="https://github.com/taranakineko" target="_blank"
-                        ><mdui-icon slot="icon" src="https://simpleicons.org/icons/github.svg"></mdui-icon
+                        ><mdui-icon
+                            slot="icon"
+                            src="https://simpleicons.org/icons/github.svg"
+                        ></mdui-icon
                         >Github</mdui-chip
                     >
                     <mdui-chip
@@ -109,7 +136,11 @@
                 <h3>Blog</h3>
                 <div class="links-chip">
                     <mdui-chip href="https://blog.nekoq.top" target="_blank"
-                        ><mdui-icon slot="icon" src="https://simpleicons.org/icons/hexo.svg"></mdui-icon>Blog</mdui-chip
+                        ><mdui-icon
+                            slot="icon"
+                            src="https://simpleicons.org/icons/hexo.svg"
+                        ></mdui-icon
+                        >Blog</mdui-chip
                     >
                 </div>
             </div>

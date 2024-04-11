@@ -1,7 +1,14 @@
 # homepage-mdy-vue
 
   > [!CAUTION]  
-  > 部分代码可能会让你出现一系列不良反应，此时请停止浏览，转而去做其他事
+  > 部分代码可能会让你出现一系列不良反应，此时请停止浏览，转而去做其他事（
+
+  > [!IMPORTANT]
+  > 欢迎访问本仓库的 dev 分支，你可以在这里看到 tara 想在主页中实现的功能或者内容
+  > 请注意，dev 分支中的部分功能或者内容可能尚未完成，并且它们有一定的概率不会出现在 main 分支以及 https://nekoq.top 上
+
+  > [!TIP]
+  > 你可能会在这里发现一些有趣的事实，包括但不限于函数的命名、塞在各个角落里的注释
 
 A homepage about @Taranakineko, use [zdhxiong/mdui](https://https://github.com/zdhxiong/mdui/) and Vue🚧
 
@@ -20,6 +27,7 @@ A homepage about @Taranakineko, use [zdhxiong/mdui](https://https://github.com/z
   - [Ionicons](https://ionic.io/ionicons) <!--图标-->
   - [Fontawesome](https://fontawesome.com/icons)<!--吐司通知图标-->
   - [Material Web](https://material-web.dev)<!--/ Material 3 + 调色参考 -->
+  - [ChatGPT](https://chat.openai.com/)<!-- 要不然有些东西写都写不出来（ -->
 
 ---
 
