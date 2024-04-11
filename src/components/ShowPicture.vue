@@ -169,7 +169,7 @@ const picturesOne = [
         src: 'https://blog.nekoq.top/static/blog/2023/maimaidx-2022.webp',
         alt: '要开始了哟~'
     },
-    { id: 7, src: 'https://nekoq.eu.org/static/images/F4S2ZexbQAAJP5I.png', alt: 'VSCode 背景' },
+    { id: 7, src: 'https://nekoq.eu.org/static/images/F4S2ZexbQAAJP5I.jpg', alt: 'VSCode 背景' },
     { id: 8, src: 'https://blog.nekoq.top/static/blog/oneplus-8t/cover.webp', alt: '一张桌子' },
     { id: 9, src: 'https://blog.nekoq.top/static/blog/line1/chexiang.webp', alt: '广州地铁一号线' },
     { id: 10, src: 'https://blog.nekoq.top/static/blog/2023/wuhan.webp', alt: '武汉' },
