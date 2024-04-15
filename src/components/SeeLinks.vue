@@ -6,12 +6,12 @@
             <div class="me-body">
                 <h3>社交平台</h3>
                 <div class="links-chip">
-                    <mdui-chip href="https://alive.bar/@TaranakiNeko" target="_blank"
+                    <mdui-chip href="https://firefish.nekoq.top/@taranakineko" target="_blank"
                         ><mdui-icon
                             slot="icon"
-                            src="https://simpleicons.org/icons/mastodon.svg"
+                            src="https://simpleicons.org/icons/firefish.svg"
                         ></mdui-icon
-                        >Mastodon</mdui-chip
+                        >FireFish</mdui-chip
                     >
                     <mdui-chip href="https://twitter.com/taranakineko" target="_blank"
                         ><mdui-icon
