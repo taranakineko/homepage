@@ -6,7 +6,7 @@
             ref="OpenTheSnackbar"
             @click="ShowSettings"
             icon="settings--outlined"
-            data-umami-event="Snackbar"
+            data-umami-event="Setting"
         ></mdui-fab>
         <mdui-fab
             class="openSnackbar"

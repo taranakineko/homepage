@@ -152,7 +152,7 @@
                     <a href="https://winsloweric.com/">
                         <div class="card">
                             <mdui-avatar
-                                src="https://wsrv.nl/?url=https://nekoq.top/images/logo256t.4b80bfe0.png&w=200&h=200&output=webp"
+                                src="/images/friend/logo256t-Dqfv6BoD.png"
                                 loading="lazy"
                             ></mdui-avatar>
                             <p>Winslow</p>
