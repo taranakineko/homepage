@@ -21,7 +21,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import TheIndex from './TheIndex.vue'
-import KnowMe from './KnowMe.vue'
+import KnowMe from './KnowMeNew.vue'
 import SeeLinks from './SeeLinks.vue'
 import ThankYou from './ThankYou.vue'
 import Picture from './ShowPicture.vue'
