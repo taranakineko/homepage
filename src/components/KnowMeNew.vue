@@ -35,11 +35,120 @@
                 <mdui-card variant="elevated" class="hover me-with-img" style="margin: 0px 5px 20px 5%; width: 95%;">
                     <img src="/images/me/Snipaste_2024-04-26_00-40-12.png">
                     <div class="me-nr">
-                        <h2>这是测试</h2>
                         <div class="me-body">
-                            <p>这是内容测试</p>
-                            <p>这是内容测试</p>
-                            <p>这是内容测试</p>
+                            <p>要问千畔喜欢什么的话......似乎并没有特别喜欢什么东西吧</p>
+                            <p>但要全说出来的话，似乎也挺多的（x</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </mdui-card>
+            </div>
+            <div class="thanks-body">
+                <mdui-card variant="elevated" class="hover me-with-img" style="margin: 0px 5px 20px 5%; width: 95%;">
+                    <img src="/images/me/PXL_20240425_172920510.jpg">
+                    <div class="me-nr" style="margin-top: 20px;">
+                        <div class="me-body">
+                            <mdui-tabs value="tab-1" placement="top" full-width>
+                            <mdui-tab value="tab-1">设备</mdui-tab>
+                            <mdui-tab value="tab-2">使用</mdui-tab>
+
+                            <mdui-tab-panel class="chip" slot="panel" value="tab-1">
+                                <mdui-tooltip content="Mobile Phone">
+                                    <mdui-chip>
+                                        Pixel 5
+                                        <mdui-icon
+                                            slot="icon"
+                                            src="https://simpleicons.org/icons/google.svg"
+                                        ></mdui-icon> </mdui-chip></mdui-tooltip
+                                >&nbsp;
+                                <mdui-tooltip content="Smart Watch">
+                                    <mdui-chip>
+                                        Samsung Galaxy Watch 4
+                                        <mdui-icon
+                                            slot="icon"
+                                            src="https://simpleicons.org/icons/samsung.svg"
+                                        ></mdui-icon> </mdui-chip></mdui-tooltip
+                                >&nbsp;
+                                <mdui-tooltip content="PC">
+                                    <mdui-chip>
+                                        RedmiBook Pro 14S
+                                        <mdui-icon
+                                            slot="icon"
+                                            src="https://simpleicons.org/icons/xiaomi.svg"
+                                        ></mdui-icon> </mdui-chip></mdui-tooltip
+                                >&nbsp;
+                            </mdui-tab-panel>
+                            <mdui-tab-panel class="chip" slot="panel" value="tab-2">
+                                <mdui-tooltip content="Windows Insider Beta Channel">
+                                    <mdui-chip>
+                                        Windows 11 Pro
+                                        <mdui-icon
+                                            slot="icon"
+                                            src="https://simpleicons.org/icons/windows.svg"
+                                        ></mdui-icon> </mdui-chip
+                                ></mdui-tooltip>&nbsp;
+                                <mdui-tooltip content="based Android 14">
+                                    <mdui-chip>
+                                        Pixel
+                                        <mdui-icon
+                                            slot="icon"
+                                            src="https://simpleicons.org/icons/android.svg"
+                                        ></mdui-icon> </mdui-chip></mdui-tooltip
+                                >&nbsp;
+                                <mdui-tooltip content="Firefox Nightly"
+                                    ><mdui-chip>
+                                        Browser
+                                        <mdui-icon
+                                            slot="icon"
+                                            src="https://simpleicons.org/icons/firefox.svg"
+                                        ></mdui-icon> </mdui-chip></mdui-tooltip
+                                >&nbsp;
+                                <mdui-chip>
+                                    Code Edit
+                                    <mdui-icon
+                                        slot="icon"
+                                        src="https://simpleicons.org/icons/visualstudiocode.svg"
+                                    ></mdui-icon> </mdui-chip
+                                >&nbsp;
+                                <mdui-chip>
+                                    Blog Framework
+                                    <mdui-icon
+                                        slot="icon"
+                                        src="https://simpleicons.org/icons/hexo.svg"
+                                    ></mdui-icon> </mdui-chip
+                                >&nbsp;
+                                <mdui-chip>
+                                    Website Analysis
+                                    <mdui-icon
+                                        slot="icon"
+                                        src="https://simpleicons.org/icons/umami.svg"
+                                    ></mdui-icon> </mdui-chip
+                                >&nbsp;
+                            </mdui-tab-panel>
+                        </mdui-tabs>
+                        </div>
+                    </div>
+                </mdui-card>
+                <mdui-card variant="elevated" class="hover me-with-img" style="margin: 0px 5px 20px 5%; width: 95%;">
+                    <img src="/images/me/Snipaste_2024-04-26_00-40-12.png">
+                    <div class="me-nr">
+                        <div class="me-body">
+                        </div>
+                    </div>
+                </mdui-card>
+            </div>
+            <div class="thanks-body">
+                <mdui-card variant="elevated" class="hover me-with-img" style="margin: 0px 5px 20px 5%; width: 95%;">
+                    <img src="/images/me/Snipaste_2024-04-26_00-40-12.png">
+                    <div class="me-nr">
+                        <div class="me-body">
+                        </div>
+                    </div>
+                </mdui-card>
+                <mdui-card variant="elevated" class="hover me-with-img" style="margin: 0px 5px 20px 5%; width: 95%;">
+                    <img src="/images/me/Snipaste_2024-04-26_00-40-12.png">
+                    <div class="me-nr">
+                        <div class="me-body">
                         </div>
                     </div>
                 </mdui-card>
