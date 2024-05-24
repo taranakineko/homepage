@@ -18,7 +18,7 @@
                 </div>
             </mdui-card>
         </div>
-        <div class="miao-thanks NewNew">
+        <div class="miao-thanks NewNew" style="display: none">
             <div class="thanks-body">
                 <mdui-card
                     variant="elevated"
