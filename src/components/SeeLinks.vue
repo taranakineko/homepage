@@ -186,6 +186,13 @@
                             ></mdui-avatar>
                             <p>MoeMagicMango</p>
                         </div></a
+                    ><a href="https://souiken.moe/">
+                        <div class="card">
+                            <mdui-avatar
+                                src="https://wsrv.nl/?url=https://souiken.moe/img/avatar.webp&w=200&h=200&output=webp"
+                            ></mdui-avatar>
+                            <p>Souiken</p>
+                        </div></a
                     ><a href="https://blog.nekoq.top/links">
                         <div class="card">
                             <mdui-avatar icon="add_link--outlined"></mdui-avatar>
