@@ -53,7 +53,9 @@
             <p>
                 Made with
                 <a href="https://github.com/zdhxiong/mdui/" target="_blank">zdhxiong/mdui</a> |
-                <a href="https://github.com/taranakineko/homepage/tree/dev" target="_blank">Github Repo</a>
+                <a href="https://github.com/taranakineko/homepage/tree/dev" target="_blank"
+                    >Github Repo</a
+                >
             </p>
         </mdui-card>
     </div>

@@ -76,11 +76,6 @@
                         >
                     </p>
                 </div>
-                <p class="links-chip" style="text-align: center">
-                    <b
-                        >由于千畔手机常年开免打扰<br />如通过以上联系途径联系千畔超过三个小时未回复<br />自求多福吧（被打</b
-                    >
-                </p>
                 <h3>On Github</h3>
                 <div class="links-chip">
                     <mdui-chip href="https://github.com/taranakineko" target="_blank"
