@@ -4,7 +4,7 @@
             <mdui-card
                 variant="elevated"
                 class="hover waring"
-                style="margin: 20px 5px 0px 5%; width: 95%; padding: 20px"
+                style="margin: 20px 5px 0px 5%; width: 90%; padding: 20px"
             >
                 <h2>注意注意！⚠️</h2>
                 <div class="me-body">
@@ -18,7 +18,7 @@
                 </div>
             </mdui-card>
         </div>
-        <div class="miao-thanks NewNew">
+        <div class="miao-thanks NewNew" style="display: none">
             <div class="thanks-body">
                 <mdui-card
                     variant="elevated"
@@ -51,6 +51,7 @@
                             <p>要问千畔喜欢什么的话......似乎并没有特别喜欢什么东西吧</p>
                             <p>但要全说出来的话，似乎也挺多的（x</p>
                             <p>那就...不说了吧！以后再慢慢去说（点头</p>
+                            <p>或者可以去看看其他地方，总会有些小惊喜的不是吗（）</p>
                             <p></p>
                         </div>
                     </div>
@@ -154,7 +155,7 @@
                     class="hover me-with-img"
                     style="margin: 0px 5px 20px 5%; width: 95%"
                 >
-                    <img src="/images/me/Snipaste_2024-04-26_00-40-12.png" />
+                    <img src="/images/me/1716555101.jpg" />
                     <div class="me-nr">
                         <div class="me-body" style="margin-top: 16px;">
                             <blockquote cite="https://t.me/taraneko_what_happen/12947">
