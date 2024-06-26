@@ -68,7 +68,7 @@ import { $ } from 'mdui/jq.js'
 import clearLocalStorage from '../function/zako'
 const WebMode = localStorage.getItem('mode')
 const WebColor = localStorage.getItem('color')
-const HColor = '#AEC9D0'
+// const HColor = '#eeeeee'
 const colorOptions = ['#ffb4aa', '#00cc6a', '#0078d4', '#ff8c00', '#aec9d0']
 
 // redo by ChatGPT 3.5
@@ -92,8 +92,6 @@ if (localStorage.getItem('mode')) {
 }
 if (localStorage.getItem('color')) {
     setColorScheme(WebColor as string)
-} else {
-    setColorScheme(HColor)
 }
 
 const changeMode = () => {
