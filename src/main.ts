@@ -9,7 +9,8 @@ import 'mdui/mdui.css'
 import 'mdui'
 
 import { setColorScheme } from 'mdui/functions/setColorScheme.js'
-setColorScheme('#0078d4')
+setColorScheme('#AEC9D0')
+// 想改成灰色的，但改了和没改一样，作罢
 
 const app = createApp(App)
 
