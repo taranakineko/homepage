@@ -230,6 +230,7 @@
 </template>
 
 <script setup lang="ts">
+document.title = "Taranakineko's homepage."
 import { snackbar } from 'mdui/functions/snackbar.js'
 const mail = 'hi@nekoq.top'
 function KnowMail() {

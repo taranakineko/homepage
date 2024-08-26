@@ -61,7 +61,9 @@
     </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+    document.title = "Taranakineko's homepage."
+</script>
 
 <style lang="scss">
 .avatar {
