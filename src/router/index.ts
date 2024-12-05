@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../components/WhatHomw.vue'
 import FourOhFour from '../components/FourOhFour.vue'
-import Flu from '../components/Fluffyluo.vue'
+import Flu from '../../2/Fluffyluo.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,7 +12,7 @@ const router = createRouter({
             component: Home
         },
         {
-            path: "/fluffyluo",
+            path: '/fluffyluo',
             name: 'f',
             component: Flu
         },

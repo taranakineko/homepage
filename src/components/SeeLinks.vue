@@ -6,42 +6,12 @@
             <div class="me-body">
                 <h3>社交平台</h3>
                 <div class="links-chip">
-                    <mdui-chip href="https://firefish.nekoq.top/@taranakineko" target="_blank"
-                        ><mdui-icon
-                            slot="icon"
-                            src="https://simpleicons.org/icons/firefish.svg"
-                        ></mdui-icon
-                        >FireFish</mdui-chip
-                    >
-                    <mdui-chip href="https://twitter.com/taranakineko" target="_blank"
-                        ><mdui-icon
-                            slot="icon"
-                            src="https://simpleicons.org/icons/twitter.svg"
-                        ></mdui-icon
-                        >Twitter</mdui-chip
-                    >
                     <mdui-chip href="https://t.me/taranaki_neko" target="_blank"
                         ><mdui-icon
                             slot="icon"
                             src="https://simpleicons.org/icons/telegram.svg"
                         ></mdui-icon
                         >Telegram</mdui-chip
-                    >
-                    <mdui-chip href="https://instagram.com/taranakineko" target="_blank"
-                        ><mdui-icon
-                            slot="icon"
-                            src="https://simpleicons.org/icons/instagram.svg"
-                        ></mdui-icon
-                        >Instagram</mdui-chip
-                    >
-                    <mdui-chip
-                        href="https://bsky.app/profile/taranakineko.bsky.social"
-                        target="_blank"
-                        ><mdui-icon
-                            slot="icon"
-                            src="https://simpleicons.org/icons/bluesky.svg"
-                        ></mdui-icon
-                        >BlueSky</mdui-chip
                     >
                 </div>
                 <h3>联系方式</h3>
@@ -55,20 +25,6 @@
                             src="https://simpleicons.org/icons/matrix.svg"
                         ></mdui-icon
                         >Matrix</mdui-chip
-                    >
-                    <mdui-chip href="https://t.me/taraneko_bot" target="_blank"
-                        ><mdui-icon
-                            slot="icon"
-                            src="https://simpleicons.org/icons/telegram.svg"
-                        ></mdui-icon
-                        >Telegram Bot</mdui-chip
-                    >
-                    <mdui-chip href="https://line.me/ti/p/5I4CjyDmEa" target="_blank"
-                        ><mdui-icon
-                            slot="icon"
-                            src="https://simpleicons.org/icons/line.svg"
-                        ></mdui-icon
-                        >Line</mdui-chip
                     >
                     <p>
                         <a href="/TaranakiNeko_0xF94A19FF_public.asc" download
@@ -88,45 +44,11 @@
                     <mdui-chip
                         href="https://github.com/users/taranakineko/projects/1"
                         target="_blank"
-                        ><mdui-icon slot="icon"
-                            ><svg
-                                aria-hidden="true"
-                                height="16"
-                                viewBox="0 0 16 16"
-                                version="1.1"
-                                width="16"
-                            >
-                                <path
-                                    d="M1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0ZM1.5 1.75v12.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25ZM11.75 3a.75.75 0 0 1 .75.75v7.5a.75.75 0 0 1-1.5 0v-7.5a.75.75 0 0 1 .75-.75Zm-8.25.75a.75.75 0 0 1 1.5 0v5.5a.75.75 0 0 1-1.5 0ZM8 3a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 3Z"
-                                ></path></svg></mdui-icon
                         >Tara's project</mdui-chip
                     >
                     <mdui-chip href="https://github.com/taranakineko/homepage" target="_blank"
-                        ><mdui-icon slot="icon"
-                            ><svg
-                                aria-hidden="true"
-                                height="16"
-                                viewBox="0 0 16 16"
-                                version="1.1"
-                                width="16"
-                            >
-                                <path
-                                    d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"
-                                ></path></svg></mdui-icon
                         >Homepage</mdui-chip
                     >
-                </div>
-                <h3>其他链接</h3>
-                <div class="links-chip">
-                    <mdui-chip href="https://bookmarks.nekoq.top/" target="_blank"
-                        ><mdui-icon slot="icon" name="bookmark--outlined"></mdui-icon
-                        >Bookmarks</mdui-chip
-                    >
-                    <mdui-chip href="https://neko.nekoq.top" target="_blank"
-                        ><mdui-icon slot="icon" name="attach_money--outlined"></mdui-icon
-                        >我很可爱请给我钱</mdui-chip
-                    >
-                    <p>使用率极低的（例如 Spotify ）暂不公开</p>
                 </div>
                 <h3>Blog</h3>
                 <div class="links-chip">
@@ -159,13 +81,6 @@
                                 src="https://shef.cc/wp-content/uploads/SheepChef-%E5%90%89%E7%A5%A5%E7%89%A9-%E5%A4%B4%E5%83%8F2-e1683031048446.png.webp"
                             ></mdui-avatar>
                             <p>SheepChef</p>
-                        </div></a
-                    ><a href="https://moe23333.vercel.app/">
-                        <div class="card">
-                            <mdui-avatar
-                                src="https://moe23333.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar_trans.1f5053b1.png&w=1920&q=75"
-                            ></mdui-avatar>
-                            <p>Moe23333</p>
                         </div></a
                     ><a href="https://sunyz.net/">
                         <div class="card">
