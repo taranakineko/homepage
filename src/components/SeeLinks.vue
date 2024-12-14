@@ -103,7 +103,15 @@
                             ></mdui-avatar>
                             <p>Souiken</p>
                         </div></a
-                    ><a href="https://blog.nekoq.top/links">
+                    ><a href="https://blog.chyk.ink/">
+                        <div class="card">
+                            <mdui-avatar
+                                src="https://q1.qlogo.cn/g?b=qq&nk=3526514925&s=640"
+                            ></mdui-avatar>
+                            <p>斬風·千雪</p>
+                        </div></a
+                    >
+                    <a href="https://blog.nekoq.top/links">
                         <div class="card">
                             <mdui-avatar icon="add_link--outlined"></mdui-avatar>
                             <p>Motto motto...</p>
