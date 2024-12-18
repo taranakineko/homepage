@@ -130,7 +130,7 @@
                     <p>这边请~😉</p>
                     <mdui-list>
                         <mdui-list-item
-                            href="https://umami.nekoq.eu.org/share/4lQOLAOmfO6CW9z6/主页"
+                            href="https://umami.nekoq.eu.org/share/rhfYp9JAeywDHLZR/nekoq.top"
                             target="_blank"
                             end-icon="open_in_new--outlined"
                             description="有什么呢"
@@ -138,7 +138,7 @@
                             主页
                         </mdui-list-item>
                         <mdui-list-item
-                            href="https://umami.nekoq.eu.org/share/gjaybUZ87J6pDCaJ/Blog"
+                            href="https://umami.nekoq.eu.org/share/4vDQmjafcOBELfps/blog.nekoq.top"
                             target="_blank"
                             description="这里不能看！"
                             end-icon="open_in_new--outlined"
